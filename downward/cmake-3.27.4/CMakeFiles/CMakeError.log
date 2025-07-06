@@ -1,0 +1,299 @@
+Determining if compiler supports C++ filesystem failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a18a2/fast
+gmake  -f CMakeFiles/cmTC_a18a2.dir/build.make CMakeFiles/cmTC_a18a2.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o
+/usr/bin/g++   -std=gnu++17 -o CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Source/Checks/cm_cxx_filesystem.cxx
+Linking CXX executable cmTC_a18a2
+/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_a18a2.dir/link.txt --verbose=1
+/usr/bin/g++ CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o -o cmTC_a18a2 
+CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o: In function `std::filesystem::__cxx11::operator==(std::filesystem::__cxx11::path const&, std::filesystem::__cxx11::path const&)':
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx11eqERKNS0_4pathES3_[_ZNSt10filesystem7__cxx11eqERKNS0_4pathES3_]+0x1f): undefined reference to `std::filesystem::__cxx11::path::compare(std::filesystem::__cxx11::path const&) const'
+CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o: In function `std::filesystem::__cxx11::filesystem_error::filesystem_error(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::error_code)':
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx1116filesystem_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10error_code[_ZNSt10filesystem7__cxx1116filesystem_errorC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10error_code]+0x36): undefined reference to `vtable for std::filesystem::__cxx11::filesystem_error'
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx1116filesystem_errorC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10error_code[_ZNSt10filesystem7__cxx1116filesystem_errorC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt10error_code]+0x77): undefined reference to `std::filesystem::__cxx11::filesystem_error::_M_gen_what()'
+CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o: In function `std::filesystem::__cxx11::path::path<wchar_t [7], std::filesystem::__cxx11::path>(wchar_t const (&) [7], std::filesystem::__cxx11::path::format)':
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx114pathC2IA7_wS1_EERKT_NS1_6formatE[_ZNSt10filesystem7__cxx114pathC5IA7_wS1_EERKT_NS1_6formatE]+0x5e): undefined reference to `std::filesystem::__cxx11::path::_M_split_cmpts()'
+CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o: In function `std::filesystem::__cxx11::path::path<char [7], std::filesystem::__cxx11::path>(char const (&) [7], std::filesystem::__cxx11::path::format)':
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx114pathC2IA7_cS1_EERKT_NS1_6formatE[_ZNSt10filesystem7__cxx114pathC5IA7_cS1_EERKT_NS1_6formatE]+0x5e): undefined reference to `std::filesystem::__cxx11::path::_M_split_cmpts()'
+CMakeFiles/cmTC_a18a2.dir/cm_cxx_filesystem.cxx.o: In function `std::filesystem::__cxx11::path::_Cvt<wchar_t>::_S_convert(wchar_t const*, wchar_t const*)':
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx114path4_CvtIwE10_S_convertEPKwS5_[_ZNSt10filesystem7__cxx114path4_CvtIwE10_S_convertEPKwS5_]+0xec): undefined reference to `std::filesystem::__cxx11::filesystem_error::~filesystem_error()'
+cm_cxx_filesystem.cxx:(.text._ZNSt10filesystem7__cxx114path4_CvtIwE10_S_convertEPKwS5_[_ZNSt10filesystem7__cxx114path4_CvtIwE10_S_convertEPKwS5_]+0xf1): undefined reference to `typeinfo for std::filesystem::__cxx11::filesystem_error'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_a18a2.dir/build.make:99: cmTC_a18a2] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a18a2/fast] Error 2
+
+
+
+Performing Curl Test HAVE_FSETXATTR_6 failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6b1a/fast
+gmake  -f CMakeFiles/cmTC_c6b1a.dir/build.make CMakeFiles/cmTC_c6b1a.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6b1a.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_FSETXATTR_6  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_c6b1a.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:423:3: error: too many arguments to function ‘fsetxattr’
+   fsetxattr(0, 0, 0, 0, 0, 0);
+   ^~~~~~~~~
+In file included from /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:420:
+/usr/include/sys/xattr.h:54:12: note: declared here
+ extern int fsetxattr (int __fd, const char *__name, const void *__value,
+            ^~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_c6b1a.dir/build.make:78: CMakeFiles/cmTC_c6b1a.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c6b1a/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3a6f2/fast
+gmake  -f CMakeFiles/cmTC_3a6f2.dir/build.make CMakeFiles/cmTC_3a6f2.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a6f2.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_3a6f2.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:221:44: error: ‘FIONBIO’ undeclared (first use in this function)
+  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+                                            ^~~~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:221:44: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_3a6f2.dir/build.make:78: CMakeFiles/cmTC_3a6f2.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3a6f2/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ab05e/fast
+gmake  -f CMakeFiles/cmTC_ab05e.dir/build.make CMakeFiles/cmTC_ab05e.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab05e.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_ab05e.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_ab05e
+/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_ab05e.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H CMakeFiles/cmTC_ab05e.dir/CurlTests.c.o -o cmTC_ab05e 
+CMakeFiles/cmTC_ab05e.dir/CurlTests.c.o: In function `main':
+CurlTests.c:(.text+0x19): undefined reference to `IoctlSocket'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_ab05e.dir/build.make:99: cmTC_ab05e] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ab05e/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_af89e/fast
+gmake  -f CMakeFiles/cmTC_af89e.dir/build.make CMakeFiles/cmTC_af89e.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af89e.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_af89e.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:269:32: error: ‘FIONBIO’ undeclared (first use in this function)
+         if(0 != IoctlSocket(0, FIONBIO, &flags))
+                                ^~~~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:269:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_af89e.dir/build.make:78: CMakeFiles/cmTC_af89e.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_af89e/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e602/fast
+gmake  -f CMakeFiles/cmTC_8e602.dir/build.make CMakeFiles/cmTC_8e602.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8e602.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_8e602.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:292:32: error: ‘FIONBIO’ undeclared (first use in this function)
+         if(0 != ioctlsocket(0, FIONBIO, &flags))
+                                ^~~~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:292:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_8e602.dir/build.make:78: CMakeFiles/cmTC_8e602.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8e602/fast] Error 2
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_603b8/fast
+gmake  -f CMakeFiles/cmTC_603b8.dir/build.make CMakeFiles/cmTC_603b8.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_603b8.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_603b8.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:384:43: error: ‘SO_NONBLOCK’ undeclared (first use in this function); did you mean ‘SOCK_NONBLOCK’?
+         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+                                           ^~~~~~~~~~~
+                                           SOCK_NONBLOCK
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:384:43: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_603b8.dir/build.make:78: CMakeFiles/cmTC_603b8.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_603b8/fast] Error 2
+
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9ee4/fast
+gmake  -f CMakeFiles/cmTC_d9ee4.dir/build.make CMakeFiles/cmTC_d9ee4.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9ee4.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_O_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_d9ee4.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_d9ee4
+/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_d9ee4.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_O_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H CMakeFiles/cmTC_d9ee4.dir/CurlTests.c.o -o cmTC_d9ee4 
+/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_d9ee4.dir/build.make:99: cmTC_d9ee4] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d9ee4/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a64f8/fast
+gmake  -f CMakeFiles/cmTC_a64f8.dir/build.make CMakeFiles/cmTC_a64f8.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a64f8.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_a64f8.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:99:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:111:8: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, &hdata);
+        ^~~~~~~~~~~~~~~
+In file included from /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_a64f8.dir/build.make:78: CMakeFiles/cmTC_a64f8.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a64f8/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_338b7/fast
+gmake  -f CMakeFiles/cmTC_338b7.dir/build.make CMakeFiles/cmTC_338b7.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_338b7.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_338b7.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:114:8: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+        ^~~~~~~~~~~~~~~
+In file included from /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_338b7.dir/build.make:78: CMakeFiles/cmTC_338b7.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_338b7/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4994/fast
+gmake  -f CMakeFiles/cmTC_c4994.dir/build.make CMakeFiles/cmTC_c4994.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4994.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_c4994.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:99:23: error: storage size of ‘hdata’ isn’t known
+   struct hostent_data hdata;
+                       ^~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:111:8: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, &hdata);
+        ^~~~~~~~~~~~~~~
+In file included from /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_c4994.dir/build.make:78: CMakeFiles/cmTC_c4994.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c4994/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d25f0/fast
+gmake  -f CMakeFiles/cmTC_d25f0.dir/build.make CMakeFiles/cmTC_d25f0.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d25f0.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_d25f0.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:114:8: error: too few arguments to function ‘gethostbyname_r’
+   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+        ^~~~~~~~~~~~~~~
+In file included from /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:89:
+/usr/include/netdb.h:177:12: note: declared here
+ extern int gethostbyname_r (const char *__restrict __name,
+            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_d25f0.dir/build.make:78: CMakeFiles/cmTC_d25f0.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d25f0/fast] Error 2
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0af2d/fast
+gmake  -f CMakeFiles/cmTC_0af2d.dir/build.make CMakeFiles/cmTC_0af2d.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0af2d.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GLIBC_STRERROR_R  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_0af2d.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:400:51: error: subscripted value is neither array nor pointer nor vector
+   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+                                                   ^
+gmake[1]: *** [CMakeFiles/cmTC_0af2d.dir/build.make:78: CMakeFiles/cmTC_0af2d.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0af2d/fast] Error 2
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_05ae3/fast
+gmake  -f CMakeFiles/cmTC_05ae3.dir/build.make CMakeFiles/cmTC_05ae3.dir/build
+gmake[1]: Entering directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05ae3.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_BUILTIN_AVAILABLE  -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_SYS_UTSNAME_H -std=gnu11 -o CMakeFiles/cmTC_05ae3.dir/CurlTests.c.o -c /gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:447:26: error: ‘macOS’ undeclared (first use in this function)
+   if(__builtin_available(macOS 10.12, *)) {}
+                          ^~~~~
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:447:26: note: each undeclared identifier is reported only once for each function it appears in
+/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Utilities/cmcurl/CMake/CurlTests.c:447:31: error: expected ‘)’ before numeric constant
+   if(__builtin_available(macOS 10.12, *)) {}
+                               ^~~~~~
+                               )
+gmake[1]: *** [CMakeFiles/cmTC_05ae3.dir/build.make:78: CMakeFiles/cmTC_05ae3.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_05ae3/fast] Error 2
+
+
+Checking for curses support failed with the following output:
+Change Dir: '/gpfs/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Source/Checks/Curses-build'
+
+Run Build Command(s): /scratchdata2/users/a1796450/ACL_2024/Minimum_Change/downward/cmake-3.27.4/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile CheckCurses
+gmake: *** No rule to make target 'CheckCurses'.  Stop.
+
+
+
