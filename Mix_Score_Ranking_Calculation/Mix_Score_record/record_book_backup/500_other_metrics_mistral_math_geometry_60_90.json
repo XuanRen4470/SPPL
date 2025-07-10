@@ -1,0 +1,66 @@
+{
+    "math_geometry_step_by_step": {
+        "perplexity": 2.6168933391571043,
+        "IDF_score": 0.897,
+        "log_propability": -641.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 4.08,
+        "cos_similarity": 0.8262858072916667
+    },
+    "math_geometry_claude": {
+        "perplexity": 2.5800461610158285,
+        "IDF_score": 0.799,
+        "log_propability": -363.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 4.06,
+        "cos_similarity": 0.7702799479166667
+    },
+    "math_geometry_gpt4_style_in_context_examples": {
+        "perplexity": 4.246127629280091,
+        "IDF_score": 0.92,
+        "log_propability": -843.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 3.32,
+        "cos_similarity": 0.814501953125
+    },
+    "math_geometry_gpt4": {
+        "perplexity": 2.6908613602320353,
+        "IDF_score": 0.909,
+        "log_propability": -604.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 4.04,
+        "cos_similarity": 0.821630859375
+    },
+    "math_geometry_mini_gpt4": {
+        "perplexity": 2.3067296107610065,
+        "IDF_score": 0.904,
+        "log_propability": -570.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 4.54,
+        "cos_similarity": 0.8177897135416666
+    },
+    "math_geometry_groundtruth": {
+        "perplexity": 10.460841981569926,
+        "IDF_score": 1.56,
+        "log_propability": -533.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 2.17,
+        "cos_similarity": 0.76259765625
+    },
+    "math_geometry_openai_human_written_examples": {
+        "perplexity": 4.987514813741048,
+        "IDF_score": 0.892,
+        "log_propability": -816.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 3.09,
+        "cos_similarity": 0.8011393229166667
+    },
+    "math_geometry_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.423983081181844,
+        "IDF_score": 0.869,
+        "log_propability": -507.0,
+        "skywork_reward_score": 15.224173177083333,
+        "CAR_score": 3.4,
+        "cos_similarity": 0.8262044270833333
+    }
+}

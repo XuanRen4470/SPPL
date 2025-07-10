@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0197
+Complexity Score: 0.0217
+IDF Score: 0.492
+perplexity: 4.156437287330627
+Average Token Length: 142.5
+Average Char Length: 710.13-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0216
+Complexity Score: 0.0211
+IDF Score: 0.553
+perplexity: 3.124986114501953
+Average Token Length: 174.6
+Average Char Length: 887.07-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0285
+Complexity Score: 0.0181
+IDF Score: 0.668
+perplexity: 3.498736710548401
+Average Token Length: 243.04
+Average Char Length: 1152.53-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0179
+Complexity Score: 0.0175
+IDF Score: 0.383
+perplexity: 3.1543593335151674
+Average Token Length: 115.79
+Average Char Length: 572.71-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.161
+Complexity Score: 0.0066
+IDF Score: inf
+perplexity: 105.29249416947364
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0199
+Complexity Score: 0.0161
+IDF Score: 0.35
+perplexity: 3.8008300137519835
+Average Token Length: 108.64
+Average Char Length: 542.03-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.028
+Complexity Score: 0.015
+IDF Score: 0.21
+perplexity: 4.0609204697608945
+Average Token Length: 62.35
+Average Char Length: 299.93-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0327
+Complexity Score: 0.0195
+IDF Score: 0.233
+perplexity: 5.496278153657913
+Average Token Length: 51.04
+Average Char Length: 238.55

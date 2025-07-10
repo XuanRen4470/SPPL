@@ -1,0 +1,72 @@
+{
+    "mmlu_pro_law_step_by_step": {
+        "perplexity": 4.731505708694458,
+        "complexity_score": 0.11,
+        "IDF_score": 0.703,
+        "average_token_len": 401.22,
+        "Average_Char_Lenth": 1757.82,
+        "average_loss_score": 1.52,
+        "skywork_reward_score": 9.8715234375,
+        "CAR_score": 1.78
+    },
+    "mmlu_pro_law_gpt4": {
+        "perplexity": 5.473709557056427,
+        "complexity_score": 0.116,
+        "IDF_score": 0.661,
+        "average_token_len": 285.61,
+        "Average_Char_Lenth": 1312.24,
+        "average_loss_score": 1.66,
+        "skywork_reward_score": 16.48015380859375,
+        "CAR_score": 2.76
+    },
+    "mmlu_pro_law_claude": {
+        "perplexity": 3.359778592586517,
+        "complexity_score": 0.118,
+        "IDF_score": 0.628,
+        "average_token_len": 273.54,
+        "Average_Char_Lenth": 1242.99,
+        "average_loss_score": 1.2,
+        "skywork_reward_score": 24.29781005859375,
+        "CAR_score": 5.3
+    },
+    "mmlu_pro_law_mini_gpt4": {
+        "perplexity": 4.603519175052643,
+        "complexity_score": 0.117,
+        "IDF_score": 0.576,
+        "average_token_len": 244.45,
+        "Average_Char_Lenth": 1138.44,
+        "average_loss_score": 1.49,
+        "skywork_reward_score": 29.22218505859375,
+        "CAR_score": 5.35
+    },
+    "mmlu_pro_law_groundtruth": {
+        "perplexity": 27089.563756713866,
+        "complexity_score": 0.00307,
+        "IDF_score": 48.4,
+        "average_token_len": 5.0,
+        "Average_Char_Lenth": 15.0,
+        "average_loss_score": 9.15,
+        "skywork_reward_score": 14.86327880859375,
+        "CAR_score": 0.522
+    },
+    "mmlu_pro_law_gpt4_style_in_context_examples": {
+        "perplexity": 5.151185591220855,
+        "complexity_score": 0.117,
+        "IDF_score": 0.65,
+        "average_token_len": 310.79,
+        "Average_Char_Lenth": 1420.27,
+        "average_loss_score": 1.59,
+        "skywork_reward_score": 25.50726318359375,
+        "CAR_score": 4.42
+    },
+    "mmlu_pro_law_openai_human_written_examples": {
+        "perplexity": 6.665271315574646,
+        "complexity_score": 0.104,
+        "IDF_score": 0.598,
+        "average_token_len": 157.65,
+        "Average_Char_Lenth": 735.26,
+        "average_loss_score": 1.82,
+        "skywork_reward_score": 30.39097900390625,
+        "CAR_score": 4.7
+    }
+}

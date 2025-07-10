@@ -1,0 +1,66 @@
+{
+    "math_geometry_step_by_step": {
+        "perplexity": 2.4510274279117583,
+        "diversity_score": 0.164,
+        "complexity_score": 0.0622,
+        "IDF_score": 0.869,
+        "average_token_len": 575.57,
+        "Average_Char_Lenth": 1699.73
+    },
+    "math_geometry_gpt4": {
+        "perplexity": 2.54419300198555,
+        "diversity_score": 0.153,
+        "complexity_score": 0.0681,
+        "IDF_score": 0.861,
+        "average_token_len": 540.54,
+        "Average_Char_Lenth": 1604.08
+    },
+    "math_geometry_claude": {
+        "perplexity": 2.320775977373123,
+        "diversity_score": 0.144,
+        "complexity_score": 0.0606,
+        "IDF_score": 0.785,
+        "average_token_len": 312.81,
+        "Average_Char_Lenth": 865.06
+    },
+    "math_geometry_mini_gpt4": {
+        "perplexity": 2.257809611558914,
+        "diversity_score": 0.155,
+        "complexity_score": 0.068,
+        "IDF_score": 0.865,
+        "average_token_len": 584.92,
+        "Average_Char_Lenth": 1644.43
+    },
+    "math_geometry_groundtruth": {
+        "perplexity": 2.9350586879253386,
+        "diversity_score": 0.15,
+        "complexity_score": 0.106,
+        "IDF_score": 0.743,
+        "average_token_len": 337.23,
+        "Average_Char_Lenth": 893.73
+    },
+    "math_geometry_gpt4_style_in_context_examples": {
+        "perplexity": 3.9167145490646362,
+        "diversity_score": 0.162,
+        "complexity_score": 0.0677,
+        "IDF_score": 0.862,
+        "average_token_len": 545.0,
+        "Average_Char_Lenth": 1689.07
+    },
+    "math_geometry_openai_human_written_examples": {
+        "perplexity": 5.139880315065384,
+        "diversity_score": 0.149,
+        "complexity_score": 0.0764,
+        "IDF_score": 0.841,
+        "average_token_len": 467.67,
+        "Average_Char_Lenth": 1490.55
+    },
+    "math_geometry_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.850142534971237,
+        "diversity_score": 0.126,
+        "complexity_score": 0.0742,
+        "IDF_score": 0.8,
+        "average_token_len": 352.97,
+        "Average_Char_Lenth": 1091.85
+    }
+}

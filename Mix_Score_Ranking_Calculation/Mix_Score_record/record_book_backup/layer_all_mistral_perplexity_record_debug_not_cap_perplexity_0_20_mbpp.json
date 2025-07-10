@@ -1,0 +1,66 @@
+{
+    "mbpp_step_by_step": {
+        "perplexity": 3.4373106718063355,
+        "diversity_score": 0.128,
+        "complexity_score": 0.0914,
+        "IDF_score": 1.19,
+        "average_token_len": 150.7,
+        "Average_Char_Lenth": 510.45
+    },
+    "mbpp_gpt4": {
+        "perplexity": 11.425373005867005,
+        "diversity_score": 0.0798,
+        "complexity_score": 0.065,
+        "IDF_score": 1.53,
+        "average_token_len": 59.95,
+        "Average_Char_Lenth": 151.4
+    },
+    "mbpp_claude": {
+        "perplexity": 10.676093763113021,
+        "diversity_score": 0.0785,
+        "complexity_score": 0.0618,
+        "IDF_score": 1.28,
+        "average_token_len": 58.65,
+        "Average_Char_Lenth": 150.3
+    },
+    "mbpp_mini_gpt4": {
+        "perplexity": 7.434659469127655,
+        "diversity_score": 0.0787,
+        "complexity_score": 0.0709,
+        "IDF_score": 1.34,
+        "average_token_len": 74.2,
+        "Average_Char_Lenth": 192.0
+    },
+    "mbpp_groundtruth": {
+        "perplexity": 33.23951781988144,
+        "diversity_score": 0.0888,
+        "complexity_score": 0.0707,
+        "IDF_score": 2.02,
+        "average_token_len": 70.7,
+        "Average_Char_Lenth": 158.25
+    },
+    "mbpp_gpt4_style_in_context_examples": {
+        "perplexity": 8.81888461112976,
+        "diversity_score": 0.0775,
+        "complexity_score": 0.0689,
+        "IDF_score": 1.34,
+        "average_token_len": 68.5,
+        "Average_Char_Lenth": 193.0
+    },
+    "mbpp_openai_human_written_examples": {
+        "perplexity": 4.480266916751861,
+        "diversity_score": 0.153,
+        "complexity_score": 0.0868,
+        "IDF_score": 1.28,
+        "average_token_len": 177.55,
+        "Average_Char_Lenth": 601.65
+    },
+    "mbpp_rewrite_groundtruth_in_own_words": {
+        "perplexity": 16.63935895562172,
+        "diversity_score": 0.0809,
+        "complexity_score": 0.0677,
+        "IDF_score": 2.03,
+        "average_token_len": 66.0,
+        "Average_Char_Lenth": 157.7
+    }
+}

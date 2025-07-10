@@ -1,0 +1,58 @@
+{
+    "piqa_step_by_step": {
+        "perplexity": 4.269637019634247,
+        "IDF_score": 0.687,
+        "log_propability": -387.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 1.17,
+        "cos_similarity": 0.8043359375
+    },
+    "piqa_claude": {
+        "perplexity": 3.48657133102417,
+        "IDF_score": 0.547,
+        "log_propability": -246.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 1.32,
+        "cos_similarity": 0.841591796875
+    },
+    "piqa_gpt4_style_in_context_examples": {
+        "perplexity": 5.634750692844391,
+        "IDF_score": 0.455,
+        "log_propability": -214.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 1.02,
+        "cos_similarity": 0.8256005859375
+    },
+    "piqa_gpt4": {
+        "perplexity": 5.750337057113647,
+        "IDF_score": 0.61,
+        "log_propability": -286.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 1.01,
+        "cos_similarity": 0.83779296875
+    },
+    "piqa_mini_gpt4": {
+        "perplexity": 4.771298153400421,
+        "IDF_score": 0.427,
+        "log_propability": -203.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 1.11,
+        "cos_similarity": 0.8444384765625
+    },
+    "piqa_groundtruth": {
+        "perplexity": 2133285.180727539,
+        "IDF_score": 19900.0,
+        "log_propability": -23.7,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 0.169,
+        "cos_similarity": 0.13743377685546876
+    },
+    "piqa_openai_human_written_examples": {
+        "perplexity": 7.023054413795471,
+        "IDF_score": 0.329,
+        "log_propability": -133.0,
+        "skywork_reward_score": 6.174027404785156,
+        "CAR_score": 0.944,
+        "cos_similarity": 0.8050341796875
+    }
+}

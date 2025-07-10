@@ -1,0 +1,66 @@
+{
+    "drop_gpt4": {
+        "perplexity": 3.8463454246520996,
+        "diversity_score": 0.147,
+        "complexity_score": 0.0654,
+        "IDF_score": 0.616,
+        "average_token_len": 160.0,
+        "Average_Char_Lenth": 610.7
+    },
+    "drop_claude": {
+        "perplexity": 3.231385087966919,
+        "diversity_score": 0.121,
+        "complexity_score": 0.0541,
+        "IDF_score": 0.52,
+        "average_token_len": 124.6,
+        "Average_Char_Lenth": 468.1
+    },
+    "drop_step_by_step": {
+        "perplexity": 3.538350558280945,
+        "diversity_score": 0.194,
+        "complexity_score": 0.0546,
+        "IDF_score": 0.727,
+        "average_token_len": 221.3,
+        "Average_Char_Lenth": 783.9
+    },
+    "drop_mini_gpt4": {
+        "perplexity": 3.774835705757141,
+        "diversity_score": 0.108,
+        "complexity_score": 0.0475,
+        "IDF_score": 0.445,
+        "average_token_len": 109.3,
+        "Average_Char_Lenth": 446.7
+    },
+    "drop_groundtruth": {
+        "perplexity": 325.52682156562804,
+        "diversity_score": 0.145,
+        "complexity_score": 0.00758,
+        "IDF_score": 2.08,
+        "average_token_len": 6.5,
+        "Average_Char_Lenth": 20.6
+    },
+    "drop_gpt4_style_in_context_examples": {
+        "perplexity": 3.657882881164551,
+        "diversity_score": 0.131,
+        "complexity_score": 0.04,
+        "IDF_score": 0.688,
+        "average_token_len": 148.0,
+        "Average_Char_Lenth": 558.9
+    },
+    "drop_openai_human_written_examples": {
+        "perplexity": 3.1881892681121826,
+        "diversity_score": 0.113,
+        "complexity_score": 0.0458,
+        "IDF_score": 0.472,
+        "average_token_len": 105.4,
+        "Average_Char_Lenth": 415.9
+    },
+    "drop_simple_response": {
+        "perplexity": 8.36275806427002,
+        "diversity_score": 0.0449,
+        "complexity_score": 0.0395,
+        "IDF_score": 0.368,
+        "average_token_len": 39.5,
+        "Average_Char_Lenth": 148.6
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "api_bank_step_by_step": {
+        "perplexity": 3.11165931224823,
+        "diversity_score": 0.118,
+        "complexity_score": 0.0385,
+        "IDF_score": 0.568,
+        "average_token_len": 308.3,
+        "Average_Char_Lenth": 1193.3
+    },
+    "api_bank_gpt4": {
+        "perplexity": 4.149767637252808,
+        "diversity_score": 0.0766,
+        "complexity_score": 0.0417,
+        "IDF_score": 0.448,
+        "average_token_len": 204.5,
+        "Average_Char_Lenth": 866.0
+    },
+    "api_bank_claude": {
+        "perplexity": 2.99365713596344,
+        "diversity_score": 0.0694,
+        "complexity_score": 0.0453,
+        "IDF_score": 0.385,
+        "average_token_len": 175.2,
+        "Average_Char_Lenth": 754.4
+    },
+    "api_bank_mini_gpt4": {
+        "perplexity": 4.985655570030213,
+        "diversity_score": 0.0816,
+        "complexity_score": 0.0372,
+        "IDF_score": 0.47,
+        "average_token_len": 200.1,
+        "Average_Char_Lenth": 892.1
+    },
+    "api_bank_groundtruth": {
+        "perplexity": 10.319228267669677,
+        "diversity_score": 0.143,
+        "complexity_score": 0.0217,
+        "IDF_score": 0.0622,
+        "average_token_len": 25.3,
+        "Average_Char_Lenth": 85.2
+    },
+    "api_bank_gpt4_style_in_context_examples": {
+        "perplexity": 3.9060001134872437,
+        "diversity_score": 0.0633,
+        "complexity_score": 0.0386,
+        "IDF_score": 0.279,
+        "average_token_len": 132.1,
+        "Average_Char_Lenth": 582.8
+    },
+    "api_bank_openai_human_written_examples": {
+        "perplexity": 4.063762044906616,
+        "diversity_score": 0.067,
+        "complexity_score": 0.0414,
+        "IDF_score": 0.328,
+        "average_token_len": 155.6,
+        "Average_Char_Lenth": 707.1
+    }
+}

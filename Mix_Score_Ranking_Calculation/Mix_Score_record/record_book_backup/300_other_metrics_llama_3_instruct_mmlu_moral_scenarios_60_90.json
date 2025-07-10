@@ -1,0 +1,51 @@
+{
+    "mmlu_moral_scenarios_step_by_step": {
+        "perplexity": 3.3622967561086017,
+        "IDF_score": 0.571,
+        "log_propability": -263.0,
+        "skywork_reward_score": 9.590625,
+        "CAR_score": 2.08
+    },
+    "mmlu_moral_scenarios_claude": {
+        "perplexity": 3.1945934772491453,
+        "IDF_score": 0.513,
+        "log_propability": -187.0,
+        "skywork_reward_score": 9.571875,
+        "CAR_score": 2.15
+    },
+    "mmlu_moral_scenarios_gpt4_style_in_context_examples": {
+        "perplexity": 3.6190980513890585,
+        "IDF_score": 0.59,
+        "log_propability": -278.0,
+        "skywork_reward_score": 9.760677083333333,
+        "CAR_score": 2.03
+    },
+    "mmlu_moral_scenarios_gpt4": {
+        "perplexity": 3.712145439783732,
+        "IDF_score": 0.521,
+        "log_propability": -198.0,
+        "skywork_reward_score": 6.076497395833333,
+        "CAR_score": 1.24
+    },
+    "mmlu_moral_scenarios_mini_gpt4": {
+        "perplexity": 3.3268505175908407,
+        "IDF_score": 0.502,
+        "log_propability": -165.0,
+        "skywork_reward_score": 6.267464192708333,
+        "CAR_score": 1.37
+    },
+    "mmlu_moral_scenarios_groundtruth": {
+        "perplexity": 26.206829897562663,
+        "IDF_score": 0.599,
+        "log_propability": -13.0,
+        "skywork_reward_score": -6.165885416666667,
+        "CAR_score": -0.574
+    },
+    "mmlu_moral_scenarios_openai_human_written_examples": {
+        "perplexity": 3.562023234367371,
+        "IDF_score": 0.437,
+        "log_propability": -120.0,
+        "skywork_reward_score": 2.8799153645833333,
+        "CAR_score": 0.607
+    }
+}

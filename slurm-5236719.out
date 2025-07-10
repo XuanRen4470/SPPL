@@ -1,0 +1,818 @@
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.40s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:06<00:03,  3.41s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.16s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.22s/it]
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_replaning----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_replaning step_by_step: 2.8982618618011475
+self aligned perplexity   plan_bench_replaning claude: 2.775278570652008
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.341205141544342
+self aligned perplexity   plan_bench_replaning gpt4: 3.765135326385498
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.092865107059479
+self aligned perplexity   plan_bench_replaning groundtruth: 33.977640810012815
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 4.160326657295227
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.5808450531959535
+self aligned perplexity   plan_bench_replaning step_by_step: 2.6099684929847715
+self aligned perplexity   plan_bench_replaning claude: 2.7057489490509035
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.060895206928253
+self aligned perplexity   plan_bench_replaning gpt4: 3.1942328000068665
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.01404283285141
+self aligned perplexity   plan_bench_replaning groundtruth: 21.222264053821565
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.6750995969772338
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 3.870982463359833
+self aligned perplexity   plan_bench_replaning step_by_step: 2.959771466255188
+self aligned perplexity   plan_bench_replaning claude: 2.581227190494537
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 2.9739783430099487
+self aligned perplexity   plan_bench_replaning gpt4: 3.157221221923828
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.032499735355377
+self aligned perplexity   plan_bench_replaning groundtruth: 14.563879995346069
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.9029377579689024
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.007495164871216
+self aligned perplexity   plan_bench_replaning step_by_step: 2.8452287554740905
+self aligned perplexity   plan_bench_replaning claude: 2.5049389362335206
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.080835056304932
+self aligned perplexity   plan_bench_replaning gpt4: 2.74119119644165
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.1290438652038572
+self aligned perplexity   plan_bench_replaning groundtruth: 42.14784834384918
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 4.12517786026001
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 3.9064382314682007
+self aligned perplexity   plan_bench_replaning step_by_step: 3.261886382102966
+self aligned perplexity   plan_bench_replaning claude: 2.8089653491973876
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 2.9809234380722045
+self aligned perplexity   plan_bench_replaning gpt4: 3.2367959141731264
+self aligned perplexity   plan_bench_replaning mini_gpt4: 2.6585387349128724
+self aligned perplexity   plan_bench_replaning groundtruth: 31.358655440807343
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.9884805917739867
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 5.187867045402527
+self aligned perplexity   plan_bench_replaning step_by_step: 3.063878619670868
+self aligned perplexity   plan_bench_replaning claude: 2.7920071721076964
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.156491982936859
+self aligned perplexity   plan_bench_replaning gpt4: 5.896427953243256
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.3864331007003785
+self aligned perplexity   plan_bench_replaning groundtruth: 25.657854855060577
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.841195547580719
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 3.8099740743637085
+self aligned perplexity   plan_bench_replaning step_by_step: 3.0569979190826415
+self aligned perplexity   plan_bench_replaning claude: 2.7019704858462017
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.072750159104665
+self aligned perplexity   plan_bench_replaning gpt4: 3.958138354619344
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.058005233605703
+self aligned perplexity   plan_bench_replaning groundtruth: 33.05478621323903
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.984951333204905
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.301426450411479
+self aligned perplexity   plan_bench_replaning step_by_step: 2.5170146385828653
+self aligned perplexity   plan_bench_replaning claude: 2.757764196395874
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.4187928160031635
+self aligned perplexity   plan_bench_replaning gpt4: 3.204136323928833
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.1280785759290057
+self aligned perplexity   plan_bench_replaning groundtruth: 28.164553944269816
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 4.102887833118439
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.275406344731649
+self aligned perplexity   plan_bench_replaning step_by_step: 2.643702733516693
+self aligned perplexity   plan_bench_replaning claude: 2.673333017031352
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.111895000934601
+self aligned perplexity   plan_bench_replaning gpt4: 3.4401646653811135
+self aligned perplexity   plan_bench_replaning mini_gpt4: 2.981592392921448
+self aligned perplexity   plan_bench_replaning groundtruth: 27.39083800315857
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.816308927536011
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 3.8974958817164103
+self aligned perplexity   plan_bench_replaning step_by_step: 2.7541151773929595
+self aligned perplexity   plan_bench_replaning claude: 2.7405137598514555
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.201050174236298
+self aligned perplexity   plan_bench_replaning gpt4: 3.4796840631961823
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.053453969955444
+self aligned perplexity   plan_bench_replaning groundtruth: 27.599952431917192
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.9177131271362304
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.225913758277893
+self aligned perplexity   plan_bench_replaning step_by_step: 2.7742444986104964
+self aligned perplexity   plan_bench_replaning claude: 2.686768000125885
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.1079784858226778
+self aligned perplexity   plan_bench_replaning gpt4: 3.334836375117302
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.0481679469347
+self aligned perplexity   plan_bench_replaning groundtruth: 22.970733466148378
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.823950433731079
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.051368592381477
+self aligned perplexity   plan_bench_replaning step_by_step: 2.7718934126695
+self aligned perplexity   plan_bench_replaning claude: 2.6266549026966093
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.1126375460624693
+self aligned perplexity   plan_bench_replaning gpt4: 3.338652913570404
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.067718451420466
+self aligned perplexity   plan_bench_replaning groundtruth: 23.355099420150122
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.761995705763499
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.05980362812678
+self aligned perplexity   plan_bench_replaning step_by_step: 2.7943738198280332
+self aligned perplexity   plan_bench_replaning claude: 2.6330222404003143
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.0149067974090578
+self aligned perplexity   plan_bench_replaning gpt4: 3.1899886870384218
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.0428819239139555
+self aligned perplexity   plan_bench_replaning groundtruth: 18.341514500379564
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.7301877403259276
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 3.876823426485062
+self aligned perplexity   plan_bench_replaning step_by_step: 2.767191240787506
+self aligned perplexity   plan_bench_replaning claude: 2.5064287078380585
+self aligned perplexity   plan_bench_replaning gpt4_style_in_context_examples: 3.1219556665420534
+self aligned perplexity   plan_bench_replaning gpt4: 3.3462859904766082
+self aligned perplexity   plan_bench_replaning mini_gpt4: 3.106819460391998
+self aligned perplexity   plan_bench_replaning groundtruth: 24.12383132815361
+self aligned perplexity   plan_bench_replaning openai_human_written_examples: 3.638086249828339
+self aligned perplexity   plan_bench_replaning rewrite_groundtruth_in_own_words: 4.076673699617386
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_generation----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_generation step_by_step: 2.2446964526176454
+self aligned perplexity   plan_bench_generation claude: 1.9997920060157777
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.4052025294303894
+self aligned perplexity   plan_bench_generation gpt4: 2.372273209095001
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.6763750863075257
+self aligned perplexity   plan_bench_generation groundtruth: 5.546482627391815
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.8762314558029174
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.4917760610580446
+self aligned perplexity   plan_bench_generation step_by_step: 2.234821217060089
+self aligned perplexity   plan_bench_generation claude: 2.0070146346092224
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.233823387622833
+self aligned perplexity   plan_bench_generation gpt4: 2.487613537311554
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.7048711800575256
+self aligned perplexity   plan_bench_generation groundtruth: 3.710006251335144
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.6891038060188293
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.4312215876579284
+self aligned perplexity   plan_bench_generation step_by_step: 2.2611043214797975
+self aligned perplexity   plan_bench_generation claude: 2.017772181034088
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.1716384172439573
+self aligned perplexity   plan_bench_generation gpt4: 2.4385069704055784
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.792683656215668
+self aligned perplexity   plan_bench_generation groundtruth: 3.7959303045272828
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.6529584240913393
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.5127661561965944
+self aligned perplexity   plan_bench_generation step_by_step: 2.234924626350403
+self aligned perplexity   plan_bench_generation claude: 1.890282154083252
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.3214688897132874
+self aligned perplexity   plan_bench_generation gpt4: 2.522654402256012
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.4856086015701293
+self aligned perplexity   plan_bench_generation groundtruth: 3.7917574763298036
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 3.3011205434799193
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.3611001849174498
+self aligned perplexity   plan_bench_generation step_by_step: 2.1767805933952333
+self aligned perplexity   plan_bench_generation claude: 1.9653494954109192
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.4069934725761413
+self aligned perplexity   plan_bench_generation gpt4: 2.1550434589385987
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.729312002658844
+self aligned perplexity   plan_bench_generation groundtruth: 8.843386089801788
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.86380078792572
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.2553182721138
+self aligned perplexity   plan_bench_generation step_by_step: 2.197186899185181
+self aligned perplexity   plan_bench_generation claude: 1.9449270844459534
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.489923346042633
+self aligned perplexity   plan_bench_generation gpt4: 2.7136202335357664
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.606450915336609
+self aligned perplexity   plan_bench_generation groundtruth: 5.65291645526886
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.7444549679756163
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.5603201627731322
+self aligned perplexity   plan_bench_generation step_by_step: 2.2029640396436054
+self aligned perplexity   plan_bench_generation claude: 1.9335195779800416
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.4061285694440206
+self aligned perplexity   plan_bench_generation gpt4: 2.463772698243459
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.607123839855194
+self aligned perplexity   plan_bench_generation groundtruth: 6.096020007133484
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.969792099793752
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.392246206601461
+self aligned perplexity   plan_bench_generation step_by_step: 2.274464944998423
+self aligned perplexity   plan_bench_generation claude: 2.094408655166626
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.352364965279897
+self aligned perplexity   plan_bench_generation gpt4: 2.281622040271759
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.6692078550656637
+self aligned perplexity   plan_bench_generation groundtruth: 4.377781573931376
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.6739121158917745
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.600250482559204
+self aligned perplexity   plan_bench_generation step_by_step: 2.2202139218648274
+self aligned perplexity   plan_bench_generation claude: 2.0189367095629374
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.228131361802419
+self aligned perplexity   plan_bench_generation gpt4: 2.5629208167394
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.7641014297803244
+self aligned perplexity   plan_bench_generation groundtruth: 3.849588358402252
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.7710738221804303
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.425650135676066
+self aligned perplexity   plan_bench_generation step_by_step: 2.239758834838867
+self aligned perplexity   plan_bench_generation claude: 2.0034033203125
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.3195129585266114
+self aligned perplexity   plan_bench_generation gpt4: 2.429943373203278
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.6906231331825254
+self aligned perplexity   plan_bench_generation groundtruth: 4.628244439363479
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.7826676309108733
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.4614988243579865
+self aligned perplexity   plan_bench_generation step_by_step: 2.2592925107479096
+self aligned perplexity   plan_bench_generation claude: 2.007440347671509
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.2929351419210433
+self aligned perplexity   plan_bench_generation gpt4: 2.471285854578018
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.704568311572075
+self aligned perplexity   plan_bench_generation groundtruth: 4.248050290942192
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.691491351723671
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.49102060854435
+self aligned perplexity   plan_bench_generation step_by_step: 2.2588922452926634
+self aligned perplexity   plan_bench_generation claude: 2.0140414253870644
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.296505584716797
+self aligned perplexity   plan_bench_generation gpt4: 2.449866896470388
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.7034007533391318
+self aligned perplexity   plan_bench_generation groundtruth: 3.9583167485396067
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.7094567171732584
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.4264762047926585
+self aligned perplexity   plan_bench_generation step_by_step: 2.2788261866569517
+self aligned perplexity   plan_bench_generation claude: 2.0114773750305175
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.2663573253154756
+self aligned perplexity   plan_bench_generation gpt4: 2.512628335952759
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.7185134899616243
+self aligned perplexity   plan_bench_generation groundtruth: 3.8678561425209046
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.6003150725364685
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.5205423927307127
+self aligned perplexity   plan_bench_generation step_by_step: 2.2580917143821715
+self aligned perplexity   plan_bench_generation claude: 2.027243580818176
+self aligned perplexity   plan_bench_generation gpt4_style_in_context_examples: 2.303646470308304
+self aligned perplexity   plan_bench_generation gpt4: 2.407028980255127
+self aligned perplexity   plan_bench_generation mini_gpt4: 2.701065636873245
+self aligned perplexity   plan_bench_generation groundtruth: 3.378849663734436
+self aligned perplexity   plan_bench_generation openai_human_written_examples: 2.7453874480724334
+self aligned perplexity   plan_bench_generation rewrite_groundtruth_in_own_words: 2.297387397289276
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_optimality----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0538542318344115
+self aligned perplexity   plan_bench_optimality claude: 2.095484278202057
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8562562584877014
+self aligned perplexity   plan_bench_optimality gpt4: 2.3197450041770935
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.324969244003296
+self aligned perplexity   plan_bench_optimality groundtruth: 6.085127205848694
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.8248295092582705
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.6946880769729615
+self aligned perplexity   plan_bench_optimality step_by_step: 2.12656138420105
+self aligned perplexity   plan_bench_optimality claude: 2.0484556341171265
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8072770476341247
+self aligned perplexity   plan_bench_optimality gpt4: 2.2005743551254273
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2513213109970094
+self aligned perplexity   plan_bench_optimality groundtruth: 3.6139918994903564
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.7314941263198853
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.5913544201850893
+self aligned perplexity   plan_bench_optimality step_by_step: 2.038473217487335
+self aligned perplexity   plan_bench_optimality claude: 2.13995943069458
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8159651231765748
+self aligned perplexity   plan_bench_optimality gpt4: 2.211785969734192
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.3579085755348204
+self aligned perplexity   plan_bench_optimality groundtruth: 4.47910877943039
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.8535679960250855
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.7213687109947204
+self aligned perplexity   plan_bench_optimality step_by_step: 1.9338045358657836
+self aligned perplexity   plan_bench_optimality claude: 2.0635668516159056
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.858702051639557
+self aligned perplexity   plan_bench_optimality gpt4: 2.2066017031669616
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.101560187339783
+self aligned perplexity   plan_bench_optimality groundtruth: 4.454319202899933
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.9615335702896117
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.577437698841095
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0046003341674803
+self aligned perplexity   plan_bench_optimality claude: 2.2685069918632506
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.7998036742210388
+self aligned perplexity   plan_bench_optimality gpt4: 2.280488836765289
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2910258054733275
+self aligned perplexity   plan_bench_optimality groundtruth: 9.582824409008026
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.766507792472839
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.543968617916107
+self aligned perplexity   plan_bench_optimality step_by_step: 2.2043996095657348
+self aligned perplexity   plan_bench_optimality claude: 2.047856533527374
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8703333973884582
+self aligned perplexity   plan_bench_optimality gpt4: 2.568035304546356
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.3047104477882385
+self aligned perplexity   plan_bench_optimality groundtruth: 3.97773015499115
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.713577890396118
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.82416033744812
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0476014931996662
+self aligned perplexity   plan_bench_optimality claude: 2.1266434590021768
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8429463744163512
+self aligned perplexity   plan_bench_optimality gpt4: 2.3517086148262023
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2324321468671164
+self aligned perplexity   plan_bench_optimality groundtruth: 6.004957922299703
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.8138730843861897
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.648522218068441
+self aligned perplexity   plan_bench_optimality step_by_step: 2.1015363971392316
+self aligned perplexity   plan_bench_optimality claude: 2.0654648621877034
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8233726183573404
+self aligned perplexity   plan_bench_optimality gpt4: 2.2121060172716778
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.412463839848836
+self aligned perplexity   plan_bench_optimality groundtruth: 5.410277509689331
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.802549986044566
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.5830954631169636
+self aligned perplexity   plan_bench_optimality step_by_step: 2.14681369860967
+self aligned perplexity   plan_bench_optimality claude: 1.9807658473650613
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.883042335510254
+self aligned perplexity   plan_bench_optimality gpt4: 2.140677583217621
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2550931930541993
+self aligned perplexity   plan_bench_optimality groundtruth: 3.727779956658681
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.7484639803568522
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.7196059346199037
+self aligned perplexity   plan_bench_optimality step_by_step: 2.090207808017731
+self aligned perplexity   plan_bench_optimality claude: 2.0719699561595917
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8317666530609131
+self aligned perplexity   plan_bench_optimality gpt4: 2.2601596796512604
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2881452775001527
+self aligned perplexity   plan_bench_optimality groundtruth: 4.849559552669525
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.7781618177890777
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.6430212485790254
+self aligned perplexity   plan_bench_optimality step_by_step: 2.093620649576187
+self aligned perplexity   plan_bench_optimality claude: 2.08680960893631
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8455430388450622
+self aligned perplexity   plan_bench_optimality gpt4: 2.244096365571022
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.3106443917751314
+self aligned perplexity   plan_bench_optimality groundtruth: 4.923083488345146
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.7933433949947357
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.7297092986106875
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0826857944329578
+self aligned perplexity   plan_bench_optimality claude: 2.0770117994149526
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8518414036432902
+self aligned perplexity   plan_bench_optimality gpt4: 2.224826757510503
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.2973403946558633
+self aligned perplexity   plan_bench_optimality groundtruth: 4.6746204272905985
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.7902491350968677
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.7119251588980355
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0970334911346438
+self aligned perplexity   plan_bench_optimality claude: 2.101649261713028
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8593194246292115
+self aligned perplexity   plan_bench_optimality gpt4: 2.2280330514907836
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.33314350605011
+self aligned perplexity   plan_bench_optimality groundtruth: 4.996607424020767
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.8085249722003938
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.816397348642349
+self aligned perplexity   plan_bench_optimality step_by_step: 2.0608160841464995
+self aligned perplexity   plan_bench_optimality claude: 2.057416180372238
+self aligned perplexity   plan_bench_optimality gpt4_style_in_context_examples: 1.8644381332397462
+self aligned perplexity   plan_bench_optimality gpt4: 2.1862875413894653
+self aligned perplexity   plan_bench_optimality mini_gpt4: 2.270732400417328
+self aligned perplexity   plan_bench_optimality groundtruth: 4.177694305181503
+self aligned perplexity   plan_bench_optimality openai_human_written_examples: 2.784060615301132
+self aligned perplexity   plan_bench_optimality rewrite_groundtruth_in_own_words: 2.6763568794727326
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_generalization----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7692395496368407
+self aligned perplexity   plan_bench_generalization claude: 2.0247431230545043
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6961536717414856
+self aligned perplexity   plan_bench_generalization gpt4: 2.2297926855087282
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.2246337604522703
+self aligned perplexity   plan_bench_generalization groundtruth: 1.707797088623047
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.4103937125205994
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.3404425525665284
+self aligned perplexity   plan_bench_generalization step_by_step: 1.812543032169342
+self aligned perplexity   plan_bench_generalization claude: 1.9994409799575805
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.5756295204162598
+self aligned perplexity   plan_bench_generalization gpt4: 2.0720309448242187
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.106472647190094
+self aligned perplexity   plan_bench_generalization groundtruth: 1.69015807390213
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.3754272079467773
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.222845501899719
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7294370341300964
+self aligned perplexity   plan_bench_generalization claude: 2.115919108390808
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.5672236132621764
+self aligned perplexity   plan_bench_generalization gpt4: 1.9656523084640503
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.0559278249740602
+self aligned perplexity   plan_bench_generalization groundtruth: 1.69927503824234
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.589527988433838
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.3849257707595823
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7425482273101807
+self aligned perplexity   plan_bench_generalization claude: 2.009246456623077
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.5911470174789428
+self aligned perplexity   plan_bench_generalization gpt4: 1.9474658608436584
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.0046807289123536
+self aligned perplexity   plan_bench_generalization groundtruth: 1.5860305547714233
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.1018953204154966
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.4962801694869996
+self aligned perplexity   plan_bench_generalization step_by_step: 1.691748595237732
+self aligned perplexity   plan_bench_generalization claude: 2.035989797115326
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.696188712120056
+self aligned perplexity   plan_bench_generalization gpt4: 2.2846627593040467
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.3987573862075804
+self aligned perplexity   plan_bench_generalization groundtruth: 1.6200343489646911
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.3671305060386656
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.1156301140785216
+self aligned perplexity   plan_bench_generalization step_by_step: 1.725293016433716
+self aligned perplexity   plan_bench_generalization claude: 2.093834900856018
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.7668771147727966
+self aligned perplexity   plan_bench_generalization gpt4: 2.0947686672210692
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.3903971791267393
+self aligned perplexity   plan_bench_generalization groundtruth: 1.734343957901001
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.46430960893631
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.3629812359809876
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7198632796605429
+self aligned perplexity   plan_bench_generalization claude: 2.0463570515314737
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6847376147905986
+self aligned perplexity   plan_bench_generalization gpt4: 2.108965762456258
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.2646117647488913
+self aligned perplexity   plan_bench_generalization groundtruth: 1.6468029538790385
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.3111118117968243
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.324963839848836
+self aligned perplexity   plan_bench_generalization step_by_step: 1.8184313416481017
+self aligned perplexity   plan_bench_generalization claude: 1.9468239227930704
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6360968073209128
+self aligned perplexity   plan_bench_generalization gpt4: 2.3488701939582826
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.1486186901728312
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7131351351737976
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.387320319811503
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.327703030904134
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7628737966219583
+self aligned perplexity   plan_bench_generalization claude: 2.014177620410919
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6158589084943136
+self aligned perplexity   plan_bench_generalization gpt4: 2.013924233118693
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.1288726131121316
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7031231721242268
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.396603886286418
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.236258379618327
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7908912909030914
+self aligned perplexity   plan_bench_generalization claude: 2.0120920515060425
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6358915960788727
+self aligned perplexity   plan_bench_generalization gpt4: 2.1509118151664732
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.165553203821182
+self aligned perplexity   plan_bench_generalization groundtruth: 1.6989775812625885
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.392910460233688
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.2816440272331238
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7700053131580353
+self aligned perplexity   plan_bench_generalization claude: 2.0664476597309114
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6269055503606795
+self aligned perplexity   plan_bench_generalization gpt4: 2.0780969572067263
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.1331536942720413
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7105798679590225
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.523442416191101
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.2912799495458605
+self aligned perplexity   plan_bench_generalization step_by_step: 1.7778259559472402
+self aligned perplexity   plan_bench_generalization claude: 2.063102202018102
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6302306433518727
+self aligned perplexity   plan_bench_generalization gpt4: 2.059134792884191
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.1522974594434103
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7074359945456188
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.497839830716451
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.303755977153778
+self aligned perplexity   plan_bench_generalization step_by_step: 1.749119335412979
+self aligned perplexity   plan_bench_generalization claude: 2.1208032679557802
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.6179195046424866
+self aligned perplexity   plan_bench_generalization gpt4: 2.005282099246979
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.1007541847229003
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7221821546554565
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.6539743721485136
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.3009158718585967
+self aligned perplexity   plan_bench_generalization step_by_step: 1.79346724152565
+self aligned perplexity   plan_bench_generalization claude: 2.0564112865924837
+self aligned perplexity   plan_bench_generalization gpt4_style_in_context_examples: 1.636880829334259
+self aligned perplexity   plan_bench_generalization gpt4: 2.0212104642391204
+self aligned perplexity   plan_bench_generalization mini_gpt4: 2.190584989786148
+self aligned perplexity   plan_bench_generalization groundtruth: 1.7011482477188111
+self aligned perplexity   plan_bench_generalization openai_human_written_examples: 2.4466346597671507
+self aligned perplexity   plan_bench_generalization rewrite_groundtruth_in_own_words: 2.3287080323696134
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_reuse----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_reuse step_by_step: 2.3185953450202943
+self aligned perplexity   plan_bench_reuse claude: 2.4504758977890013
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.137940683364868
+self aligned perplexity   plan_bench_reuse gpt4: 2.5454208779335024
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.245317895412445
+self aligned perplexity   plan_bench_reuse groundtruth: 8.047473435401917
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.4567792773246766
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.674564874172211
+self aligned perplexity   plan_bench_reuse step_by_step: 2.273338568210602
+self aligned perplexity   plan_bench_reuse claude: 2.3234141755104063
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.086528789997101
+self aligned perplexity   plan_bench_reuse gpt4: 2.689898521900177
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.057602598667145
+self aligned perplexity   plan_bench_reuse groundtruth: 8.783709473609925
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.1482246851921083
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.477061493396759
+self aligned perplexity   plan_bench_reuse step_by_step: 2.160768115520477
+self aligned perplexity   plan_bench_reuse claude: 2.251206648349762
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.2085126304626463
+self aligned perplexity   plan_bench_reuse gpt4: 2.520925660133362
+self aligned perplexity   plan_bench_reuse mini_gpt4: 2.9125079131126403
+self aligned perplexity   plan_bench_reuse groundtruth: 6.100332319736481
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.229329438209534
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.269593048095703
+self aligned perplexity   plan_bench_reuse step_by_step: 2.434715723991394
+self aligned perplexity   plan_bench_reuse claude: 2.477467966079712
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.02952356338501
+self aligned perplexity   plan_bench_reuse gpt4: 2.5136658787727355
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.256007361412048
+self aligned perplexity   plan_bench_reuse groundtruth: 7.811614370346069
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.292472755908966
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.3758542060852053
+self aligned perplexity   plan_bench_reuse step_by_step: 2.1310426592826843
+self aligned perplexity   plan_bench_reuse claude: 2.187143528461456
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.007110261917114
+self aligned perplexity   plan_bench_reuse gpt4: 2.413657748699188
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.220436656475067
+self aligned perplexity   plan_bench_reuse groundtruth: 4.34483802318573
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 2.590197169780731
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.5660118579864504
+self aligned perplexity   plan_bench_reuse step_by_step: 2.4166082620620726
+self aligned perplexity   plan_bench_reuse claude: 2.4401261806488037
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.380280101299286
+self aligned perplexity   plan_bench_reuse gpt4: 2.6941699028015136
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.095823574066162
+self aligned perplexity   plan_bench_reuse groundtruth: 11.487596309185028
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 4.115139770507812
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 4.337880325317383
+self aligned perplexity   plan_bench_reuse step_by_step: 2.327455548445384
+self aligned perplexity   plan_bench_reuse claude: 2.3682458917299907
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.1389713088671365
+self aligned perplexity   plan_bench_reuse gpt4: 2.5404978434244794
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.190755863984426
+self aligned perplexity   plan_bench_reuse groundtruth: 7.881349567572276
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.3326032320658365
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.7599154631296794
+self aligned perplexity   plan_bench_reuse step_by_step: 2.2170292655626933
+self aligned perplexity   plan_bench_reuse claude: 2.5261344790458677
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.12150582075119
+self aligned perplexity   plan_bench_reuse gpt4: 2.4928728183110556
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.1135605653127034
+self aligned perplexity   plan_bench_reuse groundtruth: 7.102295871575674
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.380556301275889
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.380543764432271
+self aligned perplexity   plan_bench_reuse step_by_step: 2.374439529577891
+self aligned perplexity   plan_bench_reuse claude: 2.3012534777323403
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.083889393011729
+self aligned perplexity   plan_bench_reuse gpt4: 2.8053173859914144
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.1571980913480124
+self aligned perplexity   plan_bench_reuse groundtruth: 12.102492280801137
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.188821721076965
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.6079816897710164
+self aligned perplexity   plan_bench_reuse step_by_step: 2.295966956615448
+self aligned perplexity   plan_bench_reuse claude: 2.386945036649704
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.1122347366809846
+self aligned perplexity   plan_bench_reuse gpt4: 2.6176596999168398
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.151460247039795
+self aligned perplexity   plan_bench_reuse groundtruth: 8.41559145450592
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.3025019812583922
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.5758131837844847
+self aligned perplexity   plan_bench_reuse step_by_step: 2.3305904978513716
+self aligned perplexity   plan_bench_reuse claude: 2.3910446721315384
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.1590481638908385
+self aligned perplexity   plan_bench_reuse gpt4: 2.586667061448097
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.0747848343849182
+self aligned perplexity   plan_bench_reuse groundtruth: 9.141049773693085
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.315934839248657
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.568324298262596
+self aligned perplexity   plan_bench_reuse step_by_step: 2.3056509335835775
+self aligned perplexity   plan_bench_reuse claude: 2.43023183743159
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.1536357466379803
+self aligned perplexity   plan_bench_reuse gpt4: 2.629333427349726
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.0542715164025624
+self aligned perplexity   plan_bench_reuse groundtruth: 9.094450777371724
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.3033525025844575
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.6693300839265186
+self aligned perplexity   plan_bench_reuse step_by_step: 2.3652140390872955
+self aligned perplexity   plan_bench_reuse claude: 2.3951443076133727
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.205861591100693
+self aligned perplexity   plan_bench_reuse gpt4: 2.555674422979355
+self aligned perplexity   plan_bench_reuse mini_gpt4: 2.9981094217300415
+self aligned perplexity   plan_bench_reuse groundtruth: 9.866508092880249
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.329367697238922
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.5608354127407074
+self aligned perplexity   plan_bench_reuse step_by_step: 2.255771805047989
+self aligned perplexity   plan_bench_reuse claude: 2.5086061680316925
+self aligned perplexity   plan_bench_reuse gpt4_style_in_context_examples: 2.1428109121322634
+self aligned perplexity   plan_bench_reuse gpt4: 2.714666159152985
+self aligned perplexity   plan_bench_reuse mini_gpt4: 3.013244880437851
+self aligned perplexity   plan_bench_reuse groundtruth: 9.001252784729004
+self aligned perplexity   plan_bench_reuse openai_human_written_examples: 3.2781878292560576
+self aligned perplexity   plan_bench_reuse rewrite_groundtruth_in_own_words: 3.871341655254364
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_execution----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+self aligned perplexity   plan_bench_execution step_by_step: 2.133499321937561
+self aligned perplexity   plan_bench_execution claude: 2.1651916337013244
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.3963226175308225
+self aligned perplexity   plan_bench_execution gpt4: 2.238410713672638
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.2764835453033445
+self aligned perplexity   plan_bench_execution groundtruth: 6.490621881484985
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.148491368293762
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.22638468503952
+self aligned perplexity   plan_bench_execution step_by_step: 2.19765634059906
+self aligned perplexity   plan_bench_execution claude: 2.1393396186828615
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.2888820600509643
+self aligned perplexity   plan_bench_execution gpt4: 2.309613265991211
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.2875828623771666
+self aligned perplexity   plan_bench_execution groundtruth: 5.590749976634979
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.891358904838562
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.2277138209342957
+self aligned perplexity   plan_bench_execution step_by_step: 1.9600855994224549
+self aligned perplexity   plan_bench_execution claude: 2.406744599342346
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.154212622642517
+self aligned perplexity   plan_bench_execution gpt4: 2.0657668542861938
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.582194402217865
+self aligned perplexity   plan_bench_execution groundtruth: 8.47707980632782
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.8807931876182558
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.160759677886963
+self aligned perplexity   plan_bench_execution step_by_step: 2.0490917921066285
+self aligned perplexity   plan_bench_execution claude: 2.133317160606384
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.4931769251823424
+self aligned perplexity   plan_bench_execution gpt4: 2.285199522972107
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.2049045324325562
+self aligned perplexity   plan_bench_execution groundtruth: 5.913921236991882
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.3041388750076295
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.141790843009949
+self aligned perplexity   plan_bench_execution step_by_step: 2.0319026708602905
+self aligned perplexity   plan_bench_execution claude: 2.2041436076164245
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.253674530982971
+self aligned perplexity   plan_bench_execution gpt4: 2.0017634272575378
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.3656750917434692
+self aligned perplexity   plan_bench_execution groundtruth: 5.98500702381134
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.965512251853943
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.2611988306045534
+self aligned perplexity   plan_bench_execution step_by_step: 2.1897274613380433
+self aligned perplexity   plan_bench_execution claude: 2.218091869354248
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.225426185131073
+self aligned perplexity   plan_bench_execution gpt4: 2.1814036846160887
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.250205898284912
+self aligned perplexity   plan_bench_execution groundtruth: 6.245731067657471
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.3437210083007813
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 2.8970409989356996
+self aligned perplexity   plan_bench_execution step_by_step: 2.0902406414349874
+self aligned perplexity   plan_bench_execution claude: 2.1851842125256855
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.3240925470987954
+self aligned perplexity   plan_bench_execution gpt4: 2.1561222116152448
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.273595174153646
+self aligned perplexity   plan_bench_execution groundtruth: 6.048219776153564
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.2044573783874513
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.1000102241834004
+self aligned perplexity   plan_bench_execution step_by_step: 2.238931918144226
+self aligned perplexity   plan_bench_execution claude: 2.128141689300537
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.4358927488327025
+self aligned perplexity   plan_bench_execution gpt4: 2.3294122298558553
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.3034696698188784
+self aligned perplexity   plan_bench_execution groundtruth: 6.981459172566732
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.0233773986498513
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.4426767349243166
+self aligned perplexity   plan_bench_execution step_by_step: 2.0828078985214233
+self aligned perplexity   plan_bench_execution claude: 2.1437944809595746
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.249255172411601
+self aligned perplexity   plan_bench_execution gpt4: 2.286924107869466
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.4960960388183593
+self aligned perplexity   plan_bench_execution groundtruth: 5.37310391664505
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.976336999734243
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.226202630996704
+self aligned perplexity   plan_bench_execution step_by_step: 2.1655778312683105
+self aligned perplexity   plan_bench_execution claude: 2.1522656261920927
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.3426023387908934
+self aligned perplexity   plan_bench_execution gpt4: 2.2740119898319247
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.2820332038402555
+self aligned perplexity   plan_bench_execution groundtruth: 6.040685929059983
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 3.019925136566162
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.227049252986908
+self aligned perplexity   plan_bench_execution step_by_step: 2.0625627356767655
+self aligned perplexity   plan_bench_execution claude: 2.2590434581041334
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.232493792772293
+self aligned perplexity   plan_bench_execution gpt4: 2.1719307047128678
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.3790054321289062
+self aligned perplexity   plan_bench_execution groundtruth: 7.009846794009209
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.9805133038759233
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.219983040690422
+self aligned perplexity   plan_bench_execution step_by_step: 2.0213159294923146
+self aligned perplexity   plan_bench_execution claude: 2.291268457174301
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.196403607130051
+self aligned perplexity   plan_bench_execution gpt4: 2.114911762873332
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.400141095717748
+self aligned perplexity   plan_bench_execution groundtruth: 7.27613208492597
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.9476740570863087
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.1749148042996724
+self aligned perplexity   plan_bench_execution step_by_step: 1.9595476400852203
+self aligned perplexity   plan_bench_execution claude: 2.365821290016174
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.1223852467536926
+self aligned perplexity   plan_bench_execution gpt4: 2.069849419593811
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.475977660417557
+self aligned perplexity   plan_bench_execution groundtruth: 7.979007658958435
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.941101471185684
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.212916828393936
+self aligned perplexity   plan_bench_execution step_by_step: 1.9388223171234131
+self aligned perplexity   plan_bench_execution claude: 2.355718455314636
+self aligned perplexity   plan_bench_execution gpt4_style_in_context_examples: 2.124223235845566
+self aligned perplexity   plan_bench_execution gpt4: 2.0008738791942595
+self aligned perplexity   plan_bench_execution mini_gpt4: 3.4424124228954316
+self aligned perplexity   plan_bench_execution groundtruth: 7.8087026667594905
+self aligned perplexity   plan_bench_execution openai_human_written_examples: 2.88199556350708
+self aligned perplexity   plan_bench_execution rewrite_groundtruth_in_own_words: 3.0847783315181734
+use_plan_prompt
+
+
+----------------------------------------------------------plan_bench_verification----------------------------------------------------------
+
+----------------------------------------------------------step_by_step----------------------------------------------------------
+
+----------------------------------------------------------claude----------------------------------------------------------
+
+----------------------------------------------------------gpt4_style_in_context_examples----------------------------------------------------------
+
+----------------------------------------------------------gpt4----------------------------------------------------------
+
+----------------------------------------------------------mini_gpt4----------------------------------------------------------
+
+----------------------------------------------------------groundtruth----------------------------------------------------------
+
+----------------------------------------------------------openai_human_written_examples----------------------------------------------------------
+
+----------------------------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------------------
+Traceback (most recent call last):
+  File "/gpfs/users/a1796450/ACL_2024/SPPL/Mix_Score_Ranking_Calculation/icppl_calculation.py", line 268, in <module>
+    with open(icppl_dict_path, 'w') as f:
+OSError: [Errno 36] File name too long: '/gpfs/users/a1796450/ACL_2024/SPPL/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/300_icppl_mistral_plan_bench_verification_icppl_dictunprocessed_3_examples_use_plan_prompt_3_examples_use_plan_prompt_3_examples_use_plan_prompt_3_examples_use_plan_prompt_3_examples_use_plan_prompt_3_examples_use_plan_prompt_3_examples_use_plan_prompt.json'

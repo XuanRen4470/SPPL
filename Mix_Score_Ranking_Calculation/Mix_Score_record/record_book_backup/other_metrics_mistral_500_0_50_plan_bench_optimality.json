@@ -1,0 +1,66 @@
+{
+    "plan_bench_optimality_step_by_step": {
+        "perplexity": 2.165109531879425,
+        "IDF_score": 0.728,
+        "average_token_len": 486.34,
+        "log_propability": -351.0,
+        "skywork_reward_score": 2.964384765625,
+        "CAR_score": 0.912
+    },
+    "plan_bench_optimality_claude": {
+        "perplexity": 2.334366443157196,
+        "IDF_score": 0.633,
+        "average_token_len": 271.4,
+        "log_propability": -222.0,
+        "skywork_reward_score": -1.177353515625,
+        "CAR_score": -0.336
+    },
+    "plan_bench_optimality_gpt4_style_in_context_examples": {
+        "perplexity": 2.056071074008942,
+        "IDF_score": 0.766,
+        "average_token_len": 497.0,
+        "log_propability": -333.0,
+        "skywork_reward_score": 2.6156640625,
+        "CAR_score": 0.843
+    },
+    "plan_bench_optimality_gpt4": {
+        "perplexity": 2.4974830293655397,
+        "IDF_score": 0.729,
+        "average_token_len": 427.12,
+        "log_propability": -364.0,
+        "skywork_reward_score": 1.551220703125,
+        "CAR_score": 0.421
+    },
+    "plan_bench_optimality_mini_gpt4": {
+        "perplexity": 2.525283381938934,
+        "IDF_score": 0.685,
+        "average_token_len": 409.64,
+        "log_propability": -363.0,
+        "skywork_reward_score": -0.52119140625,
+        "CAR_score": -0.141
+    },
+    "plan_bench_optimality_groundtruth": {
+        "perplexity": 139.9844157600403,
+        "IDF_score": 1.28,
+        "average_token_len": 51.28,
+        "log_propability": -126.0,
+        "skywork_reward_score": -15.21875,
+        "CAR_score": -1.52
+    },
+    "plan_bench_optimality_openai_human_written_examples": {
+        "perplexity": 3.080135478973389,
+        "IDF_score": 0.663,
+        "average_token_len": 308.8,
+        "log_propability": -329.0,
+        "skywork_reward_score": -1.1622265625,
+        "CAR_score": -0.27
+    },
+    "plan_bench_optimality_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.1233382272720336,
+        "IDF_score": 0.666,
+        "average_token_len": 289.42,
+        "log_propability": -296.0,
+        "skywork_reward_score": -7.9346875,
+        "CAR_score": -1.86
+    }
+}

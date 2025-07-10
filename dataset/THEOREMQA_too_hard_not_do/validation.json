@@ -1,0 +1,1031 @@
+[
+    {
+        "question": "Apply the Graeffe's root squaring method to find the roots of the following equation x^3 + 3x^2 - 4 = 0 correct to two decimals. What's the sum of these roots? Answer with integer.",
+        "gold_label": "-3",
+        "answer": "-3",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "If $X(k)$ is the N-point DFT of a sequence $x(n)$, then circular time shift property is that N-point DFT of $x((n-I))_N$ is $X(k) e^{-j 2 \\pi k \\mid / N}$. Is it true? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "While a person is walking, his arms swing through approximately a 45\u00b0 angle in 0.5s.As a reasonable approximation, we can assume that the arm moves with constant speed during each swing. A typical arm is 70.0 cm long, measured from the shoulder joint. What is the acceleration (in metre per second squared) of a 1.0 g drop of blood in the fingertips at the bottom of the swing? Answer with float.",
+        "gold_label": "1.730",
+        "answer": "1.730",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In the process of searching circles in an image, object O is detected. The contour of the object O is represented with the Fourier Descriptors (80,40,0,0,-1,0,0,1). Given that the Fourier Descriptors of a circle are (0,40,0,0,0,0,0,0). Is the object O a circle-like polygon in the image? Bear in mind that there is some high frequency noise in the image. You should take this into account when you make your judgment. Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Consider a group of 10 people {A,B,C,D,E,F,G,H,I,J} and we are to choose a committee of 4 people from them. Given that (1) A and B should not be chosen together, and that (2) A, C, F should not be chosen together, then how many ways are there to choose such a committee? Answer with integer.",
+        "gold_label": "176",
+        "answer": "176",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "what is the limit of (2n)!!/(2n+1)!! as n goes to infinity? Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "You are given: (i) The current exchange rate is 0.011$/\u00a5. (ii) A four-year dollar-denominated European put option on yen with a strike price of $0.008 sells for $0.0005. (iii) The continuously compounded risk-free interest rate on dollars is 3%. (iv) The continuously compounded risk-free interest rate on yen is 1.5%. Calculate the price of a four-year yen-denominated European put option on dollars with a strike price of \u00a5125. Answer with float.",
+        "gold_label": "42.773",
+        "answer": "42.773",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Let f be a bounded entire function, z_1,z_2 be two points in the ball B(0,r). What is the value of the integral $\\int_{|z|=r} f(z)/(z-z_1)(z-z_2) dz$? Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "One end of a 2.00-kg rope is tied to a support at the top of a mine shaft 80.0 m deep. The rope is stretched taut by a 20.0-kg box of rocks attached at the bottom. If a point on the rope is in transverse SHM with f = 2.00 Hz, how many cycles of the wave are there in the rope\u2019s length? Answer with float.",
+        "gold_label": "1.810",
+        "answer": "1.810",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "You have a coin and you would like to check whether it is fair or biased. More specifically, let $\\theta$ be the probability of heads, $\\theta = P(H)$. Suppose that you need to choose between the following hypotheses: H_0 (null hypothesis): The coin is fair, i.e. $\\theta = \\theta_0 = 1 / 2$. H_1 (the alternative hypothesis): The coin is not fair, i.e. $\\theta > 1 / 2$. We toss 100 times and observe 60 heads. What is the P-value? Answer with float.",
+        "gold_label": "0.023",
+        "answer": "0.023",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "An ordinary deck of cards containing 26 red cards and 26 black cards is shuffled and dealt out one card at a time without replacement. Let $X_i$ be the color of the $i$th card. Compute $H(X_1,X_2,\\ldots,X_{52})$ in bits. Answer with float.",
+        "gold_label": "48.800",
+        "answer": "48.800",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Each day Paul, who is in third grade, eats lunch at school. He likes only Twinkies (t) and soda (s), and these provide him a utility of utility = U(t,s) = \\sqrt{ts}. If Twinkies cost $0.10 each and soda costs $0.25 per cup, Paul's mom gives him $1, how many Twinkies should Paul buy to maximize utility? Answer with integer.",
+        "gold_label": "5",
+        "answer": "5",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "In the process of searching circles in an image, object O is detected. The contour of the object O is represented with the Fourier Descriptors (-20,60,-20,20,-20,21,-20,20). Given that the Fourier Descriptors of a circle are (0,40,0,0,0,0,0,0). Is the object O a circle-like polygon in the image? Bear in mind that there is some high frequency noise in the image. You should take this into account when you make your judgment. Answer with bool.",
+        "gold_label": "False",
+        "answer": "False",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Find acceleration in m/(min^2) at time t = 5 min of a helicopter whose height is s(t) = 300t - 4t^3 m. Answer with integer.",
+        "gold_label": "-120",
+        "answer": "-120",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "A network with one primary and four secondary stations uses polling. The size of a data frame is 1000 bytes. The size of the poll, ACK, and NAK frames are 32 bytes each. Each station has 5 frames to send. How many total bytes are exchanged if each station can send only one frame in response to a poll? Answer with integer.",
+        "gold_label": "21536",
+        "answer": "21536",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "What are the real eigenvalues of the matrix [[3, -2, 5], [1, 0, 7], [0, 0, 2]]? Answer with list of integer.",
+        "gold_label": "[1, 2, 2]",
+        "answer": "[1, 2, 2]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "Suppose there are 10 independent random variables $X_1, X_2, \\cdots, X_10$. Each of the $X_i$ lies within the range of [10, 11] with a mean value of 10.5. If we take the mean of the 10 random variables as $\\hat{X_n}$. What is the upper bound of the probability that $\\hat{X_n}$ is either smaller than 10.2 or larger than 10.8? Answer with float.",
+        "gold_label": "0.331",
+        "answer": "0.331",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "What is \\lim_{x \\to 0} (csc(x) - cot(x))? Answer with integer.",
+        "gold_label": "0",
+        "answer": "0",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Let\u2019s assume Mutual Fund A has an annualized return of 15% and a downside deviation of 8%. Mutual Fund B has an annualized return of 12% and a downside deviation of 5%. The risk-free rate is 2.5%. What is the Sortino ratio for Fund A? Answer with float.",
+        "gold_label": "1.560",
+        "answer": "1.560",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "True or false: there exists a graph with score (1, 1, 2, 2, 3, 3, 4, 4). Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "The electric flux through a spherical surface is  $4.0\\times 10^4 N \\cdot m^2/C$. What is the net charge enclosed by the surface? Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Compute the integral $\\iint_D xy^2 dA$, where $D$ is the rectangle defined by 0 <= x <= 2 and 0 <= y <= 1. Answer with float.",
+        "gold_label": "0.667",
+        "answer": "0.667",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Let $X \\sim N(0,1)$ and let the distortion measure be squared error. Here we do not allow block descriptions. Compute the minimum expected distortion for one bit quantization of $X$ using a squared error distortion measure. Answer with float.",
+        "gold_label": "0.363",
+        "answer": "0.363",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A uniform plank of length L = 6.0 m and mass M = 90 kg rests on sawhorses separated by D = 1.5 m and equidistant from the center of the plank. Cousin Throckmorton wants to stand on the right-hand end of the plank. If the plank is to remain at rest, how massive can Throckmorton be? (Unit: kg) Answer with integer.",
+        "gold_label": "30",
+        "answer": "30",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Let L^1[0,2] be the space of all the Lebesgue integrable functions on the interval [0,2], and C[0,2] be the space of all the continuous functions on the interval [0,2]. Suppose H=L^1[0,2], and X=C[0,2]. For any f\\in L^1[0,2], define operator T as $(Tf)(x)=\\int_0^x f(t)dt$. For the linear operator T from H to X, what is the norm of T? For the linear operator T from H to H, what is the norm of T? Return the answers of two questions as a list. For example, if the norm for the first question is 2, the second is 3, then return [2,3]. Answer with list of integer.",
+        "gold_label": "[1, 2]",
+        "answer": "[1, 2]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "For matrix A = [[2, 4, 3], [3, 0, 1], [1, 2, 5]], what is its determinant? Answer with integer.",
+        "gold_label": "-42",
+        "answer": "-42",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Suppose that:\nThe 1-year spot rate is 3%;\nThe 2-year spot rate is 4%; and\nThe 3-year spot rate is 5%. What is the price of a 100-par value 3-year bond paying 6% annual coupon payment? Answer with float.",
+        "gold_label": "102.950",
+        "answer": "102.950",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Passing to polar coordinates, calculate the double integral $\\iint_S ydxdy$ with $y$ > 0, where S is a semicircle of a diameter 1 with center at point C(1/2, 0) above the X axis. Answer with float.",
+        "gold_label": "0.083",
+        "answer": "0.083",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In how many ways can 8 people be seated at 5 identical round tables? Each table must have at least 1 person seated. Answer with integer.",
+        "gold_label": "1960",
+        "answer": "1960",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Please solve the equation sin(4*x) + x = 54 and provide all the roots using newton-raphson method. Answer with list of float.",
+        "gold_label": "[53.52, 54.25, 54.76]",
+        "answer": "[53.52, 54.25, 54.76]",
+        "input": "",
+        "answer_type": "list of float"
+    },
+    {
+        "question": "Find the interval in which the smallest positive root of the following equations lies: x^3 - x - 4 = 0. Determine the roots correct to two decimal places using the bisection method Answer with float.",
+        "gold_label": "1.800",
+        "answer": "1.800",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The product of two of the four roots of the quartic equation x^4 - 18x^3 +kx2 + 200x - 1984 = 0 is -32. Determine the value of k. Answer with integer.",
+        "gold_label": "86",
+        "answer": "86",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Is the set of 3 * 3 matrices in reduced row-echelon form a subspace of R^{3 * 3}? Answer with bool.",
+        "gold_label": "False",
+        "answer": "False",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "A linear learning machine based on the kernel $k(x,x')=f(x)f(x')$ will always find a solution proportional to $f(x)$. True or false? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Suppose 100 cars will be offered on the used-car market. Let 50 of them be good cars, each worth $10,000 to a buyer, and let 50 be lemons, each worth only $2,000. Suppose that there are enough buyers relative to sellers that competition among them leads cars to be sold at their maximum willingness to pay. What would the market equilibrium price for good cars be if sellers value good cars at $6,000? Answer with integer.",
+        "gold_label": "6000",
+        "answer": "6000",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "True or false: there exists a graph with score (1, 1, 1, 2, 2, 3, 4, 5, 5). Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "For any poitie integer $n$, let $\\langle n\\rangle$ denote the closest integer to $\\sqrt{n}$. Evaluate $\\sum_{n=1}^{\\infty} \\frac{2^{\\langle n \\rangle}+2^{-\\langle n \\rangle}}{2^n}$. Answer with float.",
+        "gold_label": "3.000",
+        "answer": "3.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "What is the total number of colors in RGB color space? Answer with integer.",
+        "gold_label": "16777216",
+        "answer": "16777216",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Can we use the method of compass and straightedge construction to construct the edge length of a cube, such that the volume of the cube is equal to X time the volume of a given cube, where X belongs to the set {3,17,8,27,343,1331}? Return the answer list for the respective values of X with 1 for yes and 0 for no. Answer with list of integer.",
+        "gold_label": "[0, 0, 1, 1, 1, 1]",
+        "answer": "[0, 0, 1, 1, 1, 1]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "Calculate the Hamming pairwise distances and determine the minimum Hamming distance among the following codewords: 00000,10101,01010 Answer with integer.",
+        "gold_label": "2",
+        "answer": "2",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Find the smallest positive integer that leaves a remainder of 2 when divided by 3, a remainder of 3 when divided by 5, and a remainder of 1 when divided by 7. Answer with integer.",
+        "gold_label": "8",
+        "answer": "8",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "The mass of Earth is 5.97x10^24 kg, the mass of the Moon is 7.35x10^22 kg, and the mean distance of the Moon from the center of Earth is 3.84x105 km. The magnitude of the gravitational force exerted by Earth on the Moon is X * 10^20 N. What is X? Return a numeric value. Answer with float.",
+        "gold_label": "1.990",
+        "answer": "1.990",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Suppose that feedback is used on a binary symmetric channel with parameter $p=0.5$. Each time a $Y$ is received, it becomes the next transmission. Thus $X_1$ is Bern(1/2), $X_2=Y_1$, $X_3=Y_2$, \\ldots, X_n=Y_{n-1}. Find $\\lim_{n\\to\\infty} \\frac{1}{n} I(X_n;Y_n)$ in bits. Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Consider the 7.0-TeV protons that are produced in the LHC collider at CERN. Find the available center-of-mass energy if these protons collide with other protons in a fixed-target experiment in GeV. Answer with float.",
+        "gold_label": "114.500",
+        "answer": "114.500",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "suppose F(x,y,z)=0. What is $\\frac{\\partial x}{\\partial y} \\frac{\\partial y}{\\partial z} \\frac{\\partial z}{\\partial x}$? Answer with float.",
+        "gold_label": "-1.000",
+        "answer": "-1.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In a sinusoidal sound wave of moderate loudness, the maximum pressure variations are about $3.0 \\times 10 ^ {-2}$ Pa above and below atmospheric pressure. Find the corresponding maximum displacement if the frequency is 1000 Hz. In air at normal atmospheric pressure and density, the speed of sound is 344 m/s and the bulk modulus is $1.42 \\times 10^5$ Pa. (Unit: $10 ^ {-8}$) Answer with float.",
+        "gold_label": "1.200",
+        "answer": "1.200",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "For the equation x^4 + 2*x^3 + x = 10, there are four roots. What is the sum of the roots using newton-raphson method. Answer with float.",
+        "gold_label": "-2.000",
+        "answer": "-2.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Portfolio | Portfolio 1 | Portfolio 2 | Portfolio 3\nExpected Portfolio Return |  5.3% | 6.5% | 7.2%\nPortfolio Standard Deviation | 8.2% | 9.1% | 10.1%\n\nIf we use Roy's safety-first criterion to decide with portfolio is optimal, with a threshold return of 5%. Is portfolio 2 the optimal one? Answer True or False. Answer with bool.",
+        "gold_label": "False",
+        "answer": "False",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Suppose there are 8,000 hours in a year (actually there are 8,760) and that an individual has a potential market wage of $5 per hour. Suppose a rich uncle dies and leaves the individual an annual income of $4,000 per year. If he or she devotes 75 percent of full income to leisure, how many hours will be worked? Answer with integer.",
+        "gold_label": "1400",
+        "answer": "1400",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Suppose we are given the following information. Use this information to calculate abnormal return. Rf: 4%\nRm: 12%\nBeta of the Portfolio: 1.8\nBeginning Value of Portfolio: $50,000\nEnding Value of Portfolio: $60,000\nWhat is the abnormal return? Answer with float.",
+        "gold_label": "0.016",
+        "answer": "0.016",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Consider an m * n matrix A and an n * m matrix B (with n != m) such that AB = I_m. Are the columns of A linearly independent? Answer with bool.",
+        "gold_label": "False",
+        "answer": "False",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Finding all the real roots of the equation $\\sqrt{x^2+x+1}+\\sqrt{2 x^2+x+5}=\\sqrt{x^2-3 x+13}$. Return the answer as a list with ascending order. Answer with list of float.",
+        "gold_label": "[-1.7807764064, 0.2807764064]",
+        "answer": "[-1.7807764064, 0.2807764064]",
+        "input": "",
+        "answer_type": "list of float"
+    },
+    {
+        "question": "Suppose a student who was farsighted wears glasses that allows him to read at a distance of 20cm from his eyes to the book. His near-point distance is 63cm. If his glasses are 1.5cm from his eyes, what is the refractive power of his glasses lenses? Answer with float.",
+        "gold_label": "3.846",
+        "answer": "3.846",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Traders in major financial institutions use the Black-Scholes formula in a backward fashion to infer other traders' estimation of $\\sigma$ from option prices. In fact, traders frequently quote sigmas to each other, rather than prices, to arrange trades. Suppose a call option on a stock that pays no dividend for 6 months has a strike price of $35, a premium of $2.15, and time to maturity of 7 weeks. The current short-term T-bill rate is 7%, and the price of the underlying stock is $36.12. What is the implied volatility of the underlying security? Answer with float.",
+        "gold_label": "0.251",
+        "answer": "0.251",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In 1985 the space shuttle Challenger flew a cesium clock and compared its time with a fixed clock left on Earth. The shuttle orbited at approximately 330 km above Earth with a speed of 7712 m/s. Calculate the expected time lost per second (in picoseconds) for the moving clock and compare with the measured result of $-295.02 \\pm 0.29 ps/s$, which includes a predicted effect due to general Relativity of $35.0 \\pm 0.06 ps/s$ Answer with float.",
+        "gold_label": "330.760",
+        "answer": "330.760",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "An Aston Martin V8 Vantage sports car has a lateral acceleration of $0.96g = (0.96)(9.8 m / s^2) = 9.4 m / s^2$. This is the maximum centripetal acceleration the car can sustain without skidding out of a curved path. If the car is traveling at a constant 40m/s on level ground, what is the radius R of the tightest unbanked curve it can negotiate? (Unit: m)) Answer with integer.",
+        "gold_label": "170",
+        "answer": "170",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "You have a coin and you would like to check whether it is fair or biased. More specifically, let $\\theta$ be the probability of heads, $\\theta = P(H)$. Suppose that you need to choose between the following hypotheses: H_0 (null hypothesis): The coin is fair, i.e. $\\theta = \\theta_0 = 1 / 2$. H_1 (the alternative hypothesis): The coin is not fair, i.e. $\\theta > 1 / 2$. We toss 100 times and observe 60 heads. Can we reject H_0 at significance level $\\alpha = 0.05$? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "If the quartic x^4 + 3x^3 + 11x^2 + 9x + A has roots k, l, m, and n such that kl = mn, find A. Answer with integer.",
+        "gold_label": "9",
+        "answer": "9",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Each of the four jet engines on an Airbus A380 airliner develops athrust (a forward force on the airliner) of 322,000 N (72,000 lb).When the airplane is flying at 250 m/s, what horsepower does each engine develop? (Unit: hp) Answer with integer.",
+        "gold_label": "108000",
+        "answer": "108000",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "How many ways are there to color the vertices of a cube with two colors, up to rotation? Answer with integer.",
+        "gold_label": "23",
+        "answer": "23",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "In Chord, assume the size of the identifier space is 16. The active nodes are N3, N6, N8 and N12. Show all the target key (in ascending order, ignore the node's identifier itself) for N6. Answer with list of integer.",
+        "gold_label": "[7, 8, 10, 14]",
+        "answer": "[7, 8, 10, 14]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "The stock of the CCC Corporation is currently valued at $12 and is assumed to possess all the properties of geometric Brownian motion. It has an expected annual return of 15%, an annual volatility of 20%, and the annual risk-free is 10%. Using a binomial lattice, determine the price of a call option on CCC stock maturing in 10 monthes time with a strike price of $14 (Let the distance between nodes on your tree be 1 month in length). Answer with float.",
+        "gold_label": "53.000",
+        "answer": "53.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Evaluate $\\int_c 1 / (z^ + 4)^2 dz$ over the contour. This contour is a circle centered at (0, i) with a diameter of 3 on the (Re, Im) plane, the contour goes counter-clockwise. Answer with float.",
+        "gold_label": "0.196",
+        "answer": "0.196",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The difference equation of a digital system is given by $$ y[n]=8 x[n]+2 x[n-1]-x[n-2], $$ where $x[n]$ and $y[n]$ are, respectively the current samples of the input and the output signals of the system. Determine if the system is a FIR. Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "$H(X_n|X_0)$ is a concave function of n for a stationary Markov process. True or False? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "There are only three active stations in a slotted Aloha network: A, B and C. Each station generates a frame in a time slot with the corresponding probabilities p_A=0.2, p_B=0.3 and p_C=0.4 respectively. What is the normalized throughput of the system? Answer with float.",
+        "gold_label": "0.452",
+        "answer": "0.452",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A bird is lost in a 3 by 3 by 3 cubical maze. The bird flies from room to room going to adjoining rooms with equal probability through each of the walls. To be specific, the corner rooms have 3 exits. What is the entropy rate of this random walk? Use base 2 logarithm and return the entropy rate in bits. Answer with float.",
+        "gold_label": "2.030",
+        "answer": "2.030",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "If the sum-product algorithm is run on a factor graph with a tree structure (no loops), then after a finite number of messages have been sent, there will be no pending messages. True or false? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Let {N(t), t \\in [0, \\infty)} be a Poisson process with rate of $\\lambda = 4$ and $X_1$ be the first arrival time. Given N(t) = 1, then what is $P(X_1 <= t / 2)$? Answer with float.",
+        "gold_label": "0.500",
+        "answer": "0.500",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A $200-cm^3$ glass flask is filled to the brim with mercury at 20\u00b0C How much mercury overflows when the temperature of the system is raised to 100\u00b0C. The coefficient of linear expansion of the glass is $0.40 \\times 10^{-5} K^{-1}. (Unit: cm^3) Answer with float.",
+        "gold_label": "2.700",
+        "answer": "2.700",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Suppose a monopoly market has a demand function in which quantity demanded depends not only on market price (P) but also on the amount of advertising the firm does (A, measured in dollars). The specific form of this function is Q = (20 - P)(1 + 0.1A - 0.01A^2). The monopolistic firm's cost function is given by C = 10Q + 15 + A. Suppose there is no advertising (A = 0). What output will the profit-maximizing firm choose? Answer with integer.",
+        "gold_label": "5",
+        "answer": "5",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "A single firm monopolizes the entire market for widgets and can produce at constant average and marginal costs of AC = MC = 10. Originally, the firm faces a market demand curve given by Q = 60 - P. Calculate the profit-maximizing price for the firm. Answer with integer.",
+        "gold_label": "35",
+        "answer": "35",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "If four points are picked independently at random inside the triangle ABC, what is the probability that no one of them lies inside the triangle formed by the other three? Answer with float.",
+        "gold_label": "0.667",
+        "answer": "0.667",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Consider a file with a size of 350 Kbytes storing in a web server. Client A sends a request to the server to retrieve the file from a remote location. It is known that the link capacity between client A and the server is 10 Mbps and the round trip time (RTT) between the server and client is fixed at 20ms. Assume that the segment size is 20 Kbytes and the client has a receiver buffer of 200Kbytes. Assume that the window size (W) is fixed at 2. How long (in ms) does client A take to receive the whole file from the server after sending a request? Answer with integer.",
+        "gold_label": "352",
+        "answer": "352",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "In how many ways can 3 students be selected from a class of 20 to form a study group? Answer with integer.",
+        "gold_label": "1140",
+        "answer": "1140",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Determine the period of the following signal, $$ x_1(t)=\\cos (3 \\pi t)-4 \\cos (5 \\pi t-0.5 \\pi) $$ Answer with integer.",
+        "gold_label": "2",
+        "answer": "2",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Suppose a stock has the following information. It is listed on the London stock exchange and operates throughout Europe. The yield on a UK 10 year treasury is 2.8%. The stock in question will earn 8.6% as per historical data. The Beta for the stock is 1.4, i.e., it is 140% volatile to the changes in the general stock market. What is the expected rate of return? Answer with float.",
+        "gold_label": "10.920",
+        "answer": "10.920",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Use divergence therem to evaluate $\\iint_S \\vec{F} \\cdot d \\vec{S}$ where $\\vec{F} = xy \\vec{i} - \\frac{1}{2}y^2\\vec{j} + z\\vec{k}$ and the surface $S$ consists of the three surfaces, $z=4 - 3*x^2 - 3y^2, 1 \\le z \\le 1$ on the sides and $z=0$ on the bottom. Answer with float.",
+        "gold_label": "7.853",
+        "answer": "7.853",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A pure lead bar 10 cm long is maintained with one end at T &=300 K and the other at 310 K. The thermoelectric potential difference thus induced across the ends is 12.8 micro-volts. Find the thermoelectric power for lead in this temperature range in V/K. (Note: Q varies nonlinearly with temperature, but over this narrow temperature range, you may use a linear approximation.) Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Find the sum of $\\sum_{n=1}^{\\infty} (1/e^n + 1/(n*(n+1)))$ Answer with float.",
+        "gold_label": "1.581",
+        "answer": "1.581",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Lore Ltd. estimates that its dividend growth will be 13% per year for the next five years. It will then settle to a sustainable, constant, and continuing rate of 5%. Let\u2019s say that the current year\u2019s dividend is $14 and the required rate of return (or discount rate) is 12%. What is the current fair value of Lore Ltd. stock? Answer with float.",
+        "gold_label": "291.450",
+        "answer": "291.450",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "You wish to put a 1000-kg satellite into a circular orbit 300 km above the earth's surface. How much work must be done to the satellite to put it in orbit? The earth's radius and mass are $R_E}=$ $6.38 \\times 10^6 m$ and $m_E=5.97 \\times 10^{24} kg$. (Unit: 10^10 J) Answer with float.",
+        "gold_label": "3.260",
+        "answer": "3.260",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In triangle RST, X is located on the side RS, Y is located on the side RT, Z is located on the side ST, and XY and XZ are midsegments of \u25b3RST. If the length of side XY is 7, the length of side RT is 13, and the measure of angle YXZ is 124\u00b0, what is the length of side XZ? Answer with float.",
+        "gold_label": "6.500",
+        "answer": "6.500",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Let h(x) = 1/(\\sqrt{x} + 1). What is h''(x) when x = 1? Answer with float.",
+        "gold_label": "0.125",
+        "answer": "0.125",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "If z = \\frac{1 + e^{-2x}}{x + tan(12x)}, what's the derivative of $\\frac{\\partial z}{\\partial x}$ at $x = 1$. Answer with float.",
+        "gold_label": "-153.590",
+        "answer": "-153.590",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Compute the double integrals over indicated rectangles $\\iint\\limits_{R}{{2x - 4{y^3}\\,dA}}$, $R = [-5,4] \\times [0, 3] Answer with integer.",
+        "gold_label": "-756",
+        "answer": "-756",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "How many labeled trees are there on 6 vertices? Answer with integer.",
+        "gold_label": "1296",
+        "answer": "1296",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "The position of a point for any time t (t>0) s defined by the equations: x=2t, y=ln(t), z = t^2. Find the mean velocity of motion between times t=1 and t=10. Answer with float.",
+        "gold_label": "11.250",
+        "answer": "11.250",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Is function f defined by $f(z) = \\int_0^{\\infy} |e^{zt}| / (t+1) dt$ analytical on the left plane D: Re(z) < 0 Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "A random variable $X$ takes on $m$ values and has entropy $H(X)$. An instantaneous ternary code is found for this source, with an average length $L=H_3(X)$ that achieves the entropy bound. Then $m$ must be odd. True or False? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Suppose the graph of a polynomial f(t) = a + bt + ct^2 passes through points (1, -1), (2, 3), and (3, 13). What is f(-1)? Answer with integer.",
+        "gold_label": "9",
+        "answer": "9",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Suppose the codeword that we use to describe a random variable X always starts with a symbol chosen from the set {7, 8, 9} , followed by binary digits {0, 1}. Thus we have a ternary code for the first symbol and binary thereafter. Give the optimal uniquely decodeable code (minimum expected number of symbols) for the probability distribution $p = (16/69, 15/69, 12/69, 10/69, 8/69, 8/69)$. Answer with list of integer.",
+        "gold_label": "[7, 8, 9, 70, 80, 90]",
+        "answer": "[7, 8, 9, 70, 80, 90]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "H(z) = $\\int_0^1 e^{-z^2 t^2} dt$, what is H'(1)? Answer with float.",
+        "gold_label": "-0.379",
+        "answer": "-0.379",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "matrix $A=(\\begin{array}{rrrr} -2 & -1 & -1 & -1 \\ 2 & 1 & 3 & 2 \\ 1 & 1 & 0 & 1 \\ -1 & -1 & -2 & -2 \\end{array})$. Suppose f is the minimal polynomial of A. What is f(99)? Return the numeric without explanation. Answer with float.",
+        "gold_label": "990000.000",
+        "answer": "990000.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The planet Pluto (radius 1180 km) is populated by three species of purple caterpillar. Studies have established the following facts: 1. A line of 5 mauve caterpillars is as long as a line of 7 violet caterpillars. 2. A line of 3 lavender caterpillars and 1 mauve caterpillar is as long as a line of 8 violet caterpillars. 3. A line of 5 lavender caterpillars, 5 mauve caterpillars and 2 violet caterpillars is 1 m long in total. 4.  A lavender caterpillar takes 10 s to crawl the length of a violet caterpillar. 5. Violet and mauve caterpillars both crawl twice as fast as lavender caterpillars. How many years would it take a mauve caterpillar to crawl around the equator of Pluto? Answer with float.",
+        "gold_label": "23.000",
+        "answer": "23.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Find the smallest positive integer that leaves a remainder of 3 when divided by 5, a remainder of 4 when divided by 7, and a remainder of 2 when divided by 9. Answer with integer.",
+        "gold_label": "263",
+        "answer": "263",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Three years ago, Fred invested $10,000 in the shares of ABC Corp. Each year, the company distributed dividends to its shareholders. Each year, Fred received $100 in dividends. Note that since Fred received $100 in dividends each year, his total income is $300. Today, Fred sold his shares for $12,000. What is the holding period return of his investment? Answer with float.",
+        "gold_label": "0.230",
+        "answer": "0.230",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "If z = arctan(e^{1 + (1 + x)^2}), what's the derivative of $\\frac{\\partial z}{\\partial x}$ at x = 0. Answer with float.",
+        "gold_label": "0.302",
+        "answer": "0.302",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Electrons used to produce medical x rays are accelerated from rest through a potential difference of 25,000 volts before striking a metal target. Calculate the speed of the electrons in m/s. Answer with float.",
+        "gold_label": "90000000.000",
+        "answer": "90000000.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "You are asked to determine the price of a European put option on a stock. Assuming the Black-Scholes framework holds, you are given: (i) The stock price is $100. (ii) The put option will expire in 6 months. (iii) The strike price is $98. (iv) The continuously compounded risk-free interest rate is r = 0.055. (v) \u03b4 = 0.01 (vi) \u03c3 = 0.50. What is the price of the put option? Answer with float.",
+        "gold_label": "11.900",
+        "answer": "11.900",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Consider the set S:= {2^{-m} + n^{-1}: m, n \\in N}. What is the maximum of S? Answer with float.",
+        "gold_label": "1.500",
+        "answer": "1.500",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "For any triangle ABC, we have cos(A)cost(B)cos(C) $\\leq$ 1/8, is this true or false? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "You are interviewing two investment managers. Mr. Wong shows that the average return on his portfolio for the past 10 years has been 14%, with a standard deviation of 8% and a beta of 1.2. Ms. Petrov shows that the average return on her portfolio for the past 10 years has been 16%, with a standard deviation of 10% and a beta of 1.6. You know that over the past 10 years, the US Treasury security rate has averaged 2% and the return on the S&P 500 has averaged 11%. By measuring Jensen\u2019s alpha, Mr. Wong has done the better job. Is this correct? Answer True or False. Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "We know that $y'=(x+y) / 2$, we also know that $y(x=0) = 2, y(x=0.5) = 2.636, y(x=1) = 3.595, y(x=1.5) = 4.9868$, what is the value of y(2) using Adams bashforth predictor method. Answer with float.",
+        "gold_label": "6.873",
+        "answer": "6.873",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "James (mass 90.0 kg) and Ramon (mass 60.0 kg) are 20.0 m apart on a frozen pond. Midway between them is a mug of their favorite beverage. They pull on the ends of a light rope stretched between them. When James has moved 6.0 m toward the mug, how far has Ramon moved? (Unit: m) Answer with float.",
+        "gold_label": "1.000",
+        "answer": "1.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Does 2^x +1/x = -4 have a solution? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Passengers on a carnival ride move at constant speed in a horizontal circle of radius 5.0 m, making a complete circle in 4.0 s. What is their acceleration? (Unit: m/s^2)) Answer with integer.",
+        "gold_label": "12",
+        "answer": "12",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "A basketball team has 12 players, including 5 guards and 7 forwards. How many different starting lineups can be formed that include 3 guards and 2 forwards? Answer with integer.",
+        "gold_label": "210",
+        "answer": "210",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Photoelectrons may be emitted from sodium (phi = 2.36 eV) even for light intensities as low as 10^-8 W/m^2. Calculate classically how much time (in seconds) the light must shine to produce a photoelectron of kinetic energy 1.00 eV. Return the numeric value. Answer with float.",
+        "gold_label": "463000000.000",
+        "answer": "463000000.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "\\lim_{x \\to 1}(1/(x - 1) - c/(x^3 - 1)) exists. What is the value of c? Answer with integer.",
+        "gold_label": "3",
+        "answer": "3",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Find the entropy rate of the Markov chain associated with a random walk of a king on the 3 by 3 chessboard. Use base 2 logarithm and return the entropy rate in bits. Answer with float.",
+        "gold_label": "2.240",
+        "answer": "2.240",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Find the sum of $\\sum_{n=1}^{\\infty} \\frac{2}{n^2 + 4n + 3}$ Answer with float.",
+        "gold_label": "0.833",
+        "answer": "0.833",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Is the Fourier transform of the signal x(t)=(1-e^{-|t|})[u(t+1)-u(t-1)] even? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "What's the maximum number of edges in a simple planar graph with 30 vertices? Answer with integer.",
+        "gold_label": "84",
+        "answer": "84",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "What is the smallest number of standard deviations from the mean that we must go if we want to ensure that we have at least 50% of the data of a distribution? Answer with float.",
+        "gold_label": "1.400",
+        "answer": "1.400",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In how many ways can a group of 6 people be divided into 2 teams? Notice that members in each team are ordered. Answer with integer.",
+        "gold_label": "1800",
+        "answer": "1800",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Calculate the de Broglie Wavelength, in nm, of an electron with kinetic energy 50 eV. Answer with float.",
+        "gold_label": "0.170",
+        "answer": "0.170",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Let V be the space spanned by functions cos(2x) and sin(2x). Find the determinant of the linear transformation D(f) = f' from V to V. Answer with integer.",
+        "gold_label": "4",
+        "answer": "4",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Is the transformation T(M) = [[1, 2], [3, 4]]M from R^{2*2} to R^{2*2} an isomorphism? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Consider a horizontal strip of N+2 squares in which the first and the last square are black and the remaining N squares are all white. Choose a white square uniformly at random, choose one of its two neighbors with equal probability, and color this neighboring square black if it is not already black. Repeat this process until all the remaining white squares have only black neighbors. Let $w(N)$ be the expected number of white squares remaining. What is the limit of $w(N)/N$ as $N$ goes to infinity? Answer with float.",
+        "gold_label": "0.368",
+        "answer": "0.368",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The difference equation of a digital system is given by $$ y[n]-y[n-1]=2 x[n-1]-x[n-2], $$ where $x[n]$ and $y[n]$ are, respectively the current samples of the input and the output signals of the system. Determine if the system is a stable system. Answer with bool.",
+        "gold_label": "False",
+        "answer": "False",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "How many triangles are there whose sides are all integers and whose maximum side length equals 11? Answer with integer.",
+        "gold_label": "36",
+        "answer": "36",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Use euler's method to find the solution to the differential equation $\\frac{\\partial y}{\\partial x} = 3x + 4y$ at $x=1$ with the initial condition y(0) = 0 and step size $h=0.25$. What is y(1)? Answer with float.",
+        "gold_label": "2.062",
+        "answer": "2.062",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Calculate the Fermi energy for copper in eV. Answer with float.",
+        "gold_label": "7.030",
+        "answer": "7.030",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "In a particular semiconductor device, electrons that are accelerated through a potential of 5 V attempt to tunnel through a barrier of width 0.8 nm and height 10 V. What fraction of the electrons are able to tunnel through the barrier if the potential is zero outside the barrier? Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The marginal distribution for the variables $x_s$ in a factor $f_s(x_s)$ in a tree-structured factor graph, after running the sum-product message passing algorithm, can be written as the product of the message arriving at the factor node along all its links, times the local factor $f_s(x_s)$. True or false? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "What is the coefficient of $x^2y^5$ for the formula $(x + 2y)^7$? Answer with integer.",
+        "gold_label": "672",
+        "answer": "672",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Suppose V is a finite-dimensional vector space on F. $M1={a_1,a_2,a_3}$ is a basis of V, $M2={b_1,b_2,b_3}$ is another basis of V. Suppose the coordinates of b_1,b_2,b_3 under M1 are $c_1=(1,1,-1),c_2=(1,-1,1),c_3=(-1,1,1)$. Suppose the coordinate of $d\\in V$ under M1 is (1,3,5). What is the coordinate of d under M2? Return the three coordinate values as a list. Answer with list of integer.",
+        "gold_label": "[2, 3, 4]",
+        "answer": "[2, 3, 4]",
+        "input": "",
+        "answer_type": "list of integer"
+    },
+    {
+        "question": "Assuming $x$ and $y$ are both 2-d random variable. The covariance matrix of $x=((1,2),(2,3),(3,3),(4,4))$, $y=((3,4),(1,5),(5,3),(3,3))$ is $Cov$. What is summation of the eigenvalue of $Cov$? Answer with float.",
+        "gold_label": "2.767",
+        "answer": "2.767",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A model rocket follows the trajectory c(t) = (80t, 200t - 4.9t^2) until it hits the ground, with t in seconds and distance in meters. Find the rocket's maximum height in meters. Answer with integer.",
+        "gold_label": "2041",
+        "answer": "2041",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "If $x=4*cost(t)$ and $y=8*sin(x)$, what is $y{''}_{xx}$ at t=pi/3? Answer with float.",
+        "gold_label": "-4.000",
+        "answer": "-4.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A surveyor uses a steel measuring tape that is exactly 50.000 m long at a temperature of 20\u00b0C. The markings on the tape are calibrated for this temperature. When it is 35\u00b0C, the surveyor uses the tape to measure a distance. The value that she reads off the tape is 35.794 m. What is the actual distance? (Unit: m) Answer with float.",
+        "gold_label": "35.800",
+        "answer": "35.800",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "How many ways are there to color the faces of a cube with three colors, up to rotation? Answer with integer.",
+        "gold_label": "57",
+        "answer": "57",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "Which of the following matrices takes any vector $v$ and projects it onto the space spanned by the columns of $\\Phi$? (a) $(\\Phi^T\\Phi)^{-1}$. (b) $\\Phi(\\Phi^T\\Phi)^{-1}$. (c) $\\Phi(\\Phi^T\\Phi)^{-1}\\Phi^T$. (d) $\\Phi^T(\\Phi^T\\Phi)^{-1}\\Phi^T$. Answer with option.",
+        "gold_label": "(c)",
+        "answer": "(c)",
+        "input": "",
+        "answer_type": "option"
+    },
+    {
+        "question": "How many trees are there on 5 labeled vertices? Answer with integer.",
+        "gold_label": "125",
+        "answer": "125",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "A box contains 4 red, 3 green, and 2 blue balls. Balls are identical besides of their colors. In how many ways can we choose 4 balls, if at least 2 are red? Answer with integer.",
+        "gold_label": "6",
+        "answer": "6",
+        "input": "",
+        "answer_type": "integer"
+    },
+    {
+        "question": "A steel rod 2.0 m long has a cross-sectional area of $0.30 cm ^ 2$. It is hung by one end from a support, and a 550-kg milling machine is hung from its other end. Determine the stress on the rod and the resulting strain and elongation. (Unit: mm) Answer with float.",
+        "gold_label": "1.800",
+        "answer": "1.800",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "G = Q, and G is under the operation a * b = a + b + 3. Is G a group? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "what is the value of \\int_a^b \\frac{dx}{\\sqrt{(x-a)(b-x)}}? Round the answer to the thousands decimal. Answer with float.",
+        "gold_label": "3.142",
+        "answer": "3.142",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A remote database contains 30 seconds of color motion-video. The video sequence is of the format (352 \u0301288 pixels) with RGB digitization at 30 frames per second. Find the the data rate for this motion-video in Mbits/s (3 sig. fig.). Answer with float.",
+        "gold_label": "69.600",
+        "answer": "69.600",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "What is (sin(2x) / x)^(1+x) when x is approaching 0? Answer with float.",
+        "gold_label": "2.000",
+        "answer": "2.000",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "The open mapping theorem can be proved by (a) Baire category theorem; (b) Cauchy integral theorem; (c) random graph theorem; (d) None of the above. Which option is correct? Answer with option.",
+        "gold_label": "(a)",
+        "answer": "(a)",
+        "input": "",
+        "answer_type": "option"
+    },
+    {
+        "question": "Is differential equation $sin(t)y' + t^2e^yy' - y' = -ycos(t) - 2te^y$ exact or not? Answer with bool.",
+        "gold_label": "True",
+        "answer": "True",
+        "input": "",
+        "answer_type": "bool"
+    },
+    {
+        "question": "Comet Halley moves in an elongated elliptical orbit around the sun (Fig. 13.20). Its distances from the sun at perihelion and aphelion are $8.75 \\times 10^7 km$ and $5.26 \\times 10^9 km$, respectively. The orbital period is X * 10^9 s. What is X? Answer with float.",
+        "gold_label": "2.380",
+        "answer": "2.380",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "A robotic lander with an earth weight of 3430 N is sent to Mars, which has radius $R_M=3.40 \\times 10^6 m$ and mass $m_M=6.42 \\times$ $10^{23} kg$. Find the acceleration there due to gravity. (Unit: $m/s^2$) Answer with float.",
+        "gold_label": "3.700",
+        "answer": "3.700",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Use divergence therem to evaluate $\\iint_S \\vec{F} \\cdot d \\vec{S}$ where $\\vec{F} = sin(\\pi x) \\vec{i} + (z y^3)\\vec{j} + (z^2 + 4x)\\vec{k}$ and $S$ is the suface of the box with $-1 \\le x \\le 2, 0 \\le y \\le 1$ and $1 \\le z \\le 4$. Note that all six sides of the box are included in $S$. Answer with float.",
+        "gold_label": "67.500",
+        "answer": "67.500",
+        "input": "",
+        "answer_type": "float"
+    },
+    {
+        "question": "Denote m(\\cdot) to be Lebesgue measure. Given a point set E. Suppose for any closed set F and open set G with F \\subset E \\subset G, it holds $\\sup _F {m(F)}<\\inf _G {m(G)}$. Is set E Lebesgue measurable? Answer 1 for yes and 0 for no. Return the number Answer with float.",
+        "gold_label": "0.000",
+        "answer": "0.000",
+        "input": "",
+        "answer_type": "float"
+    }
+]

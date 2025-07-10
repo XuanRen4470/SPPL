@@ -1,0 +1,74 @@
+{
+    "gsm8k_gpt4": {
+        "perplexity": 1.491109311580658,
+        "diversity_score": 0.0308,
+        "complexity_score": 0.0186,
+        "IDF_score": 0.546,
+        "average_token_len": 160.7,
+        "Average_Char_Lenth": 495.0
+    },
+    "gsm8k_claude": {
+        "perplexity": 1.543558120727539,
+        "diversity_score": 0.0344,
+        "complexity_score": 0.0155,
+        "IDF_score": 0.501,
+        "average_token_len": 129.4,
+        "Average_Char_Lenth": 365.8
+    },
+    "gsm8k_step_by_step": {
+        "perplexity": 1.4604480862617493,
+        "diversity_score": 0.0197,
+        "complexity_score": 0.0164,
+        "IDF_score": 0.66,
+        "average_token_len": 207.8,
+        "Average_Char_Lenth": 685.3
+    },
+    "gsm8k_mini_gpt4": {
+        "perplexity": 1.568906056880951,
+        "diversity_score": 0.0314,
+        "complexity_score": 0.0185,
+        "IDF_score": 0.505,
+        "average_token_len": 165.9,
+        "Average_Char_Lenth": 542.3
+    },
+    "gsm8k_groundtruth": {
+        "perplexity": 1.978910708427429,
+        "diversity_score": 0.0596,
+        "complexity_score": 0.019,
+        "IDF_score": 0.516,
+        "average_token_len": 138.9,
+        "Average_Char_Lenth": 331.4
+    },
+    "gsm8k_gpt4_style_in_context_examples": {
+        "perplexity": 1.7965475916862488,
+        "diversity_score": 0.0331,
+        "complexity_score": 0.0208,
+        "IDF_score": 0.561,
+        "average_token_len": 164.6,
+        "Average_Char_Lenth": 522.5
+    },
+    "gsm8k_openai_human_written_examples": {
+        "perplexity": 1.869849407672882,
+        "diversity_score": 0.0418,
+        "complexity_score": 0.0196,
+        "IDF_score": 0.511,
+        "average_token_len": 145.5,
+        "Average_Char_Lenth": 435.7
+    },
+    "gsm8k_simple_response": {
+        "perplexity": 3.001288902759552,
+        "diversity_score": 0.0626,
+        "complexity_score": 0.0155,
+        "IDF_score": 0.462,
+        "average_token_len": 82.0,
+        "Average_Char_Lenth": 213.0
+    },
+    "gsm8k_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.337801790237427,
+        "diversity_score": 0.0449,
+        "complexity_score": 0.0171,
+        "IDF_score": 0.465,
+        "average_token_len": 133.3,
+        "Average_Char_Lenth": 481.6
+    }
+}

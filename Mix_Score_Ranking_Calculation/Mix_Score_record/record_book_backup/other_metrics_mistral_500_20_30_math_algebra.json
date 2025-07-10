@@ -1,0 +1,66 @@
+{
+    "math_algebra_step_by_step": {
+        "perplexity": 1.8646648526191711,
+        "IDF_score": 0.848,
+        "average_token_len": 437.4,
+        "log_propability": -262.0,
+        "skywork_reward_score": 20.253125,
+        "CAR_score": 7.31
+    },
+    "math_algebra_claude": {
+        "perplexity": 2.0969865918159485,
+        "IDF_score": 0.689,
+        "average_token_len": 241.3,
+        "log_propability": -158.0,
+        "skywork_reward_score": 11.371875,
+        "CAR_score": 3.67
+    },
+    "math_algebra_gpt4_style_in_context_examples": {
+        "perplexity": 3.1018680691719056,
+        "IDF_score": 0.722,
+        "average_token_len": 212.4,
+        "log_propability": -207.0,
+        "skywork_reward_score": 4.553125,
+        "CAR_score": 1.14
+    },
+    "math_algebra_gpt4": {
+        "perplexity": 1.8712544918060303,
+        "IDF_score": 0.807,
+        "average_token_len": 411.2,
+        "log_propability": -226.0,
+        "skywork_reward_score": 20.91455078125,
+        "CAR_score": 7.51
+    },
+    "math_algebra_mini_gpt4": {
+        "perplexity": 1.7675453305244446,
+        "IDF_score": 0.818,
+        "average_token_len": 389.7,
+        "log_propability": -214.0,
+        "skywork_reward_score": 19.74375,
+        "CAR_score": 7.44
+    },
+    "math_algebra_groundtruth": {
+        "perplexity": 11.180990266799927,
+        "IDF_score": 1.21,
+        "average_token_len": 153.2,
+        "log_propability": -213.0,
+        "skywork_reward_score": 5.16484375,
+        "CAR_score": 0.782
+    },
+    "math_algebra_openai_human_written_examples": {
+        "perplexity": 2.100344979763031,
+        "IDF_score": 0.823,
+        "average_token_len": 331.6,
+        "log_propability": -203.0,
+        "skywork_reward_score": 15.6953125,
+        "CAR_score": 5.05
+    },
+    "math_algebra_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.0182568550109865,
+        "IDF_score": 0.8,
+        "average_token_len": 274.6,
+        "log_propability": -286.0,
+        "skywork_reward_score": 6.3828125,
+        "CAR_score": 1.51
+    }
+}

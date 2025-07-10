@@ -1,0 +1,58 @@
+{
+    "mmlu_moral_scenarios_step_by_step": {
+        "perplexity": 3.5732860565185547,
+        "diversity_score": 0.095,
+        "complexity_score": 0.0247,
+        "IDF_score": 0.43,
+        "average_token_len": 222.6,
+        "Average_Char_Lenth": 1102.6
+    },
+    "mmlu_moral_scenarios_gpt4": {
+        "perplexity": 3.501538062095642,
+        "diversity_score": 0.0674,
+        "complexity_score": 0.025,
+        "IDF_score": 0.32,
+        "average_token_len": 157.9,
+        "Average_Char_Lenth": 809.7
+    },
+    "mmlu_moral_scenarios_claude": {
+        "perplexity": 3.104209303855896,
+        "diversity_score": 0.0751,
+        "complexity_score": 0.0284,
+        "IDF_score": 0.366,
+        "average_token_len": 180.5,
+        "Average_Char_Lenth": 936.6
+    },
+    "mmlu_moral_scenarios_mini_gpt4": {
+        "perplexity": 3.2862207174301146,
+        "diversity_score": 0.0562,
+        "complexity_score": 0.0269,
+        "IDF_score": 0.3,
+        "average_token_len": 136.3,
+        "Average_Char_Lenth": 682.7
+    },
+    "mmlu_moral_scenarios_groundtruth": {
+        "perplexity": 26.897463035583495,
+        "diversity_score": 0.342,
+        "complexity_score": 0.00132,
+        "IDF_score": 0.126,
+        "average_token_len": 4.0,
+        "Average_Char_Lenth": 15.0
+    },
+    "mmlu_moral_scenarios_gpt4_style_in_context_examples": {
+        "perplexity": 3.6117852449417116,
+        "diversity_score": 0.0932,
+        "complexity_score": 0.0203,
+        "IDF_score": 0.432,
+        "average_token_len": 225.9,
+        "Average_Char_Lenth": 1113.6
+    },
+    "mmlu_moral_scenarios_openai_human_written_examples": {
+        "perplexity": 3.200454759597778,
+        "diversity_score": 0.061,
+        "complexity_score": 0.0281,
+        "IDF_score": 0.236,
+        "average_token_len": 103.1,
+        "Average_Char_Lenth": 515.7
+    }
+}

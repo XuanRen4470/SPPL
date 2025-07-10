@@ -1,0 +1,36 @@
+{
+    "initial_prediction": [
+        "The statement \"A person is training his horse for a competition\" is neutral given the context. The context does not provide enough information to determine if the statement is entailed (definitely true) or contradicted (definitely false) by the context. The person could be training his horse for a competition, or he could be using the airplane-jumping incident as an unconventional training method. Without more context, it is impossible to determine if the statement is entailed or contradicted.\n\nFinal Answer: neutral",
+        "The statement \"They are smiling at their parents\" is neither entailment nor contradiction given the context of \"Children smiling and waving at camera.\" It is neutral because the context does not provide enough information to definitively determine if the children are smiling at their parents or not. While it's possible that they could be smiling at their parents, the context does not guarantee it.\n\nFinal Answer: neutral",
+        "The statement \"There are children present\" is an entailment given the context of \"Children smiling and waving at camera.\" The context explicitly states that children are present, so the statement is definitely true in this context.\n\nFinal Answer: entailment",
+        "The statement \"The kids are frowning\" is a contradiction given the context of \"Children smiling and waving at camera.\" The context describes children who are smiling and waving, which is the opposite of frowning. Therefore, the statement is definitely false in this context.\n\nFinal Answer: contradiction",
+        "The statement \"The boy is wearing safety equipment\" is neutral given the context. There is no information in the context that definitively determines whether the boy is wearing safety equipment or not. While it's possible that he could be wearing safety equipment, there's also a chance that he isn't. The truth of the statement is undetermined given the context.\n\nFinal Answer: neutral",
+        "The statement \"Some women are hugging on vacation\" is neutral given the context. The context only describes two blond women hugging each other, but it does not specify that they are on vacation or that only women on vacation hug. Therefore, the truth of the statement is undetermined or irrelevant given the context.\n\nFinal Answer: neutral",
+        "The statement \"There are women showing affection\" is an entailment given the context of \"Two blond women are hugging one another.\" The context entails that women are indeed exhibiting affection towards one another, and the statement accurately reflects that fact.\n\nFinal Answer: entailment",
+        "The statement \"The people are eating omelettes\" is neutral given the context. The truth of the statement is undetermined or irrelevant as there is no information provided in the context about what the other people in the restaurant are eating.\n\nFinal Answer: neutral",
+        "The statement \"The diners are at a restaurant\" is an entailment given the context. It is definitely true that the people in the restaurant setting are diners and that they are at a restaurant.\n\nFinal Answer: entailment",
+        "The statement \"A man is drinking juice\" is an entailment given the context that an older man is drinking orange juice at a restaurant. The context entails that a man (the older man in this case) is indeed drinking juice.\n\nFinal Answer: entailment",
+        "The statement \"A man in a restaurant is waiting for his meal to arrive\" is neutral given the context. The older man in the context may or may not be the man waiting for his meal. There is no definitive information provided that would make the statement entailed or contradictory.\n\nFinal Answer: neutral",
+        "The statement \"A blond man drinking water from a fountain\" is an entailment given the context. The context describes a man with blond hair drinking water from a fountain, so the statement is definitely true in this context.\n\nFinal Answer: entailment",
+        "The statement is neutral given the context. The context only provides information about the women hugging and saying goodbye, and there is no information about their previous relationship or the length of time since they last met. The statement about them having met for the first time in 20 years and having a great time catching up is not entailed by the context, as it adds new information not present in the context. It is also not contradictory, as there is no information in the context that would make the statement false.\n\nFinal Answer: neutral",
+        "The statement is neutral given the context. The context only provides information about the women holding food containers and hugging each other. The statement adds the additional information that they are sisters, but this information is not contradictory or entailed by the context. Therefore, the truth of the statement is undetermined or irrelevant given the context.\n\nFinal Answer: neutral",
+        "The statement \"Two women hug each other\" is an entailment given the context. The context describes two women hugging, so the statement is definitely true in that context.\n\nFinal Answer: entailment"
+    ],
+    "correct_index": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        12,
+        14,
+        15,
+        17,
+        18,
+        20,
+        23,
+        26,
+        27,
+        29
+    ]
+}

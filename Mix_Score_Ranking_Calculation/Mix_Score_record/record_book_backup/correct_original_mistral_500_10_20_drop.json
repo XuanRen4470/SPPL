@@ -1,0 +1,66 @@
+{
+    "drop_gpt4": {
+        "perplexity": 4.078855645656586,
+        "diversity_score": 0.107,
+        "complexity_score": 0.0876,
+        "IDF_score": 0.538,
+        "average_token_len": 150.3,
+        "Average_Char_Lenth": 549.1
+    },
+    "drop_claude": {
+        "perplexity": 2.77448832988739,
+        "diversity_score": 0.106,
+        "complexity_score": 0.0796,
+        "IDF_score": 0.542,
+        "average_token_len": 163.1,
+        "Average_Char_Lenth": 551.7
+    },
+    "drop_step_by_step": {
+        "perplexity": 3.8142054080963135,
+        "diversity_score": 0.126,
+        "complexity_score": 0.0785,
+        "IDF_score": 0.628,
+        "average_token_len": 201.5,
+        "Average_Char_Lenth": 732.2
+    },
+    "drop_mini_gpt4": {
+        "perplexity": 3.681119275093079,
+        "diversity_score": 0.0856,
+        "complexity_score": 0.0808,
+        "IDF_score": 0.488,
+        "average_token_len": 133.9,
+        "Average_Char_Lenth": 510.3
+    },
+    "drop_groundtruth": {
+        "perplexity": 288.51314823627473,
+        "diversity_score": 0.207,
+        "complexity_score": 0.0136,
+        "IDF_score": 2.02,
+        "average_token_len": 8.0,
+        "Average_Char_Lenth": 22.4
+    },
+    "drop_gpt4_style_in_context_examples": {
+        "perplexity": 3.3188637495040894,
+        "diversity_score": 0.0949,
+        "complexity_score": 0.0737,
+        "IDF_score": 0.579,
+        "average_token_len": 151.7,
+        "Average_Char_Lenth": 536.4
+    },
+    "drop_openai_human_written_examples": {
+        "perplexity": 3.1927891254425047,
+        "diversity_score": 0.0849,
+        "complexity_score": 0.0762,
+        "IDF_score": 0.428,
+        "average_token_len": 112.8,
+        "Average_Char_Lenth": 402.4
+    },
+    "drop_simple_response": {
+        "perplexity": 8.221889662742615,
+        "diversity_score": 0.0656,
+        "complexity_score": 0.0763,
+        "IDF_score": 0.518,
+        "average_token_len": 71.2,
+        "Average_Char_Lenth": 248.9
+    }
+}

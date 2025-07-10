@@ -1,0 +1,72 @@
+{
+    "winogrande_step_by_step": {
+        "perplexity": 3.743715410232544,
+        "complexity_score": 0.0134,
+        "IDF_score": 0.6,
+        "average_token_len": 200.94,
+        "Average_Char_Lenth": 939.43,
+        "average_loss_score": 1.3,
+        "skywork_reward_score": 11.94578125,
+        "CAR_score": 2.45
+    },
+    "winogrande_gpt4": {
+        "perplexity": 4.14017685174942,
+        "complexity_score": 0.0142,
+        "IDF_score": 0.362,
+        "average_token_len": 90.46,
+        "Average_Char_Lenth": 433.96,
+        "average_loss_score": 1.37,
+        "skywork_reward_score": 23.44390625,
+        "CAR_score": 4.58
+    },
+    "winogrande_claude": {
+        "perplexity": 2.8808985245227814,
+        "complexity_score": 0.015,
+        "IDF_score": 0.452,
+        "average_token_len": 146.89,
+        "Average_Char_Lenth": 723.76,
+        "average_loss_score": 1.04,
+        "skywork_reward_score": 36.66234375,
+        "CAR_score": 8.87
+    },
+    "winogrande_mini_gpt4": {
+        "perplexity": 3.220233532190323,
+        "complexity_score": 0.0133,
+        "IDF_score": 0.311,
+        "average_token_len": 104.54,
+        "Average_Char_Lenth": 507.42,
+        "average_loss_score": 1.14,
+        "skywork_reward_score": 47.76889892578125,
+        "CAR_score": 10.8
+    },
+    "winogrande_groundtruth": {
+        "perplexity": 2.4520148074626924,
+        "complexity_score": 0.000648,
+        "IDF_score": 0.197,
+        "average_token_len": 5.0,
+        "Average_Char_Lenth": 15.0,
+        "average_loss_score": 0.34,
+        "skywork_reward_score": 53.70349853515625,
+        "CAR_score": 26.6
+    },
+    "winogrande_gpt4_style_in_context_examples": {
+        "perplexity": 3.2607790768146514,
+        "complexity_score": 0.013,
+        "IDF_score": 0.367,
+        "average_token_len": 123.21,
+        "Average_Char_Lenth": 582.92,
+        "average_loss_score": 1.15,
+        "skywork_reward_score": 67.31720947265624,
+        "CAR_score": 15.1
+    },
+    "winogrande_openai_human_written_examples": {
+        "perplexity": 3.228637322187424,
+        "complexity_score": 0.0129,
+        "IDF_score": 0.173,
+        "average_token_len": 64.59,
+        "Average_Char_Lenth": 311.14,
+        "average_loss_score": 1.14,
+        "skywork_reward_score": 79.49947509765624,
+        "CAR_score": 18.0
+    }
+}

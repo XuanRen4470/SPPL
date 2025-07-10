@@ -1,0 +1,74 @@
+{
+    "ecqa_gpt4": {
+        "perplexity": 4.806887793540954,
+        "diversity_score": 0.107,
+        "complexity_score": 0.105,
+        "IDF_score": 0.524,
+        "average_token_len": 226.0,
+        "Average_Char_Lenth": 950.7
+    },
+    "ecqa_claude": {
+        "perplexity": 3.838628959655762,
+        "diversity_score": 0.108,
+        "complexity_score": 0.113,
+        "IDF_score": 0.508,
+        "average_token_len": 200.4,
+        "Average_Char_Lenth": 885.4
+    },
+    "ecqa_step_by_step": {
+        "perplexity": 4.036687970161438,
+        "diversity_score": 0.127,
+        "complexity_score": 0.0871,
+        "IDF_score": 0.623,
+        "average_token_len": 289.3,
+        "Average_Char_Lenth": 1175.5
+    },
+    "ecqa_mini_gpt4": {
+        "perplexity": 5.745823955535888,
+        "diversity_score": 0.0829,
+        "complexity_score": 0.0988,
+        "IDF_score": 0.449,
+        "average_token_len": 152.4,
+        "Average_Char_Lenth": 679.5
+    },
+    "ecqa_groundtruth": {
+        "perplexity": 84.0247589111328,
+        "diversity_score": 0.141,
+        "complexity_score": 0.051,
+        "IDF_score": 0.975,
+        "average_token_len": 57.7,
+        "Average_Char_Lenth": 228.2
+    },
+    "ecqa_gpt4_style_in_context_examples": {
+        "perplexity": 3.9498271226882933,
+        "diversity_score": 0.138,
+        "complexity_score": 0.0788,
+        "IDF_score": 0.586,
+        "average_token_len": 308.2,
+        "Average_Char_Lenth": 1309.6
+    },
+    "ecqa_openai_human_written_examples": {
+        "perplexity": 5.60744788646698,
+        "diversity_score": 0.101,
+        "complexity_score": 0.0929,
+        "IDF_score": 0.439,
+        "average_token_len": 168.4,
+        "Average_Char_Lenth": 736.0
+    },
+    "ecqa_simple_response": {
+        "perplexity": 30.773701620101928,
+        "diversity_score": 0.137,
+        "complexity_score": 0.0616,
+        "IDF_score": 0.409,
+        "average_token_len": 44.5,
+        "Average_Char_Lenth": 181.9
+    },
+    "ecqa_rewrite_groundtruth_in_own_words": {
+        "perplexity": 13.744906139373779,
+        "diversity_score": 0.116,
+        "complexity_score": 0.0653,
+        "IDF_score": 0.373,
+        "average_token_len": 75.1,
+        "Average_Char_Lenth": 334.1
+    }
+}

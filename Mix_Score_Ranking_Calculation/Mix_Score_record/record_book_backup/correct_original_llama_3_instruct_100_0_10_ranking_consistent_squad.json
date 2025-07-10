@@ -1,0 +1,66 @@
+{
+    "squad_gpt4": {
+        "perplexity": 3.307074236869812,
+        "diversity_score": 0.117,
+        "complexity_score": 0.0419,
+        "IDF_score": 0.355,
+        "average_token_len": 98.9,
+        "Average_Char_Lenth": 482.9
+    },
+    "squad_claude": {
+        "perplexity": 2.2524373292922975,
+        "diversity_score": 0.136,
+        "complexity_score": 0.0309,
+        "IDF_score": 0.392,
+        "average_token_len": 123.8,
+        "Average_Char_Lenth": 593.5
+    },
+    "squad_step_by_step": {
+        "perplexity": 2.749999237060547,
+        "diversity_score": 0.163,
+        "complexity_score": 0.0275,
+        "IDF_score": 0.446,
+        "average_token_len": 138.6,
+        "Average_Char_Lenth": 639.0
+    },
+    "squad_mini_gpt4": {
+        "perplexity": 3.080189275741577,
+        "diversity_score": 0.0805,
+        "complexity_score": 0.0339,
+        "IDF_score": 0.315,
+        "average_token_len": 73.4,
+        "Average_Char_Lenth": 358.6
+    },
+    "squad_groundtruth": {
+        "perplexity": 3.393574798107147,
+        "diversity_score": 0.0962,
+        "complexity_score": 0.00968,
+        "IDF_score": 0.00636,
+        "average_token_len": 6.1,
+        "Average_Char_Lenth": 27.0
+    },
+    "squad_gpt4_style_in_context_examples": {
+        "perplexity": 2.908363389968872,
+        "diversity_score": 0.151,
+        "complexity_score": 0.025,
+        "IDF_score": 0.467,
+        "average_token_len": 129.4,
+        "Average_Char_Lenth": 582.4
+    },
+    "squad_openai_human_written_examples": {
+        "perplexity": 2.455489492416382,
+        "diversity_score": 0.042,
+        "complexity_score": 0.0211,
+        "IDF_score": 0.167,
+        "average_token_len": 54.9,
+        "Average_Char_Lenth": 259.4
+    },
+    "squad_simple_response": {
+        "perplexity": 3.893130564689636,
+        "diversity_score": 0.052,
+        "complexity_score": 0.0432,
+        "IDF_score": 0.237,
+        "average_token_len": 50.6,
+        "Average_Char_Lenth": 226.4
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "mmlu_pro_law_step_by_step": {
+        "perplexity": 5.037258338928223,
+        "diversity_score": 0.113,
+        "complexity_score": 0.0733,
+        "IDF_score": 0.584,
+        "average_token_len": 343.6,
+        "Average_Char_Lenth": 1737.1666666666667
+    },
+    "mmlu_pro_law_gpt4": {
+        "perplexity": 5.005043808619181,
+        "diversity_score": 0.0828,
+        "complexity_score": 0.0908,
+        "IDF_score": 0.526,
+        "average_token_len": 237.26666666666668,
+        "Average_Char_Lenth": 1261.7666666666667
+    },
+    "mmlu_pro_law_claude": {
+        "perplexity": 3.4500627517700195,
+        "diversity_score": 0.0668,
+        "complexity_score": 0.0872,
+        "IDF_score": 0.572,
+        "average_token_len": 217.33333333333334,
+        "Average_Char_Lenth": 1145.4
+    },
+    "mmlu_pro_law_mini_gpt4": {
+        "perplexity": 4.754531033833822,
+        "diversity_score": 0.0686,
+        "complexity_score": 0.0849,
+        "IDF_score": 0.502,
+        "average_token_len": 208.33333333333334,
+        "Average_Char_Lenth": 1114.8
+    },
+    "mmlu_pro_law_groundtruth": {
+        "perplexity": 39.66899534861247,
+        "diversity_score": 0.444,
+        "complexity_score": 0.00225,
+        "IDF_score": 0.127,
+        "average_token_len": 4.0,
+        "Average_Char_Lenth": 15.0
+    },
+    "mmlu_pro_law_gpt4_style_in_context_examples": {
+        "perplexity": 5.078260986010234,
+        "diversity_score": 0.0793,
+        "complexity_score": 0.084,
+        "IDF_score": 0.564,
+        "average_token_len": 255.2,
+        "Average_Char_Lenth": 1340.5333333333333
+    },
+    "mmlu_pro_law_openai_human_written_examples": {
+        "perplexity": 5.86626771291097,
+        "diversity_score": 0.0778,
+        "complexity_score": 0.0744,
+        "IDF_score": 0.452,
+        "average_token_len": 127.86666666666666,
+        "Average_Char_Lenth": 679.0
+    }
+}

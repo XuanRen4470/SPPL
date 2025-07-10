@@ -1,0 +1,66 @@
+{
+    "mbpp_step_by_step": {
+        "perplexity": 3.4502776622772218,
+        "IDF_score": 1.25,
+        "log_propability": -139.0,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 2.33,
+        "cos_similarity": 0.804052734375
+    },
+    "mbpp_claude": {
+        "perplexity": 16.62909255027771,
+        "IDF_score": 1.55,
+        "log_propability": -66.8,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.93,
+        "cos_similarity": 0.8546875
+    },
+    "mbpp_gpt4_style_in_context_examples": {
+        "perplexity": 12.71175925731659,
+        "IDF_score": 1.64,
+        "log_propability": -75.7,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.98,
+        "cos_similarity": 0.84482421875
+    },
+    "mbpp_gpt4": {
+        "perplexity": 17.20803849697113,
+        "IDF_score": 2.19,
+        "log_propability": -78.1,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.72,
+        "cos_similarity": 0.850439453125
+    },
+    "mbpp_mini_gpt4": {
+        "perplexity": 8.744472527503968,
+        "IDF_score": 1.66,
+        "log_propability": -93.0,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.83,
+        "cos_similarity": 0.8275390625
+    },
+    "mbpp_groundtruth": {
+        "perplexity": 44.071531319618224,
+        "IDF_score": 2.4,
+        "log_propability": -133.0,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.19,
+        "cos_similarity": 0.7656005859375
+    },
+    "mbpp_openai_human_written_examples": {
+        "perplexity": 4.714877009391785,
+        "IDF_score": 1.4,
+        "log_propability": -224.0,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.85,
+        "cos_similarity": 0.740576171875
+    },
+    "mbpp_rewrite_groundtruth_in_own_words": {
+        "perplexity": 19.411785185337067,
+        "IDF_score": 2.4,
+        "log_propability": -103.0,
+        "skywork_reward_score": 9.701966145833333,
+        "CAR_score": 1.42,
+        "cos_similarity": 0.827294921875
+    }
+}

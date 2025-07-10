@@ -1,0 +1,66 @@
+{
+    "squad_gpt4": {
+        "perplexity": 5.309038126468659,
+        "diversity_score": 0.11,
+        "complexity_score": 0.0573,
+        "IDF_score": 0.518,
+        "average_token_len": 104.4,
+        "Average_Char_Lenth": 407.4
+    },
+    "squad_claude": {
+        "perplexity": 2.9284258842468263,
+        "diversity_score": 0.158,
+        "complexity_score": 0.0514,
+        "IDF_score": 0.515,
+        "average_token_len": 169.1,
+        "Average_Char_Lenth": 669.7
+    },
+    "squad_step_by_step": {
+        "perplexity": 4.43857319355011,
+        "diversity_score": 0.162,
+        "complexity_score": 0.042,
+        "IDF_score": 0.712,
+        "average_token_len": 178.3,
+        "Average_Char_Lenth": 645.4
+    },
+    "squad_mini_gpt4": {
+        "perplexity": 4.2314128398895265,
+        "diversity_score": 0.0905,
+        "complexity_score": 0.0492,
+        "IDF_score": 0.437,
+        "average_token_len": 84.8,
+        "Average_Char_Lenth": 344.0
+    },
+    "squad_groundtruth": {
+        "perplexity": 155.11503710746766,
+        "diversity_score": 0.139,
+        "complexity_score": 0.0129,
+        "IDF_score": 0.0769,
+        "average_token_len": 7.3,
+        "Average_Char_Lenth": 21.1
+    },
+    "squad_gpt4_style_in_context_examples": {
+        "perplexity": 4.021794271469116,
+        "diversity_score": 0.145,
+        "complexity_score": 0.0457,
+        "IDF_score": 0.731,
+        "average_token_len": 169.0,
+        "Average_Char_Lenth": 622.4
+    },
+    "squad_openai_human_written_examples": {
+        "perplexity": 2.694914400577545,
+        "diversity_score": 0.0675,
+        "complexity_score": 0.0361,
+        "IDF_score": 0.258,
+        "average_token_len": 73.2,
+        "Average_Char_Lenth": 262.9
+    },
+    "squad_simple_response": {
+        "perplexity": 3.7631847500801086,
+        "diversity_score": 0.0518,
+        "complexity_score": 0.0416,
+        "IDF_score": 0.38,
+        "average_token_len": 51.4,
+        "Average_Char_Lenth": 177.1
+    }
+}

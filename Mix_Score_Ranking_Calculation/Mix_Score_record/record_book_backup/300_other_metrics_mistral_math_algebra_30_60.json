@@ -1,0 +1,58 @@
+{
+    "math_algebra_step_by_step": {
+        "perplexity": 2.0719154834747315,
+        "IDF_score": 0.846,
+        "log_propability": -275.0,
+        "skywork_reward_score": 22.109375,
+        "CAR_score": 7.22
+    },
+    "math_algebra_claude": {
+        "perplexity": 2.107407546043396,
+        "IDF_score": 0.675,
+        "log_propability": -176.0,
+        "skywork_reward_score": 14.654166666666667,
+        "CAR_score": 4.64
+    },
+    "math_algebra_gpt4_style_in_context_examples": {
+        "perplexity": 3.3724697192509967,
+        "IDF_score": 0.756,
+        "log_propability": -283.0,
+        "skywork_reward_score": 2.765364583333333,
+        "CAR_score": 0.657
+    },
+    "math_algebra_gpt4": {
+        "perplexity": 2.202248469988505,
+        "IDF_score": 0.781,
+        "log_propability": -286.0,
+        "skywork_reward_score": 19.926027425130208,
+        "CAR_score": 6.56
+    },
+    "math_algebra_mini_gpt4": {
+        "perplexity": 2.0099520564079283,
+        "IDF_score": 0.764,
+        "log_propability": -230.0,
+        "skywork_reward_score": 20.8953125,
+        "CAR_score": 6.89
+    },
+    "math_algebra_groundtruth": {
+        "perplexity": 9.928890339533488,
+        "IDF_score": 1.15,
+        "log_propability": -227.0,
+        "skywork_reward_score": 7.51102294921875,
+        "CAR_score": 1.08
+    },
+    "math_algebra_openai_human_written_examples": {
+        "perplexity": 2.145787215232849,
+        "IDF_score": 0.804,
+        "log_propability": -228.0,
+        "skywork_reward_score": 16.815625,
+        "CAR_score": 5.3
+    },
+    "math_algebra_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.9253250042597454,
+        "IDF_score": 0.867,
+        "log_propability": -260.0,
+        "skywork_reward_score": 4.660026041666667,
+        "CAR_score": 0.956
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "ecqa_step_by_step": {
+        "perplexity": 4.403762392997741,
+        "diversity_score": 0.163,
+        "complexity_score": 0.0856,
+        "IDF_score": 0.621,
+        "average_token_len": 281.1,
+        "Average_Char_Lenth": 1155.22
+    },
+    "ecqa_gpt4": {
+        "perplexity": 5.7748400545120235,
+        "diversity_score": 0.132,
+        "complexity_score": 0.103,
+        "IDF_score": 0.539,
+        "average_token_len": 204.98,
+        "Average_Char_Lenth": 889.22
+    },
+    "ecqa_claude": {
+        "perplexity": 4.09813871383667,
+        "diversity_score": 0.127,
+        "complexity_score": 0.115,
+        "IDF_score": 0.472,
+        "average_token_len": 190.44,
+        "Average_Char_Lenth": 839.88
+    },
+    "ecqa_mini_gpt4": {
+        "perplexity": 6.110568466186524,
+        "diversity_score": 0.118,
+        "complexity_score": 0.108,
+        "IDF_score": 0.448,
+        "average_token_len": 155.62,
+        "Average_Char_Lenth": 706.38
+    },
+    "ecqa_groundtruth": {
+        "perplexity": 130.93117195129395,
+        "diversity_score": 0.137,
+        "complexity_score": 0.0644,
+        "IDF_score": 1.96,
+        "average_token_len": 69.04,
+        "Average_Char_Lenth": 285.88
+    },
+    "ecqa_gpt4_style_in_context_examples": {
+        "perplexity": 4.48982485294342,
+        "diversity_score": 0.168,
+        "complexity_score": 0.0822,
+        "IDF_score": 0.612,
+        "average_token_len": 296.46,
+        "Average_Char_Lenth": 1263.82
+    },
+    "ecqa_openai_human_written_examples": {
+        "perplexity": 5.562054286003113,
+        "diversity_score": 0.125,
+        "complexity_score": 0.0916,
+        "IDF_score": 0.442,
+        "average_token_len": 166.76,
+        "Average_Char_Lenth": 750.28
+    },
+    "ecqa_rewrite_groundtruth_in_own_words": {
+        "perplexity": 11.765926876068114,
+        "diversity_score": 0.11,
+        "complexity_score": 0.0717,
+        "IDF_score": 0.401,
+        "average_token_len": 83.02,
+        "Average_Char_Lenth": 373.2
+    }
+}

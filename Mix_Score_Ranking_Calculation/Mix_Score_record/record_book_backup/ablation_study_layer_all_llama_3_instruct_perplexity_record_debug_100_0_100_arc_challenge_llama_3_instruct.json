@@ -1,0 +1,72 @@
+{
+    "arc_challenge_step_by_step": {
+        "perplexity": 3.38679794549942,
+        "complexity_score": 0.0814,
+        "IDF_score": 0.628,
+        "average_token_len": 259.04,
+        "Average_Char_Lenth": 1227.75,
+        "average_loss_score": 1.19,
+        "skywork_reward_score": 18.732890625,
+        "CAR_score": 4.1
+    },
+    "arc_challenge_gpt4": {
+        "perplexity": 3.5237828063964844,
+        "complexity_score": 0.096,
+        "IDF_score": 0.556,
+        "average_token_len": 185.91,
+        "Average_Char_Lenth": 912.12,
+        "average_loss_score": 1.22,
+        "skywork_reward_score": 34.324111328125,
+        "CAR_score": 7.35
+    },
+    "arc_challenge_claude": {
+        "perplexity": 3.0831968319416045,
+        "complexity_score": 0.0935,
+        "IDF_score": 0.587,
+        "average_token_len": 182.55,
+        "Average_Char_Lenth": 914.33,
+        "average_loss_score": 1.1,
+        "skywork_reward_score": 52.32511962890625,
+        "CAR_score": 12.2
+    },
+    "arc_challenge_mini_gpt4": {
+        "perplexity": 3.564488056898117,
+        "complexity_score": 0.0908,
+        "IDF_score": 0.544,
+        "average_token_len": 169.42,
+        "Average_Char_Lenth": 837.41,
+        "average_loss_score": 1.24,
+        "skywork_reward_score": 66.10949462890625,
+        "CAR_score": 14.0
+    },
+    "arc_challenge_groundtruth": {
+        "perplexity": 36208.05898750305,
+        "complexity_score": 0.0102,
+        "IDF_score": Infinity,
+        "average_token_len": 1.0,
+        "Average_Char_Lenth": 1.0,
+        "average_loss_score": 10.2,
+        "skywork_reward_score": 52.98996337890625,
+        "CAR_score": 1.68
+    },
+    "arc_challenge_gpt4_style_in_context_examples": {
+        "perplexity": 3.2217617619037626,
+        "complexity_score": 0.086,
+        "IDF_score": 0.59,
+        "average_token_len": 230.2,
+        "Average_Char_Lenth": 1062.09,
+        "average_loss_score": 1.15,
+        "skywork_reward_score": 74.93683837890624,
+        "CAR_score": 16.9
+    },
+    "arc_challenge_openai_human_written_examples": {
+        "perplexity": 3.7193318748474122,
+        "complexity_score": 0.0755,
+        "IDF_score": 0.421,
+        "average_token_len": 106.44,
+        "Average_Char_Lenth": 530.15,
+        "average_loss_score": 1.27,
+        "skywork_reward_score": 88.68129150390625,
+        "CAR_score": 18.4
+    }
+}

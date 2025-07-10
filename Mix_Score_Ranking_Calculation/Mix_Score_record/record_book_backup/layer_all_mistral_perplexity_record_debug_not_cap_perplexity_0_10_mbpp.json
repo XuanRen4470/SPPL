@@ -1,0 +1,66 @@
+{
+    "mbpp_step_by_step": {
+        "perplexity": 3.4502776622772218,
+        "diversity_score": 0.119,
+        "complexity_score": 0.0985,
+        "IDF_score": 1.25,
+        "average_token_len": 141.2,
+        "Average_Char_Lenth": 458.3
+    },
+    "mbpp_gpt4": {
+        "perplexity": 17.20803849697113,
+        "diversity_score": 0.0726,
+        "complexity_score": 0.075,
+        "IDF_score": 2.19,
+        "average_token_len": 73.8,
+        "Average_Char_Lenth": 188.4
+    },
+    "mbpp_claude": {
+        "perplexity": 16.62909255027771,
+        "diversity_score": 0.069,
+        "complexity_score": 0.064,
+        "IDF_score": 1.55,
+        "average_token_len": 65.8,
+        "Average_Char_Lenth": 173.1
+    },
+    "mbpp_mini_gpt4": {
+        "perplexity": 8.744472527503968,
+        "diversity_score": 0.0734,
+        "complexity_score": 0.0766,
+        "IDF_score": 1.66,
+        "average_token_len": 80.3,
+        "Average_Char_Lenth": 210.3
+    },
+    "mbpp_groundtruth": {
+        "perplexity": 44.071531319618224,
+        "diversity_score": 0.0852,
+        "complexity_score": 0.0817,
+        "IDF_score": 2.4,
+        "average_token_len": 81.2,
+        "Average_Char_Lenth": 184.0
+    },
+    "mbpp_gpt4_style_in_context_examples": {
+        "perplexity": 12.71175925731659,
+        "diversity_score": 0.0679,
+        "complexity_score": 0.0727,
+        "IDF_score": 1.64,
+        "average_token_len": 76.0,
+        "Average_Char_Lenth": 209.5
+    },
+    "mbpp_openai_human_written_examples": {
+        "perplexity": 4.714877009391785,
+        "diversity_score": 0.15,
+        "complexity_score": 0.0953,
+        "IDF_score": 1.4,
+        "average_token_len": 175.1,
+        "Average_Char_Lenth": 585.4
+    },
+    "mbpp_rewrite_groundtruth_in_own_words": {
+        "perplexity": 19.411785185337067,
+        "diversity_score": 0.0742,
+        "complexity_score": 0.0775,
+        "IDF_score": 2.4,
+        "average_token_len": 75.9,
+        "Average_Char_Lenth": 182.2
+    }
+}

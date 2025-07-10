@@ -1,0 +1,58 @@
+{
+    "math_geometry_step_by_step": {
+        "perplexity": 2.593365261554718,
+        "IDF_score": 0.867,
+        "log_propability": -586.0,
+        "skywork_reward_score": 21.84375,
+        "CAR_score": 5.94
+    },
+    "math_geometry_claude": {
+        "perplexity": 2.607814321517944,
+        "IDF_score": 0.796,
+        "log_propability": -330.0,
+        "skywork_reward_score": 15.525078125,
+        "CAR_score": 4.09
+    },
+    "math_geometry_gpt4_style_in_context_examples": {
+        "perplexity": 4.183052921295166,
+        "IDF_score": 0.908,
+        "log_propability": -768.0,
+        "skywork_reward_score": 11.7886328125,
+        "CAR_score": 2.6
+    },
+    "math_geometry_gpt4": {
+        "perplexity": 2.663581609725952,
+        "IDF_score": 0.885,
+        "log_propability": -553.0,
+        "skywork_reward_score": 20.81375,
+        "CAR_score": 5.55
+    },
+    "math_geometry_mini_gpt4": {
+        "perplexity": 2.3665648818016054,
+        "IDF_score": 0.863,
+        "log_propability": -539.0,
+        "skywork_reward_score": 19.858125,
+        "CAR_score": 5.77
+    },
+    "math_geometry_groundtruth": {
+        "perplexity": 9.483887729644776,
+        "IDF_score": 1.13,
+        "log_propability": -482.0,
+        "skywork_reward_score": 7.3720947265625,
+        "CAR_score": 1.06
+    },
+    "math_geometry_openai_human_written_examples": {
+        "perplexity": 4.75564041852951,
+        "IDF_score": 0.886,
+        "log_propability": -739.0,
+        "skywork_reward_score": 9.587578125,
+        "CAR_score": 1.97
+    },
+    "math_geometry_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.432027654647827,
+        "IDF_score": 0.869,
+        "log_propability": -451.0,
+        "skywork_reward_score": 15.5790625,
+        "CAR_score": 3.47
+    }
+}

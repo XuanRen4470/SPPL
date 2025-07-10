@@ -1,0 +1,66 @@
+{
+    "piqa_gpt4": {
+        "perplexity": 5.1992932796478275,
+        "diversity_score": 0.0665,
+        "complexity_score": 0.116,
+        "IDF_score": 0.564,
+        "average_token_len": 119.0,
+        "Average_Char_Lenth": 521.9
+    },
+    "piqa_claude": {
+        "perplexity": 3.724483513832092,
+        "diversity_score": 0.0973,
+        "complexity_score": 0.122,
+        "IDF_score": 0.602,
+        "average_token_len": 180.7,
+        "Average_Char_Lenth": 812.3
+    },
+    "piqa_step_by_step": {
+        "perplexity": 4.180271077156067,
+        "diversity_score": 0.117,
+        "complexity_score": 0.0962,
+        "IDF_score": 0.629,
+        "average_token_len": 240.8,
+        "Average_Char_Lenth": 1003.9
+    },
+    "piqa_mini_gpt4": {
+        "perplexity": 5.118879985809326,
+        "diversity_score": 0.0636,
+        "complexity_score": 0.103,
+        "IDF_score": 0.368,
+        "average_token_len": 109.0,
+        "Average_Char_Lenth": 474.9
+    },
+    "piqa_groundtruth": {
+        "perplexity": 6023887.250195312,
+        "diversity_score": 0.316,
+        "complexity_score": 0.00131,
+        "IDF_score": 58500.0,
+        "average_token_len": 3.0,
+        "Average_Char_Lenth": 1.0
+    },
+    "piqa_gpt4_style_in_context_examples": {
+        "perplexity": 5.428503608703613,
+        "diversity_score": 0.0701,
+        "complexity_score": 0.0949,
+        "IDF_score": 0.408,
+        "average_token_len": 108.6,
+        "Average_Char_Lenth": 493.1
+    },
+    "piqa_openai_human_written_examples": {
+        "perplexity": 6.5524329662323,
+        "diversity_score": 0.0702,
+        "complexity_score": 0.0734,
+        "IDF_score": 0.276,
+        "average_token_len": 64.1,
+        "Average_Char_Lenth": 277.7
+    },
+    "piqa_simple_response": {
+        "perplexity": 15.030120658874512,
+        "diversity_score": 0.0938,
+        "complexity_score": 0.0753,
+        "IDF_score": 0.307,
+        "average_token_len": 39.3,
+        "Average_Char_Lenth": 158.9
+    }
+}

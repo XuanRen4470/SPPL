@@ -1,0 +1,72 @@
+{
+    "api_bank_step_by_step": {
+        "perplexity": 3.7353133606910705,
+        "complexity_score": 0.0255,
+        "IDF_score": 0.465,
+        "average_token_len": 233.56,
+        "Average_Char_Lenth": 1093.38,
+        "average_loss_score": 1.29,
+        "skywork_reward_score": -0.1487890625,
+        "CAR_score": -0.0305
+    },
+    "api_bank_gpt4": {
+        "perplexity": 4.411856801509857,
+        "complexity_score": 0.0317,
+        "IDF_score": 0.4,
+        "average_token_len": 181.6,
+        "Average_Char_Lenth": 881.59,
+        "average_loss_score": 1.46,
+        "skywork_reward_score": -2.623204345703125,
+        "CAR_score": -0.487
+    },
+    "api_bank_claude": {
+        "perplexity": 3.6696810686588286,
+        "complexity_score": 0.0333,
+        "IDF_score": 0.411,
+        "average_token_len": 159.73,
+        "Average_Char_Lenth": 803.49,
+        "average_loss_score": 1.27,
+        "skywork_reward_score": -5.548055419921875,
+        "CAR_score": -1.15
+    },
+    "api_bank_mini_gpt4": {
+        "perplexity": 4.932854633331299,
+        "complexity_score": 0.0267,
+        "IDF_score": 0.394,
+        "average_token_len": 167.31,
+        "Average_Char_Lenth": 852.32,
+        "average_loss_score": 1.56,
+        "skywork_reward_score": -12.283533935546876,
+        "CAR_score": -2.16
+    },
+    "api_bank_groundtruth": {
+        "perplexity": 6.612032041549683,
+        "complexity_score": 0.0115,
+        "IDF_score": 0.0194,
+        "average_token_len": 20.41,
+        "Average_Char_Lenth": 85.33,
+        "average_loss_score": 1.73,
+        "skywork_reward_score": -20.231112060546874,
+        "CAR_score": -3.27
+    },
+    "api_bank_gpt4_style_in_context_examples": {
+        "perplexity": 4.524856986999512,
+        "complexity_score": 0.0249,
+        "IDF_score": 0.313,
+        "average_token_len": 118.12,
+        "Average_Char_Lenth": 589.44,
+        "average_loss_score": 1.47,
+        "skywork_reward_score": -23.956949462890623,
+        "CAR_score": -4.44
+    },
+    "api_bank_openai_human_written_examples": {
+        "perplexity": 4.040302550792694,
+        "complexity_score": 0.0275,
+        "IDF_score": 0.348,
+        "average_token_len": 141.65,
+        "Average_Char_Lenth": 708.31,
+        "average_loss_score": 1.36,
+        "skywork_reward_score": -26.463443603515625,
+        "CAR_score": -5.21
+    }
+}

@@ -1,0 +1,47 @@
+\begin{table*}[t!]
+  \centering
+  \resizebox{1.0\textwidth}{!}{
+  \begin{tabular}{l|l|c|c|c|c|c|c}
+    \hline
+    Methods & STD Range & num of recorded data & mistral & llama 3 instruct & qwen & Avg Acc \\ \hline
+    \hline
+    Upper bound  & All Data & 51.0 & 59.39\% & 64.44\% & 71.41\% & 65.08\% \\
+    Step-by-step  &   &   & 56.25\% & 60.94\% & 69.87\% & 62.35\% \\
+    GPT-4 ICL examples  &   &   & 57.29\% & 62.03\% & 69.90\% & 63.07\% \\
+    Human examples  &   &   & 56.95\% & 61.91\% & 70.22\% & 63.03\% \\
+    Mini-GPT-4  &   &   & 56.72\% & 61.36\% & 70.13\% & 62.74\% \\
+    GPT-4  &   &   & 56.92\% & 62.83\% & 69.89\% & 63.21\% \\
+    Claude  &   &   & 57.45\% & 62.93\% & 70.30\% & 63.56\% \\
+    Ours  &   &   & 58.01\% & 63.66\% & 70.40\% & 64.02\% \\
+    \hline
+    Ours - Claude  &   &   & \textcolor{ForestGreen}{+0.56}\% & \textcolor{ForestGreen}{+0.72}\% & \textcolor{ForestGreen}{+0.10}\% & \textcolor{ForestGreen}{+0.46}\% \\
+    Ours - Avg of Others  &   &   & \textcolor{ForestGreen}{+1.08}\% & \textcolor{ForestGreen}{+1.66}\% & \textcolor{ForestGreen}{+0.35}\% & \textcolor{ForestGreen}{+1.03}\% \\
+    \hline
+    Upper bound  & $STD > 2.00\%$ & 21.0 & 55.06\% & 55.33\% & 64.38\% & 56.51\% \\
+    Step-by-step  &   &   & 50.66\% & 49.62\% & 61.41\% & 51.75\% \\
+    GPT-4 ICL examples  &   &   & 51.85\% & 51.36\% & 58.26\% & 52.55\% \\
+    Human examples  &   &   & 51.77\% & 51.17\% & 62.21\% & 53.00\% \\
+    Mini-GPT-4  &   &   & 52.22\% & 50.79\% & 60.54\% & 52.80\% \\
+    GPT-4  &   &   & 51.96\% & 53.19\% & 61.20\% & 53.80\% \\
+    Claude  &   &   & 52.29\% & 53.26\% & 63.23\% & 54.27\% \\
+    Ours  &   &   & 53.34\% & 54.41\% & 62.48\% & 55.10\% \\
+    \hline
+    Ours - Claude  &   &   & \textcolor{ForestGreen}{+1.05}\% & \textcolor{ForestGreen}{+1.14}\% & \textcolor{red}{-0.76}\% & \textcolor{ForestGreen}{+0.83}\% \\
+    Ours - Avg of Others  &   &   & \textcolor{ForestGreen}{+1.55}\% & \textcolor{ForestGreen}{+2.84}\% & \textcolor{ForestGreen}{+1.34}\% & \textcolor{ForestGreen}{+2.07}\% \\
+    \hline
+    Upper bound  & $STD > 4.00\%$ & 10.0 & 58.57\% & 66.51\% & 46.10\% & 60.50\% \\
+    Step-by-step  &   &   & 53.35\% & 56.43\% & 41.20\% & 53.36\% \\
+    GPT-4 ICL examples  &   &   & 53.25\% & 58.81\% & 31.70\% & 53.32\% \\
+    Human examples  &   &   & 53.79\% & 59.20\% & 45.30\% & 55.10\% \\
+    Mini-GPT-4  &   &   & 55.93\% & 59.33\% & 38.77\% & 55.57\% \\
+    GPT-4  &   &   & 54.67\% & 62.72\% & 43.43\% & 56.77\% \\
+    Claude  &   &   & 54.18\% & 64.63\% & 46.10\% & 57.55\% \\
+    Ours  &   &   & 56.68\% & 66.18\% & 42.83\% & 59.09\% \\
+    \hline
+    Ours - Claude  &   &   & \textcolor{ForestGreen}{+2.50}\% & \textcolor{ForestGreen}{+1.56}\% & \textcolor{red}{-3.27}\% & \textcolor{ForestGreen}{+1.54}\% \\
+    Ours - Avg of Others  &   &   & \textcolor{ForestGreen}{+2.48}\% & \textcolor{ForestGreen}{+6.00}\% & \textcolor{ForestGreen}{+1.75}\% & \textcolor{ForestGreen}{+3.81}\% \\
+    \hline
+  \end{tabular}}
+  \caption{seed icppl vs other response generation methods: average of 3 subsets}
+  \label{tab:icppl vs other response generation methods: average of 3 subsets}
+\end{table*}

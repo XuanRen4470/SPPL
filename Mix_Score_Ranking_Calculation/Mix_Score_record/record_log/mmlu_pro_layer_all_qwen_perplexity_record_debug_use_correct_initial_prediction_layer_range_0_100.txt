@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0179
+Complexity Score: 0.0323
+IDF Score: 0.735
+perplexity: 2.1205368626117704
+Average Token Length: 358.82
+Average Char Length: 1097.98-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0393
+Complexity Score: 0.0233
+IDF Score: 0.662
+perplexity: 1.8619668555259705
+Average Token Length: 210.3
+Average Char Length: 673.94-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0178
+Complexity Score: 0.0297
+IDF Score: 0.764
+perplexity: 1.8893421590328217
+Average Token Length: 417.59
+Average Char Length: 1323.39-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0157
+Complexity Score: 0.0342
+IDF Score: 0.698
+perplexity: 1.8254712641239166
+Average Token Length: 414.24
+Average Char Length: 1272.46-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.24
+Complexity Score: 0.0249
+IDF Score: inf
+perplexity: 51645719.75823181
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0236
+Complexity Score: 0.0287
+IDF Score: 0.743
+perplexity: 1.946130268573761
+Average Token Length: 383.27
+Average Char Length: 1273.87-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.023
+Complexity Score: 0.03
+IDF Score: 0.741
+perplexity: 2.0659852969646453
+Average Token Length: 380.43
+Average Char Length: 1239.97-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0504
+Complexity Score: 0.0324
+IDF Score: 0.581
+perplexity: 2.672916359901428
+Average Token Length: 164.18
+Average Char Length: 485.69

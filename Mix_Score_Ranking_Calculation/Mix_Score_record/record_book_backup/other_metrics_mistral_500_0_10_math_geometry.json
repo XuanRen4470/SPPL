@@ -1,0 +1,66 @@
+{
+    "math_geometry_step_by_step": {
+        "perplexity": 2.5111979246139526,
+        "IDF_score": 0.919,
+        "average_token_len": 780.7,
+        "log_propability": -714.0,
+        "skywork_reward_score": 25.38125,
+        "CAR_score": 6.8
+    },
+    "math_geometry_claude": {
+        "perplexity": 2.7061301350593565,
+        "IDF_score": 0.807,
+        "average_token_len": 452.4,
+        "log_propability": -448.0,
+        "skywork_reward_score": 22.28125,
+        "CAR_score": 5.64
+    },
+    "math_geometry_gpt4_style_in_context_examples": {
+        "perplexity": 3.897059607505798,
+        "IDF_score": 0.914,
+        "average_token_len": 657.1,
+        "log_propability": -805.0,
+        "skywork_reward_score": 11.593341064453124,
+        "CAR_score": 2.46
+    },
+    "math_geometry_gpt4": {
+        "perplexity": 2.5981948375701904,
+        "IDF_score": 0.911,
+        "average_token_len": 761.2,
+        "log_propability": -685.0,
+        "skywork_reward_score": 26.9375,
+        "CAR_score": 7.18
+    },
+    "math_geometry_mini_gpt4": {
+        "perplexity": 2.3313792824745176,
+        "IDF_score": 0.88,
+        "average_token_len": 780.6,
+        "log_propability": -660.0,
+        "skywork_reward_score": 23.38125,
+        "CAR_score": 6.71
+    },
+    "math_geometry_groundtruth": {
+        "perplexity": 5.771564292907715,
+        "IDF_score": 1.06,
+        "average_token_len": 488.0,
+        "log_propability": -727.0,
+        "skywork_reward_score": 14.475,
+        "CAR_score": 2.39
+    },
+    "math_geometry_openai_human_written_examples": {
+        "perplexity": 6.822718858718872,
+        "IDF_score": 0.884,
+        "average_token_len": 529.7,
+        "log_propability": -878.0,
+        "skywork_reward_score": 5.374072265625,
+        "CAR_score": 0.903
+    },
+    "math_geometry_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.964395213127136,
+        "IDF_score": 0.849,
+        "average_token_len": 463.8,
+        "log_propability": -492.0,
+        "skywork_reward_score": 21.015625,
+        "CAR_score": 4.98
+    }
+}

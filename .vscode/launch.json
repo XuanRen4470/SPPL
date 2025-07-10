@@ -1,0 +1,157 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python: Current File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025/bin/python",
+//             // "justMyCode": true,
+//             "justMyCode": false,
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             },
+//             "args": [
+//                 "--model_type", "mistral",
+//                 "--train_task_name", "plan_bench_verification",
+//                 "--file_suffix", "debug",
+//                 "--n_train", "10",
+//                 "--n_eval", "10",
+//                 "--n_validation", "2",
+//                 "--seed_num", "0",
+//                 "--sft_epoch", "2",
+//                 "--sft_lr", "2e-4",
+//                 "--num_of_sft_checkpoints", "1",
+//                 "--disable_final_eval", "false",
+//                 "--train_method", "claude",
+//                 "--variation_suffix", "none"
+//             ],
+//         }
+//     ]
+// }
+
+
+
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+        
+//         {
+//             "name": "Python: Current File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             // "python": "/gpfs/users/a1796450/anaconda3/envs/emnlp_api_bank/bin/python",
+//             "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025/bin/python",
+//             // "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025_copy/bin/python",
+//             "justMyCode": true,
+//             // "justMyCode": false,
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             },
+//             "args": [
+//                 "--model_type", "mistral",
+//                 // "--model_type", "llama_3_instruct",
+//                 // "--model_type", "qwen",
+//                 // "--model_type", "phi_4",
+//                 "--debug_mode", "true",
+//                 "--use_in_context_learning", "false",
+//                 // "--use_in_context_learning", "true",
+//                 // "--similarity_compare_to_initial_prediction_with_in_context_example", "true",
+//                 "--similarity_compare_to_initial_prediction_with_in_context_example", "false",
+//                 "--similarity_compare_to_irrelevant_prediction", "false",
+//                 // "--similarity_compare_to_irrelevant_prediction", "true",
+//                 "--create_initial_prediction", "true",
+//                 // "--create_initial_prediction", "false",
+//                 // "--hidden_states_layer_num", "32",
+//                 "--hidden_states_layer_num", "-1",
+//                 // "--hidden_states_layer_num", "3",
+//                 // "--enable_skywork_reward", "True",
+//                 "--enable_skywork_reward", "False",
+//                 // "--use_total", "true",
+//                 "--use_total", "False",
+//                 "--use_correct_initial_prediction", "True",
+//                 // "--use_correct_initial_prediction", "False",
+//                 "--load_original_question", "True",
+//                 // "--load_original_question", "False",
+//                 // "--Find_similar_examples", "True",
+//                 "--Find_similar_examples", "False",
+//                 "--record_token_length", "False",
+//                 // "--sub_group", "1"
+//                 "--use_plan_prompt", "false",
+//                 "--num_of_incontext_examples", "1"
+//             ],
+//             // "cwd": "/workspace/Minimum_Change/DAMO-ConvAI/api-bank/"
+//         }
+//     ]
+// }
+
+
+
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+        
+//         {
+//             "name": "Python: Current File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             // "python": "/gpfs/users/a1796450/anaconda3/envs/emnlp_api_bank/bin/python",
+//             "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025/bin/python",
+//             // "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025_copy/bin/python",
+//             "justMyCode": true,
+//             // "justMyCode": false,
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             },
+//             "args": [
+//                 "--use_plan_prompt", "false",
+//                 "--num_of_incontext_examples", "2"
+//             ],
+//             "cwd": "/gpfs/users/a1796450/ACL_2024/Minimum_Change/"
+//         }
+//     ]
+// }
+
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            // "python": "/gpfs/users/a1796450/anaconda3/envs/emnlp_api_bank/bin/python",
+            "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025/bin/python",
+            // "python": "/gpfs/users/a1796450/anaconda3/envs/acl_2025_copy/bin/python",
+            "justMyCode": true,
+            // "justMyCode": false,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--model_name", "llama_3_instruct",
+                "--suffix", "unprocessed",
+                "--num_of_incontext_examples", "2"
+            ],
+            "cwd": "/gpfs/users/a1796450/ACL_2024/SPPL/"
+        }
+    ]
+}

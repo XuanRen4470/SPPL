@@ -1,0 +1,19 @@
+\begin{table*}[t!]
+\centering
+\resizebox{1.0\textwidth}{!}{
+\begin{tabular}{l|l|c|c|c|c|c|c|c|c|c|c|c|c}
+\hline
+Data Generation Strategy & Model Type & gsm8k & math_algebra & ecqa & boolq & mmlu & winogrande & piqa & agieval & squad & esnli & api_bank & plan_bench \\ \hline
+groundtruth & & 0.440 & 0.201 & 0.672 &  &  &  &  &  &  &  &  &  \\ \hline
+gpt4 & & 0.625 &  & 0.700 &  &  &  &  &  &  &  &  &  \\ \hline
+gpt4 style in context examples & & 0.619 &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+openai human written examples & & 0.604 &  & 0.709 &  &  &  &  &  &  &  &  &  \\ \hline
+step by step & & 0.639 &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+rewirte groundtruth in own words & & 0.511 &  & 0.709 &  &  &  &  &  &  &  &  &  \\ \hline
+mini gpt4 & & 0.627 &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+claude & & 0.583 &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+\hline
+\end{tabular}
+\label{tab:table1}}
+\caption{seed3 trian 1000 lr 2e-5}
+\end{table*}

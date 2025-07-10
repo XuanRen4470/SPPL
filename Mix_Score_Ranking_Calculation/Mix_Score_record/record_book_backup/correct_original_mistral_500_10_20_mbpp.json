@@ -1,0 +1,66 @@
+{
+    "mbpp_step_by_step": {
+        "perplexity": 4.676162970066071,
+        "diversity_score": 0.137,
+        "complexity_score": 0.0706,
+        "IDF_score": 1.16,
+        "average_token_len": 99.3,
+        "Average_Char_Lenth": 304.0
+    },
+    "mbpp_gpt4": {
+        "perplexity": 4.431884860992431,
+        "diversity_score": 0.034,
+        "complexity_score": 0.03,
+        "IDF_score": 0.724,
+        "average_token_len": 26.3,
+        "Average_Char_Lenth": 71.9
+    },
+    "mbpp_claude": {
+        "perplexity": 4.463134062290192,
+        "diversity_score": 0.0428,
+        "complexity_score": 0.0306,
+        "IDF_score": 0.704,
+        "average_token_len": 26.0,
+        "Average_Char_Lenth": 72.5
+    },
+    "mbpp_mini_gpt4": {
+        "perplexity": 6.07948215007782,
+        "diversity_score": 0.0417,
+        "complexity_score": 0.0349,
+        "IDF_score": 0.961,
+        "average_token_len": 29.0,
+        "Average_Char_Lenth": 78.4
+    },
+    "mbpp_groundtruth": {
+        "perplexity": 17.00254030227661,
+        "diversity_score": 0.0644,
+        "complexity_score": 0.0376,
+        "IDF_score": 1.7,
+        "average_token_len": 41.6,
+        "Average_Char_Lenth": 101.2
+    },
+    "mbpp_gpt4_style_in_context_examples": {
+        "perplexity": 3.6987687587738036,
+        "diversity_score": 0.0445,
+        "complexity_score": 0.0368,
+        "IDF_score": 0.75,
+        "average_token_len": 31.3,
+        "Average_Char_Lenth": 91.2
+    },
+    "mbpp_openai_human_written_examples": {
+        "perplexity": 4.443493175506592,
+        "diversity_score": 0.188,
+        "complexity_score": 0.0547,
+        "IDF_score": 1.43,
+        "average_token_len": 139.5,
+        "Average_Char_Lenth": 494.4
+    },
+    "mbpp_rewrite_groundtruth_in_own_words": {
+        "perplexity": 7.561087822914123,
+        "diversity_score": 0.0559,
+        "complexity_score": 0.0373,
+        "IDF_score": 1.39,
+        "average_token_len": 39.8,
+        "Average_Char_Lenth": 101.9
+    }
+}

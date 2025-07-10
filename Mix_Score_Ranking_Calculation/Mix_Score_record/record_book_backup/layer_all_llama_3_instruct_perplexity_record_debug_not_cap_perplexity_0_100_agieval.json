@@ -1,0 +1,58 @@
+{
+    "agieval_step_by_step": {
+        "perplexity": 4.038888382911682,
+        "diversity_score": 0.0797,
+        "complexity_score": 0.0654,
+        "IDF_score": 0.509,
+        "average_token_len": 325.35,
+        "Average_Char_Lenth": 1556.44
+    },
+    "agieval_gpt4": {
+        "perplexity": 4.429276586771011,
+        "diversity_score": 0.0724,
+        "complexity_score": 0.0736,
+        "IDF_score": 0.483,
+        "average_token_len": 275.76,
+        "Average_Char_Lenth": 1361.53
+    },
+    "agieval_claude": {
+        "perplexity": 3.007425450086594,
+        "diversity_score": 0.0632,
+        "complexity_score": 0.063,
+        "IDF_score": 0.463,
+        "average_token_len": 218.86,
+        "Average_Char_Lenth": 1080.91
+    },
+    "agieval_mini_gpt4": {
+        "perplexity": 4.077349479198456,
+        "diversity_score": 0.0716,
+        "complexity_score": 0.0727,
+        "IDF_score": 0.481,
+        "average_token_len": 298.31,
+        "Average_Char_Lenth": 1457.63
+    },
+    "agieval_groundtruth": {
+        "perplexity": 18209.916118164063,
+        "diversity_score": 0.515,
+        "complexity_score": 0.00941,
+        "IDF_score": Infinity,
+        "average_token_len": 1.0,
+        "Average_Char_Lenth": 1.0
+    },
+    "agieval_gpt4_style_in_context_examples": {
+        "perplexity": 4.267135765552521,
+        "diversity_score": 0.0904,
+        "complexity_score": 0.0688,
+        "IDF_score": 0.505,
+        "average_token_len": 341.86,
+        "Average_Char_Lenth": 1643.14
+    },
+    "agieval_openai_human_written_examples": {
+        "perplexity": 4.529672311544418,
+        "diversity_score": 0.0726,
+        "complexity_score": 0.0717,
+        "IDF_score": 0.481,
+        "average_token_len": 284.74,
+        "Average_Char_Lenth": 1415.34
+    }
+}

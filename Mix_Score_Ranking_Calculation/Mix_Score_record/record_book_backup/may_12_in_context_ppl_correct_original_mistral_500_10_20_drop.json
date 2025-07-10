@@ -1,0 +1,23 @@
+{
+    "drop_gpt4_style_in_context_examples": {
+        "in_context_perplexity": 3.5326152801513673
+    },
+    "drop_claude": {
+        "in_context_perplexity": 3.559104120731354
+    },
+    "drop_step_by_step": {
+        "in_context_perplexity": 4.416783881187439
+    },
+    "drop_gpt4": {
+        "in_context_perplexity": 5.473167896270752
+    },
+    "drop_mini_gpt4": {
+        "in_context_perplexity": 5.161521792411804
+    },
+    "drop_groundtruth": {
+        "in_context_perplexity": 145.0665150165558
+    },
+    "drop_openai_human_written_examples": {
+        "in_context_perplexity": 4.053025758266449
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "plan_bench_generalization_step_by_step": {
+        "perplexity": 1.8346375703811646,
+        "IDF_score": 0.808,
+        "average_token_len": 526.9,
+        "log_propability": -309.0,
+        "skywork_reward_score": -1.735546875,
+        "CAR_score": -0.622
+    },
+    "plan_bench_generalization_claude": {
+        "perplexity": 2.1832027554512026,
+        "IDF_score": 0.724,
+        "average_token_len": 299.9,
+        "log_propability": -229.0,
+        "skywork_reward_score": -4.518359375,
+        "CAR_score": -1.37
+    },
+    "plan_bench_generalization_gpt4_style_in_context_examples": {
+        "perplexity": 1.7072827339172363,
+        "IDF_score": 0.708,
+        "average_token_len": 513.7,
+        "log_propability": -246.0,
+        "skywork_reward_score": -3.197265625,
+        "CAR_score": -1.24
+    },
+    "plan_bench_generalization_gpt4": {
+        "perplexity": 2.002244031429291,
+        "IDF_score": 0.747,
+        "average_token_len": 439.7,
+        "log_propability": -279.0,
+        "skywork_reward_score": -5.29453125,
+        "CAR_score": -1.77
+    },
+    "plan_bench_generalization_mini_gpt4": {
+        "perplexity": 2.0855581402778625,
+        "IDF_score": 0.746,
+        "average_token_len": 515.5,
+        "log_propability": -354.0,
+        "skywork_reward_score": -8.030078125,
+        "CAR_score": -2.54
+    },
+    "plan_bench_generalization_groundtruth": {
+        "perplexity": 4.793485450744629,
+        "IDF_score": 0.851,
+        "average_token_len": 94.0,
+        "log_propability": -116.0,
+        "skywork_reward_score": -9.18125,
+        "CAR_score": -1.73
+    },
+    "plan_bench_generalization_openai_human_written_examples": {
+        "perplexity": 2.165335166454315,
+        "IDF_score": 0.709,
+        "average_token_len": 392.2,
+        "log_propability": -274.0,
+        "skywork_reward_score": -6.026171875,
+        "CAR_score": -1.85
+    },
+    "plan_bench_generalization_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.859061062335968,
+        "IDF_score": 0.712,
+        "average_token_len": 364.6,
+        "log_propability": -343.0,
+        "skywork_reward_score": -14.190625,
+        "CAR_score": -3.53
+    }
+}

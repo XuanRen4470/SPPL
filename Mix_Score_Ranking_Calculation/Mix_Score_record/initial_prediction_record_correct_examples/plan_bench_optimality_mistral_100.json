@@ -1,0 +1,8 @@
+{
+    "initial_prediction": [
+        "[PLAN]\nunstack the orange block from on top of the blue block\nput down the orange block\nunstack the yellow block from on top of the red block\nput down the yellow block\npick up the red block\nstack the red block on top of the yellow block\npick up the blue block\nstack the blue block on top of the orange block\n[PLAN END]\n\nThe total time to execute the plan is 10 minutes.\n\nExplanation:\n1. Unstack the orange block from on top of the blue block and put it down to free up the blue block. (2 minutes)\n2. Unstack the yellow block from on top of the red block and put it down to free up the red block. (2 minutes)\n3. Pick up the red block and stack it on top of the yellow block. (2 minutes)\n4. Pick up the blue block and stack it on top of the orange block. (2 minutes)\n\nTherefore, the total time taken to achieve the goal is 10 minutes.\n\nFinal Answer: (unstack orange blue)\n(put-down orange)\n(pick-up blue)\n(stack blue orange)\n(unstack yellow red)\n(put-down yellow)\n(pick-up red)\n(stack red yellow)\n\n\nFinal Answer: (unstack orange blue)\n(put-down orange)\n(pick-up blue)\n(stack blue orange)\n(unstack yellow red)\n(put-down yellow)\n(pick-up red)\n(stack red yellow)\n"
+    ],
+    "correct_index": [
+        8
+    ]
+}

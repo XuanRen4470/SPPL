@@ -1,0 +1,66 @@
+{
+    "gsm8k_step_by_step": {
+        "perplexity": 1.9203110432624817,
+        "IDF_score": 0.618,
+        "average_token_len": 203.16,
+        "log_propability": -130.0,
+        "skywork_reward_score": 13.2934375,
+        "CAR_score": 4.56
+    },
+    "gsm8k_claude": {
+        "perplexity": 1.8749806046485902,
+        "IDF_score": 0.484,
+        "average_token_len": 127.9,
+        "log_propability": -78.3,
+        "skywork_reward_score": 15.95875,
+        "CAR_score": 5.58
+    },
+    "gsm8k_gpt4_style_in_context_examples": {
+        "perplexity": 2.19576327085495,
+        "IDF_score": 0.578,
+        "average_token_len": 158.0,
+        "log_propability": -120.0,
+        "skywork_reward_score": 8.08875,
+        "CAR_score": 2.44
+    },
+    "gsm8k_gpt4": {
+        "perplexity": 2.0218860125541687,
+        "IDF_score": 0.557,
+        "average_token_len": 155.44,
+        "log_propability": -106.0,
+        "skywork_reward_score": 12.7959375,
+        "CAR_score": 4.18
+    },
+    "gsm8k_mini_gpt4": {
+        "perplexity": 2.0842051672935487,
+        "IDF_score": 0.559,
+        "average_token_len": 150.66,
+        "log_propability": -108.0,
+        "skywork_reward_score": 12.364375,
+        "CAR_score": 3.9
+    },
+    "gsm8k_groundtruth": {
+        "perplexity": 3.4060477590560914,
+        "IDF_score": 0.511,
+        "average_token_len": 104.82,
+        "log_propability": -112.0,
+        "skywork_reward_score": 3.32,
+        "CAR_score": 0.728
+    },
+    "gsm8k_openai_human_written_examples": {
+        "perplexity": 2.2219413805007933,
+        "IDF_score": 0.516,
+        "average_token_len": 129.58,
+        "log_propability": -97.8,
+        "skywork_reward_score": 7.63283203125,
+        "CAR_score": 2.3
+    },
+    "gsm8k_rewrite_groundtruth_in_own_words": {
+        "perplexity": 3.896591515541077,
+        "IDF_score": 0.551,
+        "average_token_len": 129.72,
+        "log_propability": -170.0,
+        "skywork_reward_score": -2.1690234375,
+        "CAR_score": -0.433
+    }
+}

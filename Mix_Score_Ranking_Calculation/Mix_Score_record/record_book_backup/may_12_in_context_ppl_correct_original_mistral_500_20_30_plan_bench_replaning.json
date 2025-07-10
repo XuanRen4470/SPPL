@@ -1,0 +1,26 @@
+{
+    "plan_bench_replaning_gpt4_style_in_context_examples": {
+        "in_context_perplexity": 3.6151090025901795
+    },
+    "plan_bench_replaning_claude": {
+        "in_context_perplexity": 3.9575818538665772
+    },
+    "plan_bench_replaning_step_by_step": {
+        "in_context_perplexity": 3.303771948814392
+    },
+    "plan_bench_replaning_gpt4": {
+        "in_context_perplexity": 16.03592336177826
+    },
+    "plan_bench_replaning_mini_gpt4": {
+        "in_context_perplexity": 3.8211153507232667
+    },
+    "plan_bench_replaning_groundtruth": {
+        "in_context_perplexity": 1862.2270555496216
+    },
+    "plan_bench_replaning_openai_human_written_examples": {
+        "in_context_perplexity": 4.529001951217651
+    },
+    "plan_bench_replaning_rewrite_groundtruth_in_own_words": {
+        "in_context_perplexity": 4.931537914276123
+    }
+}

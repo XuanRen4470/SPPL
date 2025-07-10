@@ -1,0 +1,66 @@
+{
+    "gsm8k_step_by_step": {
+        "perplexity": 2.127130126953125,
+        "IDF_score": 0.649,
+        "average_token_len": 228.5,
+        "log_propability": -154.0,
+        "skywork_reward_score": 16.01875,
+        "CAR_score": 5.17
+    },
+    "gsm8k_claude": {
+        "perplexity": 2.338489818572998,
+        "IDF_score": 0.601,
+        "average_token_len": 169.5,
+        "log_propability": -126.0,
+        "skywork_reward_score": 18.475,
+        "CAR_score": 5.45
+    },
+    "gsm8k_gpt4_style_in_context_examples": {
+        "perplexity": 2.297796642780304,
+        "IDF_score": 0.636,
+        "average_token_len": 192.0,
+        "log_propability": -157.0,
+        "skywork_reward_score": 10.3609375,
+        "CAR_score": 3.02
+    },
+    "gsm8k_gpt4": {
+        "perplexity": 2.1499621868133545,
+        "IDF_score": 0.638,
+        "average_token_len": 204.9,
+        "log_propability": -149.0,
+        "skywork_reward_score": 13.515625,
+        "CAR_score": 4.33
+    },
+    "gsm8k_mini_gpt4": {
+        "perplexity": 2.1984524846076967,
+        "IDF_score": 0.633,
+        "average_token_len": 188.3,
+        "log_propability": -141.0,
+        "skywork_reward_score": 16.95,
+        "CAR_score": 5.13
+    },
+    "gsm8k_groundtruth": {
+        "perplexity": 6.23842351436615,
+        "IDF_score": 1.15,
+        "average_token_len": 135.4,
+        "log_propability": -172.0,
+        "skywork_reward_score": 4.81796875,
+        "CAR_score": 0.818
+    },
+    "gsm8k_openai_human_written_examples": {
+        "perplexity": 2.3155210852622985,
+        "IDF_score": 0.561,
+        "average_token_len": 160.8,
+        "log_propability": -132.0,
+        "skywork_reward_score": 9.43125,
+        "CAR_score": 2.72
+    },
+    "gsm8k_rewrite_groundtruth_in_own_words": {
+        "perplexity": 5.5549651145935055,
+        "IDF_score": 0.73,
+        "average_token_len": 160.6,
+        "log_propability": -262.0,
+        "skywork_reward_score": -1.7197265625,
+        "CAR_score": -0.285
+    }
+}

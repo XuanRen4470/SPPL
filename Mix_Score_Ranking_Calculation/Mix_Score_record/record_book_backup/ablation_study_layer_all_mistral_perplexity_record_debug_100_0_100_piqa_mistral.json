@@ -1,0 +1,72 @@
+{
+    "piqa_step_by_step": {
+        "perplexity": 4.2899665665626525,
+        "complexity_score": 0.101,
+        "IDF_score": 0.671,
+        "average_token_len": 279.03,
+        "Average_Char_Lenth": 1152.53,
+        "average_loss_score": 1.43,
+        "skywork_reward_score": 9.357373046875,
+        "CAR_score": 1.76
+    },
+    "piqa_gpt4": {
+        "perplexity": 6.277120208740234,
+        "complexity_score": 0.127,
+        "IDF_score": 0.614,
+        "average_token_len": 158.07,
+        "Average_Char_Lenth": 710.13,
+        "average_loss_score": 1.78,
+        "skywork_reward_score": 14.2076171875,
+        "CAR_score": 2.24
+    },
+    "piqa_claude": {
+        "perplexity": 3.8021826171875,
+        "complexity_score": 0.126,
+        "IDF_score": 0.565,
+        "average_token_len": 199.86,
+        "Average_Char_Lenth": 887.07,
+        "average_loss_score": 1.31,
+        "skywork_reward_score": 22.499450225830078,
+        "CAR_score": 4.58
+    },
+    "piqa_mini_gpt4": {
+        "perplexity": 5.015389783382416,
+        "complexity_score": 0.109,
+        "IDF_score": 0.433,
+        "average_token_len": 130.15,
+        "Average_Char_Lenth": 572.71,
+        "average_loss_score": 1.57,
+        "skywork_reward_score": 28.122062530517578,
+        "CAR_score": 4.93
+    },
+    "piqa_groundtruth": {
+        "perplexity": 6368641.259497071,
+        "complexity_score": 0.00154,
+        "IDF_score": 58300.0,
+        "average_token_len": 3.0,
+        "Average_Char_Lenth": 1.0,
+        "average_loss_score": 12.6,
+        "skywork_reward_score": 22.317716827392577,
+        "CAR_score": 0.577
+    },
+    "piqa_gpt4_style_in_context_examples": {
+        "perplexity": 5.679120173454285,
+        "complexity_score": 0.0991,
+        "IDF_score": 0.427,
+        "average_token_len": 120.9,
+        "Average_Char_Lenth": 542.03,
+        "average_loss_score": 1.68,
+        "skywork_reward_score": 30.959044952392578,
+        "CAR_score": 5.13
+    },
+    "piqa_openai_human_written_examples": {
+        "perplexity": 6.466504933834076,
+        "complexity_score": 0.0778,
+        "IDF_score": 0.302,
+        "average_token_len": 70.21,
+        "Average_Char_Lenth": 299.93,
+        "average_loss_score": 1.78,
+        "skywork_reward_score": 37.42464157104492,
+        "CAR_score": 5.9
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "ecqa_step_by_step": {
+        "perplexity": 3.993560609817505,
+        "IDF_score": 0.572,
+        "average_token_len": 249.58,
+        "log_propability": -339.0,
+        "skywork_reward_score": 12.72984375,
+        "CAR_score": 2.49
+    },
+    "ecqa_claude": {
+        "perplexity": 3.7507820653915407,
+        "IDF_score": 0.464,
+        "average_token_len": 167.04,
+        "log_propability": -218.0,
+        "skywork_reward_score": 11.9279296875,
+        "CAR_score": 2.42
+    },
+    "ecqa_gpt4_style_in_context_examples": {
+        "perplexity": 4.583262844085693,
+        "IDF_score": 0.568,
+        "average_token_len": 256.96,
+        "log_propability": -388.0,
+        "skywork_reward_score": 18.147421875,
+        "CAR_score": 3.29
+    },
+    "ecqa_gpt4": {
+        "perplexity": 4.6121320104598995,
+        "IDF_score": 0.466,
+        "average_token_len": 180.68,
+        "log_propability": -268.0,
+        "skywork_reward_score": 11.42474609375,
+        "CAR_score": 2.07
+    },
+    "ecqa_mini_gpt4": {
+        "perplexity": 4.699164042472839,
+        "IDF_score": 0.424,
+        "average_token_len": 140.04,
+        "log_propability": -209.0,
+        "skywork_reward_score": 7.4275390625,
+        "CAR_score": 1.34
+    },
+    "ecqa_groundtruth": {
+        "perplexity": 16.515950012207032,
+        "IDF_score": 0.357,
+        "average_token_len": 61.38,
+        "log_propability": -148.0,
+        "skywork_reward_score": 1.96228515625,
+        "CAR_score": 0.213
+    },
+    "ecqa_openai_human_written_examples": {
+        "perplexity": 4.250515103340149,
+        "IDF_score": 0.402,
+        "average_token_len": 153.26,
+        "log_propability": -219.0,
+        "skywork_reward_score": 11.0839990234375,
+        "CAR_score": 2.11
+    },
+    "ecqa_rewrite_groundtruth_in_own_words": {
+        "perplexity": 5.808776798248291,
+        "IDF_score": 0.276,
+        "average_token_len": 75.34,
+        "log_propability": -130.0,
+        "skywork_reward_score": 4.68484375,
+        "CAR_score": 0.76
+    }
+}

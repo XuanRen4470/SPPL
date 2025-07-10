@@ -1,0 +1,66 @@
+{
+    "math_intermediate_algebra_step_by_step": {
+        "perplexity": 2.27683284955147,
+        "diversity_score": 0.111,
+        "complexity_score": 0.0806,
+        "IDF_score": 0.903,
+        "average_token_len": 566.1538461538462,
+        "Average_Char_Lenth": 1280.051282051282
+    },
+    "math_intermediate_algebra_gpt4": {
+        "perplexity": 2.0818245044121375,
+        "diversity_score": 0.103,
+        "complexity_score": 0.0803,
+        "IDF_score": 0.89,
+        "average_token_len": 539.9487179487179,
+        "Average_Char_Lenth": 1202.128205128205
+    },
+    "math_intermediate_algebra_claude": {
+        "perplexity": 2.2144191845869408,
+        "diversity_score": 0.127,
+        "complexity_score": 0.0814,
+        "IDF_score": 0.799,
+        "average_token_len": 357.12820512820514,
+        "Average_Char_Lenth": 761.5128205128206
+    },
+    "math_intermediate_algebra_mini_gpt4": {
+        "perplexity": 2.1434771525554166,
+        "diversity_score": 0.107,
+        "complexity_score": 0.0815,
+        "IDF_score": 0.891,
+        "average_token_len": 591.1025641025641,
+        "Average_Char_Lenth": 1318.3589743589744
+    },
+    "math_intermediate_algebra_groundtruth": {
+        "perplexity": 4.327625586436345,
+        "diversity_score": 0.168,
+        "complexity_score": 0.0851,
+        "IDF_score": 1.09,
+        "average_token_len": 244.5897435897436,
+        "Average_Char_Lenth": 518.8974358974359
+    },
+    "math_intermediate_algebra_gpt4_style_in_context_examples": {
+        "perplexity": 2.948666459474808,
+        "diversity_score": 0.111,
+        "complexity_score": 0.0827,
+        "IDF_score": 0.896,
+        "average_token_len": 544.6410256410256,
+        "Average_Char_Lenth": 1337.5384615384614
+    },
+    "math_intermediate_algebra_openai_human_written_examples": {
+        "perplexity": 2.9387460488539476,
+        "diversity_score": 0.109,
+        "complexity_score": 0.0819,
+        "IDF_score": 0.899,
+        "average_token_len": 485.8205128205128,
+        "Average_Char_Lenth": 1149.3846153846155
+    },
+    "math_intermediate_algebra_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.5327401711390567,
+        "diversity_score": 0.113,
+        "complexity_score": 0.0765,
+        "IDF_score": 0.871,
+        "average_token_len": 358.1025641025641,
+        "Average_Char_Lenth": 846.7692307692307
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "mmlu_pro_law_step_by_step": {
+        "perplexity": 4.702313423156738,
+        "diversity_score": 0.139,
+        "complexity_score": 0.0907,
+        "IDF_score": 0.673,
+        "average_token_len": 481.7,
+        "Average_Char_Lenth": 2086.5
+    },
+    "mmlu_pro_law_gpt4": {
+        "perplexity": 4.80540144443512,
+        "diversity_score": 0.128,
+        "complexity_score": 0.104,
+        "IDF_score": 0.617,
+        "average_token_len": 372.4,
+        "Average_Char_Lenth": 1662.5
+    },
+    "mmlu_pro_law_claude": {
+        "perplexity": 2.959042525291443,
+        "diversity_score": 0.0916,
+        "complexity_score": 0.106,
+        "IDF_score": 0.596,
+        "average_token_len": 307.7,
+        "Average_Char_Lenth": 1374.3
+    },
+    "mmlu_pro_law_mini_gpt4": {
+        "perplexity": 4.673698353767395,
+        "diversity_score": 0.0824,
+        "complexity_score": 0.0968,
+        "IDF_score": 0.555,
+        "average_token_len": 223.8,
+        "Average_Char_Lenth": 1037.7
+    },
+    "mmlu_pro_law_groundtruth": {
+        "perplexity": 10474.292425537109,
+        "diversity_score": 0.427,
+        "complexity_score": 0.0024,
+        "IDF_score": 15.0,
+        "average_token_len": 5.0,
+        "Average_Char_Lenth": 15.0
+    },
+    "mmlu_pro_law_gpt4_style_in_context_examples": {
+        "perplexity": 4.488503313064575,
+        "diversity_score": 0.0913,
+        "complexity_score": 0.105,
+        "IDF_score": 0.599,
+        "average_token_len": 296.0,
+        "Average_Char_Lenth": 1318.5
+    },
+    "mmlu_pro_law_openai_human_written_examples": {
+        "perplexity": 5.324016857147217,
+        "diversity_score": 0.0819,
+        "complexity_score": 0.0849,
+        "IDF_score": 0.484,
+        "average_token_len": 141.8,
+        "Average_Char_Lenth": 652.6
+    }
+}

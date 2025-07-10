@@ -1,0 +1,66 @@
+{
+    "drop_gpt4": {
+        "perplexity": 2.544018816947937,
+        "diversity_score": 0.109,
+        "complexity_score": 0.0462,
+        "IDF_score": 0.356,
+        "average_token_len": 129.4,
+        "Average_Char_Lenth": 577.9
+    },
+    "drop_claude": {
+        "perplexity": 2.4786442875862122,
+        "diversity_score": 0.0884,
+        "complexity_score": 0.0299,
+        "IDF_score": 0.36,
+        "average_token_len": 90.7,
+        "Average_Char_Lenth": 400.9
+    },
+    "drop_step_by_step": {
+        "perplexity": 2.911508309841156,
+        "diversity_score": 0.159,
+        "complexity_score": 0.0362,
+        "IDF_score": 0.492,
+        "average_token_len": 154.3,
+        "Average_Char_Lenth": 652.6
+    },
+    "drop_mini_gpt4": {
+        "perplexity": 2.7260234355926514,
+        "diversity_score": 0.0572,
+        "complexity_score": 0.0254,
+        "IDF_score": 0.284,
+        "average_token_len": 72.8,
+        "Average_Char_Lenth": 340.7
+    },
+    "drop_groundtruth": {
+        "perplexity": 3.993837833404541,
+        "diversity_score": 0.123,
+        "complexity_score": 0.00517,
+        "IDF_score": 0.0194,
+        "average_token_len": 5.1,
+        "Average_Char_Lenth": 19.4
+    },
+    "drop_gpt4_style_in_context_examples": {
+        "perplexity": 2.71250638961792,
+        "diversity_score": 0.123,
+        "complexity_score": 0.0273,
+        "IDF_score": 0.386,
+        "average_token_len": 117.8,
+        "Average_Char_Lenth": 534.9
+    },
+    "drop_openai_human_written_examples": {
+        "perplexity": 2.428454113006592,
+        "diversity_score": 0.0789,
+        "complexity_score": 0.0285,
+        "IDF_score": 0.293,
+        "average_token_len": 89.1,
+        "Average_Char_Lenth": 407.0
+    },
+    "drop_simple_response": {
+        "perplexity": 3.7725033521652223,
+        "diversity_score": 0.0329,
+        "complexity_score": 0.0201,
+        "IDF_score": 0.0992,
+        "average_token_len": 28.6,
+        "Average_Char_Lenth": 123.4
+    }
+}

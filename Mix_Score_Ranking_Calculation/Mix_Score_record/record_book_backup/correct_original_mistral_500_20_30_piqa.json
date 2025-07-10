@@ -1,0 +1,66 @@
+{
+    "piqa_gpt4": {
+        "perplexity": 7.085581731796265,
+        "diversity_score": 0.0879,
+        "complexity_score": 0.117,
+        "IDF_score": 0.654,
+        "average_token_len": 151.2,
+        "Average_Char_Lenth": 694.9
+    },
+    "piqa_claude": {
+        "perplexity": 3.6953458547592164,
+        "diversity_score": 0.106,
+        "complexity_score": 0.115,
+        "IDF_score": 0.579,
+        "average_token_len": 214.6,
+        "Average_Char_Lenth": 964.7
+    },
+    "piqa_step_by_step": {
+        "perplexity": 4.362987661361695,
+        "diversity_score": 0.113,
+        "complexity_score": 0.0876,
+        "IDF_score": 0.686,
+        "average_token_len": 267.7,
+        "Average_Char_Lenth": 1130.7
+    },
+    "piqa_mini_gpt4": {
+        "perplexity": 5.191323947906494,
+        "diversity_score": 0.0634,
+        "complexity_score": 0.0948,
+        "IDF_score": 0.355,
+        "average_token_len": 102.0,
+        "Average_Char_Lenth": 464.3
+    },
+    "piqa_groundtruth": {
+        "perplexity": 15796844.876953125,
+        "diversity_score": 0.342,
+        "complexity_score": 0.00156,
+        "IDF_score": 144000.0,
+        "average_token_len": 3.0,
+        "Average_Char_Lenth": 1.0
+    },
+    "piqa_gpt4_style_in_context_examples": {
+        "perplexity": 5.594470262527466,
+        "diversity_score": 0.0802,
+        "complexity_score": 0.09,
+        "IDF_score": 0.455,
+        "average_token_len": 122.2,
+        "Average_Char_Lenth": 550.8
+    },
+    "piqa_openai_human_written_examples": {
+        "perplexity": 5.9161312818527225,
+        "diversity_score": 0.0783,
+        "complexity_score": 0.0729,
+        "IDF_score": 0.326,
+        "average_token_len": 67.1,
+        "Average_Char_Lenth": 289.8
+    },
+    "piqa_simple_response": {
+        "perplexity": 38.08996734619141,
+        "diversity_score": 0.0926,
+        "complexity_score": 0.0734,
+        "IDF_score": 0.468,
+        "average_token_len": 43.7,
+        "Average_Char_Lenth": 176.3
+    }
+}

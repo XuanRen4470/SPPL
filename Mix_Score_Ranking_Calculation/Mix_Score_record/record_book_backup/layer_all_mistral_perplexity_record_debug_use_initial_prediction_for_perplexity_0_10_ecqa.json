@@ -1,0 +1,26 @@
+{
+    "ecqa_step_by_step": {
+        "in_context_perplexity": 4.779197740554809
+    },
+    "ecqa_gpt4": {
+        "in_context_perplexity": 5.719102120399475
+    },
+    "ecqa_claude": {
+        "in_context_perplexity": 3.6541874170303346
+    },
+    "ecqa_mini_gpt4": {
+        "in_context_perplexity": 5.834615421295166
+    },
+    "ecqa_groundtruth": {
+        "in_context_perplexity": 80.86065139770508
+    },
+    "ecqa_gpt4_style_in_context_examples": {
+        "in_context_perplexity": 4.637790060043335
+    },
+    "ecqa_openai_human_written_examples": {
+        "in_context_perplexity": 4.711436748504639
+    },
+    "ecqa_rewrite_groundtruth_in_own_words": {
+        "in_context_perplexity": 13.346054458618164
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "arc_challenge_step_by_step": {
+        "perplexity": 3.318118357658386,
+        "diversity_score": 0.0692,
+        "complexity_score": 0.0686,
+        "IDF_score": 0.628,
+        "average_token_len": 269.7,
+        "Average_Char_Lenth": 1251.3
+    },
+    "arc_challenge_gpt4": {
+        "perplexity": 3.5886286735534667,
+        "diversity_score": 0.0544,
+        "complexity_score": 0.0822,
+        "IDF_score": 0.514,
+        "average_token_len": 158.9,
+        "Average_Char_Lenth": 778.8
+    },
+    "arc_challenge_claude": {
+        "perplexity": 2.881043565273285,
+        "diversity_score": 0.0567,
+        "complexity_score": 0.0843,
+        "IDF_score": 0.562,
+        "average_token_len": 185.8,
+        "Average_Char_Lenth": 892.7
+    },
+    "arc_challenge_mini_gpt4": {
+        "perplexity": 3.3444228887557985,
+        "diversity_score": 0.0552,
+        "complexity_score": 0.086,
+        "IDF_score": 0.53,
+        "average_token_len": 175.7,
+        "Average_Char_Lenth": 835.4
+    },
+    "arc_challenge_groundtruth": {
+        "perplexity": 32083.220978546142,
+        "diversity_score": 0.516,
+        "complexity_score": 0.0113,
+        "IDF_score": Infinity,
+        "average_token_len": 1.0,
+        "Average_Char_Lenth": 1.0
+    },
+    "arc_challenge_gpt4_style_in_context_examples": {
+        "perplexity": 3.189953088760376,
+        "diversity_score": 0.0663,
+        "complexity_score": 0.0708,
+        "IDF_score": 0.58,
+        "average_token_len": 244.3,
+        "Average_Char_Lenth": 1087.0
+    },
+    "arc_challenge_openai_human_written_examples": {
+        "perplexity": 3.657465124130249,
+        "diversity_score": 0.0643,
+        "complexity_score": 0.0693,
+        "IDF_score": 0.436,
+        "average_token_len": 127.6,
+        "Average_Char_Lenth": 609.1
+    }
+}

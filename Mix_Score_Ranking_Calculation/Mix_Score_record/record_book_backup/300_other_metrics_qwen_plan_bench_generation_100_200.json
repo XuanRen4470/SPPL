@@ -1,0 +1,58 @@
+{
+    "plan_bench_generation_step_by_step": {
+        "perplexity": 2.1356991004943846,
+        "IDF_score": 0.684,
+        "log_propability": -276.0,
+        "skywork_reward_score": 0.82722900390625,
+        "CAR_score": 0.261
+    },
+    "plan_bench_generation_claude": {
+        "perplexity": 2.0073014807701113,
+        "IDF_score": 0.581,
+        "log_propability": -144.0,
+        "skywork_reward_score": -2.6311083984375,
+        "CAR_score": -0.86
+    },
+    "plan_bench_generation_gpt4_style_in_context_examples": {
+        "perplexity": 2.164117579460144,
+        "IDF_score": 0.713,
+        "log_propability": -305.0,
+        "skywork_reward_score": 1.683006591796875,
+        "CAR_score": 0.517
+    },
+    "plan_bench_generation_gpt4": {
+        "perplexity": 2.3800046050548556,
+        "IDF_score": 0.698,
+        "log_propability": -272.0,
+        "skywork_reward_score": -0.22926513671875,
+        "CAR_score": -0.0648
+    },
+    "plan_bench_generation_mini_gpt4": {
+        "perplexity": 2.480205945968628,
+        "IDF_score": 0.669,
+        "log_propability": -285.0,
+        "skywork_reward_score": -3.3794580078125,
+        "CAR_score": -0.925
+    },
+    "plan_bench_generation_groundtruth": {
+        "perplexity": 82.6238218832016,
+        "IDF_score": 1.01,
+        "log_propability": -109.0,
+        "skywork_reward_score": -11.80578125,
+        "CAR_score": -1.13
+    },
+    "plan_bench_generation_openai_human_written_examples": {
+        "perplexity": 2.440582686662674,
+        "IDF_score": 0.67,
+        "log_propability": -253.0,
+        "skywork_reward_score": -0.522987060546875,
+        "CAR_score": -0.145
+    },
+    "plan_bench_generation_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.90139888048172,
+        "IDF_score": 0.7,
+        "log_propability": -194.0,
+        "skywork_reward_score": -7.763388671875,
+        "CAR_score": -1.95
+    }
+}

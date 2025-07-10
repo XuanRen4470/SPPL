@@ -1,0 +1,55 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0556
+Complexity Score: 0.0229
+IDF Score: 0.719
+perplexity: 2.6378244439760845
+Average Token Length: 336.3333333333333
+Average Char Length: 1412.6-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0703
+Complexity Score: 0.0137
+IDF Score: 0.718
+perplexity: 2.490908972422282
+Average Token Length: 212.33333333333334
+Average Char Length: 885.8-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0614
+Complexity Score: 0.0233
+IDF Score: 0.746
+perplexity: 2.4290096243222554
+Average Token Length: 384.46666666666664
+Average Char Length: 1569.3666666666666-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.066
+Complexity Score: 0.017
+IDF Score: 0.711
+perplexity: 2.99785795211792
+Average Token Length: 320.1666666666667
+Average Char Length: 1374.8666666666666-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.358
+Complexity Score: 0.0161
+IDF Score: 0.285
+perplexity: 17.252633992830912
+Average Token Length: 36.36666666666667
+Average Char Length: 145.46666666666667-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0585
+Complexity Score: 0.0169
+IDF Score: 0.746
+perplexity: 2.6452505389849343
+Average Token Length: 404.26666666666665
+Average Char Length: 1689.4333333333334-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0584
+Complexity Score: 0.0174
+IDF Score: 0.724
+perplexity: 3.251089898745219
+Average Token Length: 296.6
+Average Char Length: 1282.1-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.128
+Complexity Score: 0.0355
+IDF Score: 0.598
+perplexity: 5.385941632588705
+Average Token Length: 131.36666666666667
+Average Char Length: 548.2333333333333-------------------------------------rewrite_groundtruth_in_own_words----------------------------------------------
+Diversity Score: 0.0796
+Complexity Score: 0.0275
+IDF Score: 0.639
+perplexity: 2.7229794383049013
+Average Token Length: 185.76666666666668
+Average Char Length: 787.6

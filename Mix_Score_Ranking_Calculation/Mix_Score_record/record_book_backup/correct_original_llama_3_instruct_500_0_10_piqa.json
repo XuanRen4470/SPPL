@@ -1,0 +1,66 @@
+{
+    "piqa_gpt4": {
+        "perplexity": 5.324269151687622,
+        "diversity_score": 0.0736,
+        "complexity_score": 0.0647,
+        "IDF_score": 0.502,
+        "average_token_len": 119.8,
+        "Average_Char_Lenth": 580.8
+    },
+    "piqa_claude": {
+        "perplexity": 3.6590795278549195,
+        "diversity_score": 0.0829,
+        "complexity_score": 0.0663,
+        "IDF_score": 0.572,
+        "average_token_len": 170.0,
+        "Average_Char_Lenth": 850.0
+    },
+    "piqa_step_by_step": {
+        "perplexity": 4.146907019615173,
+        "diversity_score": 0.119,
+        "complexity_score": 0.0531,
+        "IDF_score": 0.587,
+        "average_token_len": 231.4,
+        "Average_Char_Lenth": 1075.6
+    },
+    "piqa_mini_gpt4": {
+        "perplexity": 3.9253726482391356,
+        "diversity_score": 0.076,
+        "complexity_score": 0.0578,
+        "IDF_score": 0.447,
+        "average_token_len": 119.6,
+        "Average_Char_Lenth": 588.2
+    },
+    "piqa_groundtruth": {
+        "perplexity": 84.54945831298828,
+        "diversity_score": 0.407,
+        "complexity_score": 0.00362,
+        "IDF_score": Infinity,
+        "average_token_len": 1.0,
+        "Average_Char_Lenth": 1.0
+    },
+    "piqa_gpt4_style_in_context_examples": {
+        "perplexity": 4.910718154907227,
+        "diversity_score": 0.0685,
+        "complexity_score": 0.0467,
+        "IDF_score": 0.394,
+        "average_token_len": 99.8,
+        "Average_Char_Lenth": 488.0
+    },
+    "piqa_openai_human_written_examples": {
+        "perplexity": 4.583564233779907,
+        "diversity_score": 0.0787,
+        "complexity_score": 0.0438,
+        "IDF_score": 0.265,
+        "average_token_len": 64.1,
+        "Average_Char_Lenth": 296.5
+    },
+    "piqa_simple_response": {
+        "perplexity": 6.087331914901734,
+        "diversity_score": 0.109,
+        "complexity_score": 0.0424,
+        "IDF_score": 0.245,
+        "average_token_len": 46.6,
+        "Average_Char_Lenth": 215.4
+    }
+}

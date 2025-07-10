@@ -1,0 +1,58 @@
+{
+    "mmlu_moral_scenarios_step_by_step": {
+        "perplexity": 3.5410818894704184,
+        "diversity_score": 0.0796,
+        "complexity_score": 0.0268,
+        "IDF_score": 0.421,
+        "average_token_len": 224.06666666666666,
+        "Average_Char_Lenth": 1102.9666666666667
+    },
+    "mmlu_moral_scenarios_gpt4": {
+        "perplexity": 3.712145439783732,
+        "diversity_score": 0.0525,
+        "complexity_score": 0.0259,
+        "IDF_score": 0.309,
+        "average_token_len": 151.86666666666667,
+        "Average_Char_Lenth": 787.9666666666667
+    },
+    "mmlu_moral_scenarios_claude": {
+        "perplexity": 3.1945934772491453,
+        "diversity_score": 0.0551,
+        "complexity_score": 0.0277,
+        "IDF_score": 0.34,
+        "average_token_len": 162.96666666666667,
+        "Average_Char_Lenth": 845.9333333333333
+    },
+    "mmlu_moral_scenarios_mini_gpt4": {
+        "perplexity": 3.3268505175908407,
+        "diversity_score": 0.0435,
+        "complexity_score": 0.0238,
+        "IDF_score": 0.313,
+        "average_token_len": 138.33333333333334,
+        "Average_Char_Lenth": 699.8666666666667
+    },
+    "mmlu_moral_scenarios_groundtruth": {
+        "perplexity": 26.206829897562663,
+        "diversity_score": 0.355,
+        "complexity_score": 0.00152,
+        "IDF_score": 0.116,
+        "average_token_len": 4.0,
+        "Average_Char_Lenth": 15.0
+    },
+    "mmlu_moral_scenarios_gpt4_style_in_context_examples": {
+        "perplexity": 3.6190980513890585,
+        "diversity_score": 0.0716,
+        "complexity_score": 0.0205,
+        "IDF_score": 0.417,
+        "average_token_len": 217.4,
+        "Average_Char_Lenth": 1065.2666666666667
+    },
+    "mmlu_moral_scenarios_openai_human_written_examples": {
+        "perplexity": 3.562023234367371,
+        "diversity_score": 0.051,
+        "complexity_score": 0.0307,
+        "IDF_score": 0.207,
+        "average_token_len": 95.2,
+        "Average_Char_Lenth": 481.06666666666666
+    }
+}

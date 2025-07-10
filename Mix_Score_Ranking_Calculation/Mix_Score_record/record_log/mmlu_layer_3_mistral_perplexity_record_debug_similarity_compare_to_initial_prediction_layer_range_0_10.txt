@@ -1,0 +1,63 @@
+-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.123
+Complexity Score: 0.000488
+Skywork Reward Score: -5.638802083333333
+IDF Score: 16.8
+perplexity: 15322.946380615234
+CAR_score: -0.205
+Average Token Length: 5.0
+
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0602
+Complexity Score: 0.0262
+Skywork Reward Score: 19.595194498697918
+IDF Score: 0.841
+perplexity: 1.8996526598930359
+CAR_score: 6.84
+Average Token Length: 490.6
+
+-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0651
+Complexity Score: 0.025
+Skywork Reward Score: 20.628645833333334
+IDF Score: 0.86
+perplexity: 1.9234105706214906
+CAR_score: 7.04
+Average Token Length: 534.6
+
+-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0688
+Complexity Score: 0.0236
+Skywork Reward Score: 21.0625
+IDF Score: 0.863
+perplexity: 2.564011108875275
+CAR_score: 6.44
+Average Token Length: 589.4
+
+-------------------------------------anthropic----------------------------------------------
+Diversity Score: 0.0494
+Complexity Score: 0.00742
+Skywork Reward Score: 19.17890625
+IDF Score: 0.77
+perplexity: 2.090782415866852
+CAR_score: 6.11
+Average Token Length: 319.9
+
+-------------------------------------provide_gpt4_style_example----------------------------------------------
+Diversity Score: 0.0556
+Complexity Score: 0.016
+Skywork Reward Score: 20.322395833333335
+IDF Score: 0.912
+perplexity: 2.165107798576355
+CAR_score: 6.19
+Average Token Length: 507.9
+
+-------------------------------------human_written_examples----------------------------------------------
+Diversity Score: 0.0461
+Complexity Score: 0.0222
+Skywork Reward Score: 15.045491536458334
+IDF Score: 0.881
+perplexity: 2.4735062599182127
+CAR_score: 4.18
+Average Token Length: 417.7
+

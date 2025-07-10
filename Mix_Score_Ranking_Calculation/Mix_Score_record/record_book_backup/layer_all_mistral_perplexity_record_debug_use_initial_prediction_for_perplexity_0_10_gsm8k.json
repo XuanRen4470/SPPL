@@ -1,0 +1,26 @@
+{
+    "gsm8k_step_by_step": {
+        "in_context_perplexity": 2.1708929181098937
+    },
+    "gsm8k_gpt4": {
+        "in_context_perplexity": 2.3626336097717284
+    },
+    "gsm8k_claude": {
+        "in_context_perplexity": 2.6227062344551086
+    },
+    "gsm8k_mini_gpt4": {
+        "in_context_perplexity": 2.494535768032074
+    },
+    "gsm8k_groundtruth": {
+        "in_context_perplexity": 4.962387943267823
+    },
+    "gsm8k_gpt4_style_in_context_examples": {
+        "in_context_perplexity": 2.4200052976608277
+    },
+    "gsm8k_openai_human_written_examples": {
+        "in_context_perplexity": 4.456974494457245
+    },
+    "gsm8k_rewrite_groundtruth_in_own_words": {
+        "in_context_perplexity": 5.038052725791931
+    }
+}

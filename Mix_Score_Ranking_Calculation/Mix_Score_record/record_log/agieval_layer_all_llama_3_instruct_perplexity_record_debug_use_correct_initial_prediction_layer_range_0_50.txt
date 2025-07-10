@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0719
+Complexity Score: 0.0756
+IDF Score: 0.459
+perplexity: 4.498124279975891
+Average Token Length: 245.28
+Average Char Length: 1239.04-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0594
+Complexity Score: 0.0621
+IDF Score: 0.459
+perplexity: 2.985549943447113
+Average Token Length: 211.0
+Average Char Length: 1046.62-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0792
+Complexity Score: 0.0648
+IDF Score: 0.507
+perplexity: 4.015748314857483
+Average Token Length: 320.38
+Average Char Length: 1549.28-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0691
+Complexity Score: 0.0736
+IDF Score: 0.476
+perplexity: 4.102056488990784
+Average Token Length: 276.42
+Average Char Length: 1366.32-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.508
+Complexity Score: 0.00896
+IDF Score: inf
+perplexity: 17575.28310546875
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0895
+Complexity Score: 0.0684
+IDF Score: 0.507
+perplexity: 4.203950319290161
+Average Token Length: 339.6
+Average Char Length: 1644.84-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0699
+Complexity Score: 0.0729
+IDF Score: 0.478
+perplexity: 4.405231864452362
+Average Token Length: 269.56
+Average Char Length: 1340.84-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0879
+Complexity Score: 0.0771
+IDF Score: 0.315
+perplexity: 4.834879641532898
+Average Token Length: 94.68
+Average Char Length: 455.34

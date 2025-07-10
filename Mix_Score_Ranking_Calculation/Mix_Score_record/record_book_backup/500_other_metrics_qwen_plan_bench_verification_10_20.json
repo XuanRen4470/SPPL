@@ -1,0 +1,66 @@
+{
+    "plan_bench_verification_step_by_step": {
+        "perplexity": 1.4241143226623536,
+        "IDF_score": 0.715,
+        "log_propability": -172.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -1.02,
+        "cos_similarity": 0.982470703125
+    },
+    "plan_bench_verification_claude": {
+        "perplexity": 1.4321387648582458,
+        "IDF_score": 0.548,
+        "log_propability": -91.2,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -1.01,
+        "cos_similarity": 0.978466796875
+    },
+    "plan_bench_verification_gpt4_style_in_context_examples": {
+        "perplexity": 1.3067946434020996,
+        "IDF_score": 0.684,
+        "log_propability": -123.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -1.16,
+        "cos_similarity": 0.988916015625
+    },
+    "plan_bench_verification_gpt4": {
+        "perplexity": 1.4079706430435182,
+        "IDF_score": 0.719,
+        "log_propability": -161.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -1.04,
+        "cos_similarity": 0.986328125
+    },
+    "plan_bench_verification_mini_gpt4": {
+        "perplexity": 1.9502600193023683,
+        "IDF_score": 0.635,
+        "log_propability": -245.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -0.705,
+        "cos_similarity": 0.9693359375
+    },
+    "plan_bench_verification_groundtruth": {
+        "perplexity": 68.100053024292,
+        "IDF_score": 1.31,
+        "log_propability": -37.9,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -0.153,
+        "cos_similarity": 0.76591796875
+    },
+    "plan_bench_verification_openai_human_written_examples": {
+        "perplexity": 1.71794091463089,
+        "IDF_score": 0.615,
+        "log_propability": -152.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -0.818,
+        "cos_similarity": 0.977685546875
+    },
+    "plan_bench_verification_rewrite_groundtruth_in_own_words": {
+        "perplexity": 2.7613760948181154,
+        "IDF_score": 0.574,
+        "log_propability": -250.0,
+        "skywork_reward_score": -2.088102315266927,
+        "CAR_score": -0.539,
+        "cos_similarity": 0.941357421875
+    }
+}

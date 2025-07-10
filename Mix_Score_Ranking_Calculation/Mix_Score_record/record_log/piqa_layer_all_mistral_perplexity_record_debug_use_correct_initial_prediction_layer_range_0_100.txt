@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0888
+Complexity Score: 0.128
+IDF Score: 0.598
+perplexity: 5.782006540298462
+Average Token Length: 159.16
+Average Char Length: 713.83-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0999
+Complexity Score: 0.126
+IDF Score: 0.566
+perplexity: 3.688799276351929
+Average Token Length: 196.53
+Average Char Length: 873.16-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.125
+Complexity Score: 0.0997
+IDF Score: 0.69
+perplexity: 4.2228201222419735
+Average Token Length: 270.22
+Average Char Length: 1114.36-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0717
+Complexity Score: 0.109
+IDF Score: 0.422
+perplexity: 4.872904970645904
+Average Token Length: 123.3
+Average Char Length: 545.34-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.326
+Complexity Score: 0.00157
+IDF Score: 45500.0
+perplexity: 4928200.191691894
+Average Token Length: 3.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0786
+Complexity Score: 0.0991
+IDF Score: 0.436
+perplexity: 5.240606520175934
+Average Token Length: 123.41
+Average Char Length: 553.44-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0779
+Complexity Score: 0.0776
+IDF Score: 0.293
+perplexity: 5.883593547344208
+Average Token Length: 69.12
+Average Char Length: 295.76-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0867
+Complexity Score: 0.0884
+IDF Score: 0.4
+perplexity: 15.529487640857697
+Average Token Length: 53.18
+Average Char Length: 221.89
