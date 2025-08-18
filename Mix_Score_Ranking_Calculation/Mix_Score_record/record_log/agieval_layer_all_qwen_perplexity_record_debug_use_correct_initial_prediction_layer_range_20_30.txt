@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0165
+Complexity Score: 0.016
+IDF Score: 0.471
+perplexity: 3.0754451036453245
+Average Token Length: 249.4
+Average Char Length: 1340.3-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0197
+Complexity Score: 0.0138
+IDF Score: 0.432
+perplexity: 2.4146515369415282
+Average Token Length: 200.2
+Average Char Length: 1048.2-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0165
+Complexity Score: 0.0168
+IDF Score: 0.531
+perplexity: 3.5964590072631837
+Average Token Length: 297.1
+Average Char Length: 1499.1-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0137
+Complexity Score: 0.0155
+IDF Score: 0.422
+perplexity: 2.962519979476929
+Average Token Length: 272.0
+Average Char Length: 1474.3-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.225
+Complexity Score: 0.0172
+IDF Score: inf
+perplexity: 24333083.561328124
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0135
+Complexity Score: 0.0176
+IDF Score: 0.463
+perplexity: 2.7088349938392637
+Average Token Length: 324.0
+Average Char Length: 1628.7-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.014
+Complexity Score: 0.0158
+IDF Score: 0.418
+perplexity: 3.085608220100403
+Average Token Length: 258.4
+Average Char Length: 1361.0-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0658
+Complexity Score: 0.0178
+IDF Score: 0.272
+perplexity: 4.8572324991226195
+Average Token Length: 66.2
+Average Char Length: 345.5

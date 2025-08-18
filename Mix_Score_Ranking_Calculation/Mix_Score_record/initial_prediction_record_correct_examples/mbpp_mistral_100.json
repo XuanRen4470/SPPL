@@ -1,0 +1,28 @@
+{
+    "initial_prediction": [
+        "def radian_degree(degrees):\n return degrees * 0.017453292519943295",
+        "def max_of_nth(tuples, n):\n column = [row[n] for row in tuples]\n return max(column)\n\n# Do not run this test in your answer\nassert max_of_nth([(5, 6, 7), (1, 3, 5), (8, 9, 19)], 2) == 19",
+        "def tuple_modulo(tuple1, tuple2):\n return tuple(elem1 % elem2 for elem1, elem2 in zip(tuple1, tuple2))",
+        "def is_upper(string):\n return string.upper()",
+        "def sample_nam(names):\n names_to_sum = [name for name in names if name[0].isupper()]\n return sum(len(name) for name in names_to_sum)",
+        "def rectangle_perimeter(length, width):\n return 2 * (length + width)",
+        "def count_char(string, char):\n return string.count(char)",
+        "def remove_spaces(string):\n return string.replace(\" \", \"\")\n\n# For testing purposes, uncomment the following line to check the function\n# assert remove_spaces(\"a b c\") == \"abc\"\n\n# Do not run this test in your answer, it is only for demonstration purposes.",
+        "def len_complex(a, b):\n return (a**2 + b**2)**0.5\n\n# Do not run this test in your answer, it is only provided for input format reference.\nassert len_complex(3, 4) == 5.0",
+        "def sort_dict_item(d):\n return {k: v for k, v in sorted(d.items(), key=lambda x: x[0])}\n\n# Example usage:\n# sort_dict_item({(5, 6) : 3, (2, 3) : 9, (8, 4): 10, (6, 4): 12})\n# Output: {(2, 3): 9, (6, 4): 12, (5, 6): 3, (8, 4): 10}",
+        "def count_range_in_list(lst, start, end):\n return sum(1 for i in lst if start <= i <= end)\n\n# Example usage:\n# count_range_in_list([10,20,30,40,40,40,70,80,99], 40, 100)\n# Output: 6"
+    ],
+    "correct_index": [
+        5,
+        10,
+        15,
+        23,
+        38,
+        53,
+        65,
+        77,
+        87,
+        97,
+        99
+    ]
+}

@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0787
+Complexity Score: 0.0787
+IDF Score: 0.782
+perplexity: 2.0089356899261475
+Average Token Length: 481.2
+Average Char Length: 1422.8-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0734
+Complexity Score: 0.0623
+IDF Score: 0.633
+perplexity: 2.0500076055526733
+Average Token Length: 230.0
+Average Char Length: 636.7-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0781
+Complexity Score: 0.0729
+IDF Score: 0.776
+perplexity: 1.8939523100852966
+Average Token Length: 472.9
+Average Char Length: 1352.2-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0735
+Complexity Score: 0.0649
+IDF Score: 0.773
+perplexity: 1.981380319595337
+Average Token Length: 471.5
+Average Char Length: 1354.8-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.651
+Complexity Score: 0.00894
+IDF Score: inf
+perplexity: 56282.9619140625
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0711
+Complexity Score: 0.0676
+IDF Score: 0.759
+perplexity: 2.3042409658432006
+Average Token Length: 386.2
+Average Char Length: 1148.8-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0631
+Complexity Score: 0.0626
+IDF Score: 0.749
+perplexity: 2.301364374160767
+Average Token Length: 368.5
+Average Char Length: 1094.8-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.101
+Complexity Score: 0.088
+IDF Score: 0.647
+perplexity: 2.4749860882759096
+Average Token Length: 211.4
+Average Char Length: 598.6

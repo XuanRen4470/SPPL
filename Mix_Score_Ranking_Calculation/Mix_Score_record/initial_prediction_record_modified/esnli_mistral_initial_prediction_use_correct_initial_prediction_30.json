@@ -1,0 +1,26 @@
+{
+    "initial_prediction": [
+        "The statement \"There are children present\" is an entailment given the context of \"Children smiling and waving at camera.\" The context explicitly states that children are present, so the statement is definitely true in this context.\n\nFinal Answer: entailment",
+        "The statement \"The kids are frowning\" is a contradiction given the context of \"Children smiling and waving at camera.\" The context describes children who are smiling and waving, which is the opposite of frowning. Therefore, the statement is definitely false in this context.\n\nFinal Answer: contradiction",
+        "The statement \"The boy is wearing safety equipment\" is neutral given the context. There is no information in the context that definitively determines whether the boy is wearing safety equipment or not. While it's possible that he could be wearing safety equipment, there's also a chance that he isn't. The truth of the statement is undetermined given the context.\n\nFinal Answer: neutral",
+        "The statement \"Some women are hugging on vacation\" is neutral given the context. The context only describes two blond women hugging each other, but it does not specify that they are on vacation or that only women on vacation hug. Therefore, the truth of the statement is undetermined or irrelevant given the context.\n\nFinal Answer: neutral",
+        "The statement \"There are women showing affection\" is an entailment given the context of \"Two blond women are hugging one another.\" The context entails that women are indeed exhibiting affection towards one another, and the statement accurately reflects that fact.\n\nFinal Answer: entailment",
+        "The statement \"The people are eating omelettes\" is neutral given the context. The truth of the statement is undetermined or irrelevant as there is no information provided in the context about what the other people in the restaurant are eating.\n\nFinal Answer: neutral",
+        "The statement \"The diners are at a restaurant\" is an entailment given the context. It is definitely true that the people in the restaurant setting are diners and that they are at a restaurant.\n\nFinal Answer: entailment",
+        "The statement \"A man is drinking juice\" is an entailment given the context that an older man is drinking orange juice at a restaurant. The context entails that a man (the older man in this case) is indeed drinking juice.\n\nFinal Answer: entailment",
+        "The statement \"A blond man drinking water from a fountain\" is an entailment given the context. The context describes a man with blond hair drinking water from a fountain, so the statement is definitely true in this context.\n\nFinal Answer: entailment",
+        "The statement \"Two women hug each other\" is an entailment given the context. The context describes two women hugging, so the statement is definitely true in that context.\n\nFinal Answer: entailment"
+    ],
+    "correct_index": [
+        4,
+        5,
+        8,
+        12,
+        14,
+        15,
+        17,
+        18,
+        23,
+        29
+    ]
+}

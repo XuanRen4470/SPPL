@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.111
+Complexity Score: 0.0432
+IDF Score: 0.341
+perplexity: 4.9366025686264035
+Average Token Length: 174.2
+Average Char Length: 848.6-------------------------------------claude----------------------------------------------
+Diversity Score: 0.106
+Complexity Score: 0.0355
+IDF Score: 0.409
+perplexity: 4.035389256477356
+Average Token Length: 156.1
+Average Char Length: 775.0-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.156
+Complexity Score: 0.0362
+IDF Score: 0.379
+perplexity: 4.124929642677307
+Average Token Length: 262.6
+Average Char Length: 1265.8-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0707
+Complexity Score: 0.0361
+IDF Score: 0.381
+perplexity: 5.342019510269165
+Average Token Length: 120.1
+Average Char Length: 599.9-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.302
+Complexity Score: 0.0046
+IDF Score: inf
+perplexity: 71.98579864501953
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.15
+Complexity Score: 0.0298
+IDF Score: 0.366
+perplexity: 3.656785321235657
+Average Token Length: 248.2
+Average Char Length: 1124.6-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0775
+Complexity Score: 0.0295
+IDF Score: 0.302
+perplexity: 5.228358340263367
+Average Token Length: 132.2
+Average Char Length: 645.1-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0765
+Complexity Score: 0.0436
+IDF Score: 0.194
+perplexity: 6.752982354164123
+Average Token Length: 39.6
+Average Char Length: 181.4

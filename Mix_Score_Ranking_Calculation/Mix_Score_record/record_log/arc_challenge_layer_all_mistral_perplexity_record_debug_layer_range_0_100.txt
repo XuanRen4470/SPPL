@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0906
+Complexity Score: 0.138
+IDF Score: 0.617
+perplexity: 3.8554686737060546
+Average Token Length: 215.77
+Average Char Length: 912.12-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0885
+Complexity Score: 0.141
+IDF Score: 0.579
+perplexity: 3.0426740312576293
+Average Token Length: 214.49
+Average Char Length: 914.33-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.114
+Complexity Score: 0.125
+IDF Score: 0.701
+perplexity: 3.5459726667404174
+Average Token Length: 299.11
+Average Char Length: 1227.75-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0873
+Complexity Score: 0.138
+IDF Score: 0.556
+perplexity: 3.709963331222534
+Average Token Length: 197.22
+Average Char Length: 837.41-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.395
+Complexity Score: 0.00783
+IDF Score: 177000.0
+perplexity: 1864182893.6268482
+Average Token Length: 2.01
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.106
+Complexity Score: 0.126
+IDF Score: 0.61
+perplexity: 3.280778880119324
+Average Token Length: 263.35
+Average Char Length: 1062.09-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0829
+Complexity Score: 0.114
+IDF Score: 0.444
+perplexity: 4.289066208600998
+Average Token Length: 119.88
+Average Char Length: 530.15-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.112
+Complexity Score: 0.11
+IDF Score: 0.453
+perplexity: 8.627654683589935
+Average Token Length: 60.45
+Average Char Length: 263.11

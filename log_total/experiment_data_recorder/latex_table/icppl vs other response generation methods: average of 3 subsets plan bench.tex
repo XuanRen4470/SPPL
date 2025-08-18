@@ -1,0 +1,23 @@
+\begin{table*}[t!]
+  \centering
+  \resizebox{1.0\textwidth}{!}{
+  \begin{tabular}{l|l|c|c|c|c|c|c}
+    \hline
+    Methods & STD Range & num of recorded data & mistral & llama 3 instruct & qwen & Avg Acc \\ \hline
+    \hline
+    Upper bound  & All Data & 18.0 & 52.88\% & 54.87\% & 41.87\% & 49.88\% \\
+    Step-by-step  &   &   & 37.56\% & 44.48\% & 31.06\% & 37.70\% \\
+    GPT-4 ICL examples  &   &   & 40.86\% & 45.84\% & 36.86\% & 41.19\% \\
+    Human examples  &   &   & 45.01\% & 41.82\% & 29.89\% & 38.91\% \\
+    Mini-GPT-4  &   &   & 38.68\% & 40.29\% & 30.51\% & 36.49\% \\
+    GPT-4  &   &   & 39.33\% & 41.86\% & 31.08\% & 37.42\% \\
+    Claude  &   &   & 51.89\% & 50.09\% & 37.27\% & 46.42\% \\
+    Ours  &   &   & 45.29\% & 50.06\% & 39.66\% & 45.00\% \\
+    \hline
+    Ours - Claude  &   &   & \textcolor{red}{-6.60}\% & \textcolor{red}{-0.03}\% & \textcolor{ForestGreen}{+2.39}\% & \textcolor{red}{-1.42}\% \\
+    Ours - Avg of Others  &   &   & \textcolor{ForestGreen}{+3.07}\% & \textcolor{ForestGreen}{+5.99}\% & \textcolor{ForestGreen}{+6.89}\% & \textcolor{ForestGreen}{+5.31}\% \\
+    \hline
+  \end{tabular}}
+  \caption{seed icppl vs other response generation methods: average of 3 subsets plan bench}
+  \label{tab:icppl vs other response generation methods: average of 3 subsets plan bench}
+\end{table*}

@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.0182
+Complexity Score: 0.0234
+IDF Score: 0.371
+perplexity: 3.4061136722564695
+Average Token Length: 88.9
+Average Char Length: 442.2-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0191
+Complexity Score: 0.0224
+IDF Score: 0.489
+perplexity: 2.7673722922801973
+Average Token Length: 168.9
+Average Char Length: 866.6-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.0224
+Complexity Score: 0.0194
+IDF Score: 0.557
+perplexity: 3.630579447746277
+Average Token Length: 148.75
+Average Char Length: 704.25-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0203
+Complexity Score: 0.0189
+IDF Score: 0.347
+perplexity: 3.0663146495819094
+Average Token Length: 78.35
+Average Char Length: 381.05-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.126
+Complexity Score: 0.000975
+IDF Score: 9.36
+perplexity: 938.76268491745
+Average Token Length: 4.0
+Average Char Length: 18.15-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.0197
+Complexity Score: 0.0196
+IDF Score: 0.291
+perplexity: 2.991848385334015
+Average Token Length: 91.5
+Average Char Length: 448.6-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.0226
+Complexity Score: 0.0158
+IDF Score: 0.233
+perplexity: 2.5192824065685273
+Average Token Length: 76.65
+Average Char Length: 362.65-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.0326
+Complexity Score: 0.0216
+IDF Score: 0.226
+perplexity: 4.01049627661705
+Average Token Length: 42.95
+Average Char Length: 194.25

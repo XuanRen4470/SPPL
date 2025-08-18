@@ -1,0 +1,20 @@
+\begin{table*}[t!]
+  \centering
+  \resizebox{1.0\textwidth}{!}{
+  \begin{tabular}{l|l|c|c|c|c|c|c|c}
+    \hline
+    Methods & STD Range & num of recorded data & mistral & llama 3 instruct & qwen & Avg Acc & Weighted Spearman Pho \\ \hline
+    \hline
+    Upper bound  & All Data & 18.0 & 52.88\% & 54.87\% & 41.87\% & 49.88\% &   \\
+    skywork  &   &   & 43.66\% & 46.01\% & 36.12\% & 41.93\% & 0.101 \\
+    CAR  &   &   & 41.87\% & 44.99\% & 35.00\% & 40.62\% & 0.128 \\
+    IDF  &   &   & 52.88\% & 49.73\% & 38.19\% & 46.93\% & 0.387 \\
+    perplexity  &   &   & 42.32\% & 46.60\% & 36.44\% & 41.79\% & 0.189 \\
+    Ours  &   &   & 45.29\% & 50.06\% & 39.66\% & 45.00\% & 0.240 \\
+    \hline
+    Ours - Perplexity  &   &   & \textcolor{ForestGreen}{+2.97}\% & \textcolor{ForestGreen}{+3.45}\% & \textcolor{ForestGreen}{+3.22}\% & \textcolor{ForestGreen}{+3.22}\% & \textcolor{ForestGreen}{+0.051} \\
+    \hline
+  \end{tabular}}
+  \caption{seed icppl vs other metrics: average of 3 subsets plan bench}
+  \label{tab:icppl vs other metrics: average of 3 subsets plan bench}
+\end{table*}

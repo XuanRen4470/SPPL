@@ -1,0 +1,49 @@
+-------------------------------------gpt4----------------------------------------------
+Diversity Score: 0.067
+Complexity Score: 0.0943
+IDF Score: 0.562
+perplexity: 3.6364878714084625
+Average Token Length: 200.58333333333334
+Average Char Length: 999.125-------------------------------------claude----------------------------------------------
+Diversity Score: 0.0598
+Complexity Score: 0.089
+IDF Score: 0.588
+perplexity: 3.0868527740240097
+Average Token Length: 183.41666666666666
+Average Char Length: 915.2916666666666-------------------------------------step_by_step----------------------------------------------
+Diversity Score: 0.08
+Complexity Score: 0.0782
+IDF Score: 0.641
+perplexity: 3.413185109694799
+Average Token Length: 282.4166666666667
+Average Char Length: 1330.6666666666667-------------------------------------mini_gpt4----------------------------------------------
+Diversity Score: 0.0645
+Complexity Score: 0.0932
+IDF Score: 0.575
+perplexity: 3.5984920958677926
+Average Token Length: 198.20833333333334
+Average Char Length: 946.6666666666666-------------------------------------groundtruth----------------------------------------------
+Diversity Score: 0.49
+Complexity Score: 0.00937
+IDF Score: inf
+perplexity: 35234.10274251302
+Average Token Length: 1.0
+Average Char Length: 1.0-------------------------------------gpt4_style_in_context_examples----------------------------------------------
+Diversity Score: 0.074
+Complexity Score: 0.0858
+IDF Score: 0.575
+perplexity: 3.455264319976171
+Average Token Length: 237.08333333333334
+Average Char Length: 1105.9583333333333-------------------------------------openai_human_written_examples----------------------------------------------
+Diversity Score: 0.06
+Complexity Score: 0.0752
+IDF Score: 0.437
+perplexity: 3.9306618670622506
+Average Token Length: 116.5
+Average Char Length: 584.4166666666666-------------------------------------simple_response----------------------------------------------
+Diversity Score: 0.132
+Complexity Score: 0.0643
+IDF Score: 0.318
+perplexity: 5.56348912914594
+Average Token Length: 50.708333333333336
+Average Char Length: 251.54166666666666
