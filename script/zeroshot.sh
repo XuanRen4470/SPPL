@@ -14,8 +14,8 @@
 conda init
 conda activate acl_2025
 
-python /gpfs/users/a1796450/ACL_2024/Minimum_Change/Mix_Score_Ranking_Calculation/june_28_zero_shot_initial_prediction_qwen.py --train_task_name ecqa
+python /gpfs/users/a1796450/ACL_2024/SPPL/Mix_Score_Ranking_Calculation/zero_shot_initial_prediction.py  --model_name_list qwen
 
-# python /gpfs/users/a1796450/ACL_2024/Minimum_Change/Mix_Score_Ranking_Calculation/june_28_zero_shot_initial_prediction_qwen.py --train_task_name agieval
+# python /gpfs/users/a1796450/ACL_2024/SPPL/Mix_Score_Ranking_Calculation/zero_shot_initial_prediction.py  --model_name_list mistral
 
-# python /gpfs/users/a1796450/ACL_2024/Minimum_Change/Mix_Score_Ranking_Calculation/june_28_zero_shot_initial_prediction_qwen.py --train_task_name squad
+# python /gpfs/users/a1796450/ACL_2024/SPPL/Mix_Score_Ranking_Calculation/zero_shot_initial_prediction.py  --model_name_list llama_3_instruct

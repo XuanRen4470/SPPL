@@ -2056,7 +2056,7 @@ def load_gold_label_and_question_list(task_name, n_data_creation, provide_ground
         gold_label_list = []
         for item in train_data_list:
             qq = item['question']
-            qq += "\nPlease inference first then provide the final plan at the end after the word 'Final Answer:'"
+            qq += "\nPlease inference first then provide the API-Request at the end after the word 'Final Answer:'"
             question_list.append(qq)
             gold_label_list.append(item['gold_label'])
 

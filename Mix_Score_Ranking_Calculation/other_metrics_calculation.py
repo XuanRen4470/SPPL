@@ -12,16 +12,14 @@ sys.path.append(parent_dir)
 from config.config import HOME_DIRECTORY, MODEL_DIRECTORY
 from utils.in_context_perplexity_measurement_function import original_perplexity_calculation, probability_in_context_perplexity_calculation
 from utils.in_context_data_loader import perplexity_calculation_in_context_data_loader
-import argparse
+# import argparse
 
-parser = argparse.ArgumentParser(description='train and evaluate')
-parser.add_argument('--model_name', type=str, required=False, default='llama2-13b')
-parser.add_argument('--suffix', type=str, default='', required=False, help='model_name')
+# parser = argparse.ArgumentParser(description='train and evaluate')
+# parser.add_argument('--model_name', type=str, required =False, default='llama2-13b')
 
-args = parser.parse_args()
-suffix_ = args.suffix
+# args = parser.parse_args()
 
-model_name = args.model_name
+# model_name = args.model_name
 
 
 os.environ["MKL_SERVICE_FORCE_INTEL"] = "1"
@@ -35,6 +33,9 @@ CAR_beta = 3
 # train_task_list = ['piqa', 'mmlu', 'winogrande', 'agieval', 'squad', 'gsm8k', 'math_algebra', 'ecqa', 'boolq', 'api_bank', 'mmlu_pro', 'hellaswag', 'arc_challenge', 'drop', 'math_geometry', 'mmlu_moral_scenarios', 'mmlu_pro_law']
 train_task_list = ['api_bank' , 'gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'plan_bench_generation', 'plan_bench_generalization', 'plan_bench_optimality', 'plan_bench_reuse', 'plan_bench_verification', 'plan_bench_replaning', 'plan_bench_execution']
 # train_task_list = ['plan_bench_generation', 'plan_bench_generalization', 'plan_bench_optimality', 'plan_bench_reuse', 'plan_bench_verification', 'plan_bench_execution', 'plan_bench_replaning']
+
+# train_task_list = ['api_bank']
+
 
 test_idx = -1
 
@@ -69,9 +70,9 @@ def load_model(model_name):
     model.to(device)
     return model, tokenizer, model_base
 
-# for model_name in ['mistral', 'qwen', 'llama_3_instruct']:
+for model_name in ['mistral', 'qwen', 'llama_3_instruct']:
 # for model_name in ['llama_3_instruct']:
-for model_name in [model_name]:
+# for model_name in [model_name]:
     if 'mistral' in model_name:
         model_name = 'mistral'
     elif 'llama_3_instruct' in model_name:
@@ -168,14 +169,7 @@ for model_name in [model_name]:
 
                 record_book[key] = element
 
-            # if load_original_question:
-            #     with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_other_metrics_correct_original_{model_name}_{train_task_name}_{data_name}_{suffix_}.json", 'w') as f:
-            #         json.dump(record_book, f, indent=4)
-            # else:
-            #     with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_other_metrics_{model_name}_{train_task_name}_{data_name}_{suffix_}.json", 'w') as f:
-            #         json.dump(record_book, f, indent=4)
-            
-            with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_other_metrics_{model_name}_{train_task_name}_{initial_index}_{last_index}_{suffix_}.json", 'w') as f:
+            with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_other_metrics_{model_name}_{train_task_name}_{initial_index}_{last_index}.json", 'w') as f:
                 json.dump(record_book, f, indent=4)
             a = 1
 

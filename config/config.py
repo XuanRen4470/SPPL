@@ -72,7 +72,7 @@ parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(parent_dir)
 MODEL_DIRECTORY = os.path.dirname(parent_dir) + '/model'
 OUTPUT_RECORD_DIRECTORY = os.path.dirname(parent_dir) + '/output_record'
-LLAMA_FACTORY_DIRECTORY = os.path.dirname(parent_dir) + '/LLaMA-Factory-ACL-2025'
+LLAMA_FACTORY_DIRECTORY = os.path.dirname(parent_dir) + '/SPPL/LLaMA-Factory-ACL-2025'
 LLAMA_FACTORY_TEMP_DIRECTORY = '/gpfs/users/a1796450/llama_factory_temp/delete_later'
 HOME_DIRECTORY = parent_dir
 YOUR_API_KEY = os.getenv('GPT_API')

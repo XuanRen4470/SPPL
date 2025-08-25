@@ -149,8 +149,8 @@ def calc_accuracy_GSM8K(question_list, output_list, groundtruth_list, output_fol
     cover_ratio = 0
 
     for i in range(len(output_list)):
-        if i % 50 ==0:
-            print(i)
+        # if i % 50 ==0:
+        #     print(i)
         temp = output_list[i]
         # extracted_final_answer = extract_boxed_content(temp) 
         extracted_final_answer = extract_last_number(temp)
@@ -208,8 +208,6 @@ def calc_accuracy_MATH(question_list, output_list, groundtruth_list, output_fold
     cover_ratio = 0
 
     for i in range(len(output_list)):
-        if i % 50 ==0:
-            print(i)
         temp = output_list[i]
         extracted_final_answer = extract_last_number(temp)
         final_answer = extracted_final_answer
@@ -384,8 +382,7 @@ def calc_accuracy_PLAN_BENCH(PLAN_BENCH_test_data_list_total, predict_list, outp
             output_data["instances"].append(new_instance)
 
         task_name = task_name.upper()
-        modified_path = f"{HOME_DIRECTORY}/output/{output_folder_name}/intermediate_results/{task_name}_{domain_name}.json"
-
+        modified_path = f"{HOME_DIRECTORY}/evaluation/intermediate_data/plan_bench_results/{task_name}_{domain_name}.json"
         with open(modified_path, 'w') as file:
             json.dump(output_data, file, indent=4)
         modified_path = modified_path.replace('.json', '')

@@ -8,29 +8,86 @@ sys.path.append(parent_dir)
 from utils.function import load_experimental_result
 from utils.data_recorder import write_to_table
 from config.config import HOME_DIRECTORY
+import argparse
 
 
-rank_method_list = ['in_context_perplexity']
 
 
 
-index_range_list = [(0, 50), (50, 100), (100, 150)]
+
+
+
+
+parser = argparse.ArgumentParser(description="Experiment configuration")
+
+# 你最初的参数
+parser.add_argument(
+    "--index_range_list",
+    type=lambda s: [tuple(map(int, item.split("-"))) for item in s.split(",")],
+    default=[(0, 50), (50, 100), (100, 150)],
+    help="List of index ranges, e.g. '0-50,50-100,100-150'"
+)
+parser.add_argument(
+    "--num_of_incontext_examples",
+    type=int,
+    default=2,
+    help="Number of in-context examples"
+)
+parser.add_argument(
+    "--evaluation_task",
+    type=str,
+    choices=["main_experiment", "planbench"],
+    default="main_experiment",
+    help="Task type"
+)
+
+parser.add_argument(
+    "--model_name_list",
+    type=str,
+    nargs="+",
+    choices=["mistral", "llama_3_instruct", "qwen"],
+    default=["mistral", "llama_3_instruct", "qwen"],
+    help="Target model names (space-separated)"
+)
+
+
+args = parser.parse_args()
+
+# index_range_list = [(0, 50), (50, 100), (100, 150)]
+# index_range_list = [(0, 10), (10, 20), (20, 30)]
+# index_range_list = [(0, 50), (50, 100), (100, 150)]
+# index_range_list = [(0, 30), (30, 60), (60, 90)]
+# index_range_list = [(0, 100), (100, 200), (200, 300)]
+index_range_list = args.index_range_list
+# how many in-context example do you wish to add for Self-Algined perplexity ?
+# num_of_incontext_examples = 5
+# num_of_incontext_examples = 4
+# num_of_incontext_examples = 3
+# num_of_incontext_examples = 2   
+# num_of_incontext_examples = 1
+num_of_incontext_examples = args.num_of_incontext_examples
+# evaluation_task = 'main_experiment' # if you wish to run metrics comparison on main experiment, set evaluation_task = 'main_experiment'
+# evaluation_task = 'planbench' # if you wish to run metrics comparison on PlanBench, set evaluation_task = 'planbench'
+evaluation_task = args.evaluation_task
+# which model do you wish to evaluate? 
+model_name_list = args.model_name_list
+
+evaluation_task = 'planbench'
+
+
+
+# index_range_list = [(0, 50), (50, 100), (100, 150)]
+# num_of_incontext_examples = 2
+# # num_of_incontext_examples = 3
+# evaluation_task = 'main_experiment'
+# evaluation_task = 'planbench'
+
+
+num_of_run = len(index_range_list)
+ranking_method = 'in_context_perplexity'
 
 
 experimental_result_list = []
-num_of_run = len(index_range_list)
-
-
-suffix_ = 'unprocessed'
-# suffix_ = ''
-
-
-num_of_incontext_examples = 2
-# num_of_incontext_examples = 3
-
-evaluation_task = 'main_experiment'
-# evaluation_task = 'planbench'
-
 table_tex_name = f'icppl vs other response generation methods: average of {num_of_run} subsets  num of incontext examples: {num_of_incontext_examples}'
 
 if evaluation_task == 'main_experiment':
@@ -43,8 +100,6 @@ elif evaluation_task == 'planbench':
     table_tex_name += ' plan bench'
 
 
-# model_name_list = ['mistral', 'llama_3_instruct', 'qwen']
-model_name_list = ['qwen']
 
 n_train_recorder = 300
 n_train_recorder_other_metrics = 300
@@ -245,11 +300,6 @@ experimental_result['Claude'] = {}
 experimental_result['Ours'] = {}
 experimental_result['Ours - Claude'] = {}
 
-for ranking_method in rank_method_list:
-    if ranking_method == 'in_context_perplexity':
-        experimental_result['Ours'] = {}
-    else:
-        experimental_result[ranking_method] = {}
 
 column_name_list = ['STD Range', 'num of recorded data']
 for model_name in model_name_list:
@@ -277,11 +327,6 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
         experimental_result['Ours - Claude'] = {}
         experimental_result['Ours - Avg of Others'] = {}
 
-        for ranking_method in rank_method_list:
-            if ranking_method == 'in_context_perplexity':
-                experimental_result['Ours'] = {}
-            else:
-                experimental_result[ranking_method] = {}
 
         column_name_list = ['STD Range', 'num of recorded data']
         for model_name in model_name_list:
@@ -293,224 +338,218 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
             for column_name in column_name_list:
                 experimental_result[row_name][column_name] = ''
 
-        for ranking_method in rank_method_list:
-            avg_accuracy_best = []
-            avg_mix_score = []
-            avg_gpt4 = []
-            avg_claude = []
-            avg_mini_gpt4 = []
-            avg_human_example = []
-            avg_gpt4_example = []
-            avg_step_by_step = []
-            diversity_list = []
-            weighted_rho = []
+        avg_accuracy_best = []
+        avg_mix_score = []
+        avg_gpt4 = []
+        avg_claude = []
+        avg_mini_gpt4 = []
+        avg_human_example = []
+        avg_gpt4_example = []
+        avg_step_by_step = []
+        diversity_list = []
+        weighted_rho = []
 
-            counted_task_num = 0
-            for model_name in model_name_list:
-                avg_accuracy_best_per_model = []
-                avg_mix_score_per_model = []
-                avg_gpt4_per_model = []
-                avg_claude_per_model = []
-                avg_mini_gpt4_per_model = []
-                avg_human_example_per_model = []
-                avg_gpt4_example_per_model = []
-                avg_step_by_step_per_model = []
-                diversity_list_per_model = []
-                weighted_rho_per_model = []
+        counted_task_num = 0
+        for model_name in model_name_list:
+            avg_accuracy_best_per_model = []
+            avg_mix_score_per_model = []
+            avg_gpt4_per_model = []
+            avg_claude_per_model = []
+            avg_mini_gpt4_per_model = []
+            avg_human_example_per_model = []
+            avg_gpt4_example_per_model = []
+            avg_step_by_step_per_model = []
+            diversity_list_per_model = []
+            weighted_rho_per_model = []
 
-                pho_for_each_model = []
-                acc_for_each_model = []
-                diversity_for_each_model = []
-                task_name_list = default_lr_task_name_list
-                avg_mix_score_subset_total = []
-                method_names_with_ranks_total = []
-                layerwise_best_record_book_list = []
-                layerwise_best_record_book = {}
-                log_line = ''
-                best_log_line = ''
+            pho_for_each_model = []
+            acc_for_each_model = []
+            diversity_for_each_model = []
+            task_name_list = default_lr_task_name_list
+            avg_mix_score_subset_total = []
+            method_names_with_ranks_total = []
+            layerwise_best_record_book_list = []
+            layerwise_best_record_book = {}
+            log_line = ''
+            best_log_line = ''
+            
+            for task_name in task_name_list:
+
+                suffix = f'{num_of_incontext_examples}_examples'
+
                 
-                for task_name in task_name_list:
-                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}_{suffix_}.json'                            
-                    with open(file_path, 'r') as f:
-                        ppl_cos_record = json.load(f)
-
-                    if 'plan' in task_name:
-                        suffix_ += f'_{num_of_incontext_examples}_examples_use_plan_prompt'
-                    else:
-                        suffix_ += f'_{num_of_incontext_examples}_examples'
-                    if 'plan_bench' in task_name:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_plan_bench{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
-                    else:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_main{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
-
-                    with open(file_path, 'r') as f:
-                        in_context_ppl_cos_record = json.load(f)
-
-                    seed_num = 0
-                    sft_lr = '2e-05'
-                    n_train = 1000
-                    if 'plan_bench' not in task_name:
-                        epoch_num = 20
-                    else:
-                        epoch_num = 40
-                    default_lr_experiment_result_dict = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
-                    seed_num = 1
-                    default_lr_experiment_result_dict_1 = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
-                    seed_num = 2
-                    default_lr_experiment_result_dict_2 = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
+                file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_{suffix}.json'
+                with open(file_path, 'r') as f:
+                    in_context_ppl_cos_record = json.load(f)
                 
-                    diversity = calculate_diversity(default_lr_experiment_result_dict[model_name][task_name])              
 
-                    if diversity > diff_threshold:
-                        diversity_list.append(diversity)
-                        diversity_for_each_model.append(diversity)
-                        counted_task_num += 1
-                        print(f'===================={task_name}====================')
-                        log_line += f'===================={task_name}====================\n'
-                        best_log_line += f'===================={task_name}====================\n'
+                file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'  
+                with open(file_path, 'r') as f:
+                    ppl_cos_record = json.load(f)
 
-                        ppl_values, IDF_values, log_propability_values, skywork_reward_score_values, CAR_score_values, name_list = loading_other_metric_scores(task_name, ppl_cos_record)
-                        
-                        in_context_ppl_values, _ = loading_icppl_scores(task_name, in_context_ppl_cos_record)
-
-                        if task_name in default_lr_task_name_list:
-                            experiment_result_dict = default_lr_experiment_result_dict
-                            experiment_result_dict_1 = default_lr_experiment_result_dict_1
-                            experiment_result_dict_2 = default_lr_experiment_result_dict_2
-
-                        ranked_method_name_list, method_names_with_ranks = rank_on_metrics(in_context_ppl_values, ppl_values, IDF_values, log_propability_values, skywork_reward_score_values, CAR_score_values, name_list, ranking_method = ranking_method)
-
-                        rho, gt_accuracy_record_detail, key_name_list, accuracy_best, chosen_method_accuracy = calc_spearman_coefficient_3(experiment_result_dict[model_name][task_name], experiment_result_dict_1[model_name][task_name], experiment_result_dict_2[model_name][task_name], ranked_method_name_list, task_name)
-                        avg_accuracy_best.append(float(accuracy_best))
-                        avg_accuracy_best_per_model.append(float(accuracy_best))
-
-                        if chosen_method_accuracy is not None:
-                            avg_mix_score.append(float(chosen_method_accuracy))
-                            avg_mix_score_per_model.append(float(chosen_method_accuracy))
-
-                        if experiment_result_dict[model_name][task_name]['gpt4'] is not None:
-                            avg_gpt4.append(float(experiment_result_dict[model_name][task_name]['gpt4']))
-                            avg_gpt4_per_model.append(float(experiment_result_dict[model_name][task_name]['gpt4']))
-
-                        if experiment_result_dict[model_name][task_name]['claude'] is not None:
-                            avg_claude.append(float(experiment_result_dict[model_name][task_name]['claude']))
-                            avg_claude_per_model.append(float(experiment_result_dict[model_name][task_name]['claude']))
-
-                        if experiment_result_dict[model_name][task_name]['mini_gpt4'] is not None:
-                            avg_mini_gpt4.append(float(experiment_result_dict[model_name][task_name]['mini_gpt4']))
-                            avg_mini_gpt4_per_model.append(float(experiment_result_dict[model_name][task_name]['mini_gpt4']))
-                        
-                        if experiment_result_dict[model_name][task_name]['openai_human_written_examples'] is not None:
-                            avg_human_example.append(float(experiment_result_dict[model_name][task_name]['openai_human_written_examples']))
-                            avg_human_example_per_model.append(float(experiment_result_dict[model_name][task_name]['openai_human_written_examples']))
-
-                        if experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples'] is not None:
-                            avg_gpt4_example.append(float(experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples']))
-                            avg_gpt4_example_per_model.append(float(experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples']))
-
-                        if experiment_result_dict[model_name][task_name]['step_by_step'] is not None:
-                            avg_step_by_step.append(float(experiment_result_dict[model_name][task_name]['step_by_step']))
-                            avg_step_by_step_per_model.append(float(experiment_result_dict[model_name][task_name]['step_by_step']))
-                    
-                        for item in method_names_with_ranks:
-                            print(f'response rank:    {item}')
-                        print('----------------------')
-                        
-                        weighted_rho.append(rho)
-
-                        pho_for_each_model.append(rho)
-                        acc_for_each_model.append(float(chosen_method_accuracy))
-
-                        for iiiii, item in enumerate(gt_accuracy_record_detail):
-                            print(f'gt rank: {iiiii + 1}   {item}')
-                        print('Spearman: ', rho)
-                        print()
-                
-                print('-------------------------------------------------------------------')
-                aveavg_mix_scorerage_per_model = sum(avg_mix_score_per_model) / len(avg_mix_score_per_model)
-                avg_rho_score_average_per_model = weighted_spearman_correlation(pho_for_each_model, diversity_for_each_model)
-                print(f'weighted pho for {model_name}: {avg_rho_score_average_per_model}')
-                print(f'avg acc for {model_name}: {aveavg_mix_scorerage_per_model}')
-                print()
-                print()
-
-                experimental_result['Step-by-step'][model_name] = calc_avg(avg_step_by_step_per_model)
-                experimental_result['GPT-4 ICL examples'][model_name] = calc_avg(avg_gpt4_example_per_model)
-                experimental_result['Human examples'][model_name] = calc_avg(avg_human_example_per_model)
-                experimental_result['Mini-GPT-4'][model_name] = calc_avg(avg_mini_gpt4_per_model)
-                experimental_result['Claude'][model_name] = calc_avg(avg_claude_per_model)
-                experimental_result['GPT-4'][model_name] = calc_avg(avg_gpt4_per_model)
-                experimental_result['Upper bound'][model_name] = calc_avg(avg_accuracy_best_per_model)
-                experimental_result['Ours - Claude'][model_name] = calc_avg(avg_mix_score_per_model) - calc_avg(avg_claude_per_model)
-
-                avg_other_methods = (calc_avg(avg_gpt4_per_model) + calc_avg(avg_claude_per_model) + calc_avg(avg_mini_gpt4_per_model) + calc_avg(avg_human_example_per_model) + calc_avg(avg_gpt4_example_per_model) + calc_avg(avg_step_by_step_per_model)) / 6
-
-                experimental_result['Ours - Avg of Others'][model_name] = calc_avg(avg_mix_score_per_model) - avg_other_methods
-
-                if ranking_method == 'in_context_perplexity':
-                    experimental_result['Ours'][model_name] = calc_avg(avg_mix_score_per_model)
+                seed_num = 0
+                sft_lr = '2e-05'
+                n_train = 1000
+                if 'plan_bench' not in task_name:
+                    epoch_num = 20
                 else:
-                    experimental_result[ranking_method][model_name] = calc_avg(avg_mix_score_per_model)
-                                        
-            num_of_recorded_data = len(weighted_rho)
-            avg_pho = sum(weighted_rho) / len(weighted_rho)
-            weighted_rho = weighted_spearman_correlation(weighted_rho, diversity_list)
-            num_samples = len(avg_mix_score)
-            avg_mix_score = calc_avg(avg_mix_score)
-            avg_gpt4 = calc_avg(avg_gpt4)
-            avg_claude = calc_avg(avg_claude)
-            avg_mini_gpt4 = calc_avg(avg_mini_gpt4)
-            avg_human_example = calc_avg(avg_human_example)
-            avg_gpt4_example = calc_avg(avg_gpt4_example)
-            avg_step_by_step = calc_avg(avg_step_by_step)
-            avg_accuracy_best = calc_avg(avg_accuracy_best)
-
-
-            print('////////////////////////////////')
-
-            print(f'avg_accuracy_best: {avg_accuracy_best}')
-            print(f'avg_mix_score: {avg_mix_score}')
-            print(f'avg_gpt4: {avg_gpt4}')
-            print(f'avg_claude: {avg_claude}')
-            print(f'avg_mini_gpt4: {avg_mini_gpt4}')
-            print(f'avg_human_example: {avg_human_example}')
-            print(f'avg_gpt4_example: {avg_gpt4_example}')
-            print(f'avg_step_by_step: {avg_step_by_step}')
+                    epoch_num = 40
+                default_lr_experiment_result_dict = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
+                seed_num = 1
+                default_lr_experiment_result_dict_1 = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
+                seed_num = 2
+                default_lr_experiment_result_dict_2 = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
             
-            aveavg_mix_scorerage = avg_mix_score 
+                diversity = calculate_diversity(default_lr_experiment_result_dict[model_name][task_name])              
 
-            avg_other_methods = (avg_gpt4 + avg_claude + avg_mini_gpt4 + avg_human_example + avg_gpt4_example + avg_step_by_step) / 6
+                if diversity > diff_threshold:
+                    diversity_list.append(diversity)
+                    diversity_for_each_model.append(diversity)
+                    counted_task_num += 1
+                    print(f'===================={task_name}====================')
+                    log_line += f'===================={task_name}====================\n'
+                    best_log_line += f'===================={task_name}====================\n'
 
-            print('---------------------')
-            print(f'avg pho: {avg_pho}')
-            print(f'weighted_rho: {weighted_rho}')
+                    ppl_values, IDF_values, log_propability_values, skywork_reward_score_values, CAR_score_values, name_list = loading_other_metric_scores(task_name, ppl_cos_record)
+                    
+                    in_context_ppl_values, _ = loading_icppl_scores(task_name, in_context_ppl_cos_record)
+
+                    if task_name in default_lr_task_name_list:
+                        experiment_result_dict = default_lr_experiment_result_dict
+                        experiment_result_dict_1 = default_lr_experiment_result_dict_1
+                        experiment_result_dict_2 = default_lr_experiment_result_dict_2
+
+                    ranked_method_name_list, method_names_with_ranks = rank_on_metrics(in_context_ppl_values, ppl_values, IDF_values, log_propability_values, skywork_reward_score_values, CAR_score_values, name_list, ranking_method = ranking_method)
+
+                    rho, gt_accuracy_record_detail, key_name_list, accuracy_best, chosen_method_accuracy = calc_spearman_coefficient_3(experiment_result_dict[model_name][task_name], experiment_result_dict_1[model_name][task_name], experiment_result_dict_2[model_name][task_name], ranked_method_name_list, task_name)
+                    avg_accuracy_best.append(float(accuracy_best))
+                    avg_accuracy_best_per_model.append(float(accuracy_best))
+
+                    if chosen_method_accuracy is not None:
+                        avg_mix_score.append(float(chosen_method_accuracy))
+                        avg_mix_score_per_model.append(float(chosen_method_accuracy))
+
+                    if experiment_result_dict[model_name][task_name]['gpt4'] is not None:
+                        avg_gpt4.append(float(experiment_result_dict[model_name][task_name]['gpt4']))
+                        avg_gpt4_per_model.append(float(experiment_result_dict[model_name][task_name]['gpt4']))
+
+                    if experiment_result_dict[model_name][task_name]['claude'] is not None:
+                        avg_claude.append(float(experiment_result_dict[model_name][task_name]['claude']))
+                        avg_claude_per_model.append(float(experiment_result_dict[model_name][task_name]['claude']))
+
+                    if experiment_result_dict[model_name][task_name]['mini_gpt4'] is not None:
+                        avg_mini_gpt4.append(float(experiment_result_dict[model_name][task_name]['mini_gpt4']))
+                        avg_mini_gpt4_per_model.append(float(experiment_result_dict[model_name][task_name]['mini_gpt4']))
+                    
+                    if experiment_result_dict[model_name][task_name]['openai_human_written_examples'] is not None:
+                        avg_human_example.append(float(experiment_result_dict[model_name][task_name]['openai_human_written_examples']))
+                        avg_human_example_per_model.append(float(experiment_result_dict[model_name][task_name]['openai_human_written_examples']))
+
+                    if experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples'] is not None:
+                        avg_gpt4_example.append(float(experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples']))
+                        avg_gpt4_example_per_model.append(float(experiment_result_dict[model_name][task_name]['gpt4_style_in_context_examples']))
+
+                    if experiment_result_dict[model_name][task_name]['step_by_step'] is not None:
+                        avg_step_by_step.append(float(experiment_result_dict[model_name][task_name]['step_by_step']))
+                        avg_step_by_step_per_model.append(float(experiment_result_dict[model_name][task_name]['step_by_step']))
+                
+                    for item in method_names_with_ranks:
+                        print(f'response rank:    {item}')
+                    print('----------------------')
+                    
+                    weighted_rho.append(rho)
+
+                    pho_for_each_model.append(rho)
+                    acc_for_each_model.append(float(chosen_method_accuracy))
+
+                    for iiiii, item in enumerate(gt_accuracy_record_detail):
+                        print(f'gt rank: {iiiii + 1}   {item}')
+                    print('Spearman: ', rho)
+                    print()
             
-            experimental_result['Step-by-step']['Avg Acc'] = avg_step_by_step
-            experimental_result['GPT-4 ICL examples']['Avg Acc'] = avg_gpt4_example
-            experimental_result['Human examples']['Avg Acc'] = avg_human_example
-            experimental_result['Mini-GPT-4']['Avg Acc'] = avg_mini_gpt4
-            experimental_result['Claude']['Avg Acc'] = avg_claude
-            experimental_result['GPT-4']['Avg Acc'] = avg_gpt4
-            experimental_result['Upper bound']['Avg Acc'] = avg_accuracy_best
-            
-            if diff_threshold < 0:
-                experimental_result['Upper bound']['STD Range'] = 'All Data'
+            print('-------------------------------------------------------------------')
+            aveavg_mix_scorerage_per_model = sum(avg_mix_score_per_model) / len(avg_mix_score_per_model)
+            avg_rho_score_average_per_model = weighted_spearman_correlation(pho_for_each_model, diversity_for_each_model)
+            print(f'weighted pho for {model_name}: {avg_rho_score_average_per_model}')
+            print(f'avg acc for {model_name}: {aveavg_mix_scorerage_per_model}')
+            print()
+            print()
 
-            if diff_threshold > 0:
-                experimental_result['Upper bound']['STD Range']  = f"$STD > {diff_threshold * 100:.2f}\\%$"
+            experimental_result['Step-by-step'][model_name] = calc_avg(avg_step_by_step_per_model)
+            experimental_result['GPT-4 ICL examples'][model_name] = calc_avg(avg_gpt4_example_per_model)
+            experimental_result['Human examples'][model_name] = calc_avg(avg_human_example_per_model)
+            experimental_result['Mini-GPT-4'][model_name] = calc_avg(avg_mini_gpt4_per_model)
+            experimental_result['Claude'][model_name] = calc_avg(avg_claude_per_model)
+            experimental_result['GPT-4'][model_name] = calc_avg(avg_gpt4_per_model)
+            experimental_result['Upper bound'][model_name] = calc_avg(avg_accuracy_best_per_model)
+            experimental_result['Ours - Claude'][model_name] = calc_avg(avg_mix_score_per_model) - calc_avg(avg_claude_per_model)
 
-            experimental_result['Upper bound']['num of recorded data']  = str(num_of_recorded_data)
-            
+            avg_other_methods = (calc_avg(avg_gpt4_per_model) + calc_avg(avg_claude_per_model) + calc_avg(avg_mini_gpt4_per_model) + calc_avg(avg_human_example_per_model) + calc_avg(avg_gpt4_example_per_model) + calc_avg(avg_step_by_step_per_model)) / 6
+
+            experimental_result['Ours - Avg of Others'][model_name] = calc_avg(avg_mix_score_per_model) - avg_other_methods
+
             if ranking_method == 'in_context_perplexity':
-                experimental_result['Ours']['Avg Acc'] = avg_mix_score
-                experimental_result['Ours - Claude']['Avg Acc'] = avg_mix_score - avg_claude
-                experimental_result['Ours - Avg of Others']['Avg Acc'] = avg_mix_score - avg_other_methods
+                experimental_result['Ours'][model_name] = calc_avg(avg_mix_score_per_model)
             else:
-                experimental_result[ranking_method]['Avg Acc'] = avg_mix_score
-                if 'Weighted Spearman Pho' in column_name_list:
-                    experimental_result[ranking_method]['Weighted Spearman Pho'] = weighted_rho
+                experimental_result[ranking_method][model_name] = calc_avg(avg_mix_score_per_model)
+                                    
+        num_of_recorded_data = len(weighted_rho)
+        avg_pho = sum(weighted_rho) / len(weighted_rho)
+        weighted_rho = weighted_spearman_correlation(weighted_rho, diversity_list)
+        num_samples = len(avg_mix_score)
+        avg_mix_score = calc_avg(avg_mix_score)
+        avg_gpt4 = calc_avg(avg_gpt4)
+        avg_claude = calc_avg(avg_claude)
+        avg_mini_gpt4 = calc_avg(avg_mini_gpt4)
+        avg_human_example = calc_avg(avg_human_example)
+        avg_gpt4_example = calc_avg(avg_gpt4_example)
+        avg_step_by_step = calc_avg(avg_step_by_step)
+        avg_accuracy_best = calc_avg(avg_accuracy_best)
+
+
+        print('////////////////////////////////')
+
+        print(f'avg_accuracy_best: {avg_accuracy_best}')
+        print(f'avg_mix_score: {avg_mix_score}')
+        print(f'avg_gpt4: {avg_gpt4}')
+        print(f'avg_claude: {avg_claude}')
+        print(f'avg_mini_gpt4: {avg_mini_gpt4}')
+        print(f'avg_human_example: {avg_human_example}')
+        print(f'avg_gpt4_example: {avg_gpt4_example}')
+        print(f'avg_step_by_step: {avg_step_by_step}')
+        
+        aveavg_mix_scorerage = avg_mix_score 
+
+        avg_other_methods = (avg_gpt4 + avg_claude + avg_mini_gpt4 + avg_human_example + avg_gpt4_example + avg_step_by_step) / 6
+
+        print('---------------------')
+        print(f'avg pho: {avg_pho}')
+        print(f'weighted_rho: {weighted_rho}')
+        
+        experimental_result['Step-by-step']['Avg Acc'] = avg_step_by_step
+        experimental_result['GPT-4 ICL examples']['Avg Acc'] = avg_gpt4_example
+        experimental_result['Human examples']['Avg Acc'] = avg_human_example
+        experimental_result['Mini-GPT-4']['Avg Acc'] = avg_mini_gpt4
+        experimental_result['Claude']['Avg Acc'] = avg_claude
+        experimental_result['GPT-4']['Avg Acc'] = avg_gpt4
+        experimental_result['Upper bound']['Avg Acc'] = avg_accuracy_best
+        
+        if diff_threshold < 0:
+            experimental_result['Upper bound']['STD Range'] = 'All Data'
+
+        if diff_threshold > 0:
+            experimental_result['Upper bound']['STD Range']  = f"$STD > {diff_threshold * 100:.2f}\\%$"
+
+        experimental_result['Upper bound']['num of recorded data']  = str(num_of_recorded_data)
+        
+        if ranking_method == 'in_context_perplexity':
+            experimental_result['Ours']['Avg Acc'] = avg_mix_score
+            experimental_result['Ours - Claude']['Avg Acc'] = avg_mix_score - avg_claude
+            experimental_result['Ours - Avg of Others']['Avg Acc'] = avg_mix_score - avg_other_methods
+        else:
+            experimental_result[ranking_method]['Avg Acc'] = avg_mix_score
+            if 'Weighted Spearman Pho' in column_name_list:
+                experimental_result[ranking_method]['Weighted Spearman Pho'] = weighted_rho
         experiment_recorder_different_seed_list.append(experimental_result)
 
     import copy
@@ -537,5 +576,24 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
 # print('Ours - Claude: llama_3_instruct', experimental_result['Ours - Claude']['llama_3_instruct']* 100)
 print('Ours - Claude: qwen', experimental_result['Ours - Claude']['qwen']* 100)
 print('Ours - Claude: Avg Acc', experimental_result['Ours - Claude']['Avg Acc'] * 100)
+
+
+
+def replace_key_preserve_order(obj, old_key, new_key):
+    if isinstance(obj, dict):
+        new_dict = {}
+        for k, v in obj.items():
+            new_k = new_key if k == old_key else k
+            new_dict[new_k] = replace_key_preserve_order(v, old_key, new_key)
+        return new_dict
+    elif isinstance(obj, list):
+        return [replace_key_preserve_order(i, old_key, new_key) for i in obj]
+    else:
+        return obj
+
+experimental_result_list = replace_key_preserve_order(experimental_result_list, "IDF", "IFD")
+
+
+
 
 write_to_table(experimental_result_list, table_tex_name)

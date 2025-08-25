@@ -59,7 +59,7 @@ from config.config import HOME_DIRECTORY
 def write_to_table(experimental_result_list, table_tex_name):
 
     output_file = os.path.join(
-        HOME_DIRECTORY, "log_total/experiment_data_recorder/latex_table", f"{table_tex_name}.tex"
+        HOME_DIRECTORY, "Mix_Score_Ranking_Calculation/experiment_result", f"{table_tex_name}.tex"
     )
 
     # 1. 提取模型和任务列表（任务顺序固定）
@@ -138,6 +138,11 @@ def write_to_table(experimental_result_list, table_tex_name):
 
 
 def write_to_table_comparison(experimental_result_list, table_tex_name):
+    replacements = {
+        "IDF": "IFD",
+        "Ours - Claude": "Ours - Best",
+        # 可以继续加 ...
+    }
 
     output_file = os.path.join(
         HOME_DIRECTORY, "log_total/experiment_data_recorder/latex_table", f"{table_tex_name}.tex"
@@ -200,6 +205,15 @@ def write_to_table_comparison(experimental_result_list, table_tex_name):
                                     except:
                                         line += f" & {acc}"
                 line += " \\\\\n"
+
+                line = line.replace('IDF', 'IFD')
+                line = line.replace('Ours - Claude', 'Ours - Best')
+
+                # 循环逐一替换
+                for old, new in replacements.items():
+                    line = line.replace(old, new)
+
+
                 f.write(line)
 
                 # 行间分隔

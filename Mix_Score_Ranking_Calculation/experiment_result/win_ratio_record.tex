@@ -1,0 +1,14 @@
+\begin{table*}[t!]
+  \centering
+  \resizebox{1.0\textwidth}{!}{%
+  \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+    \hline
+    Model  & gsm8k & math algebra & mmlu & winogrande & piqa & agieval & squad & ecqa & boolq & arc challenge & mmlu pro law & drop & hellaswag & mmlu moral scenarios & math geometry & api bank \\ \hline
+    qwen & 94.8\% / 88.9\% & 93.4\% / 91.6\% & 51.0\% / 50.9\% & 72.7\% / 72.1\% & 86.0\% / \textbf{87.9\%} & 57.2\% / 54.5\% & 67.3\% / \textbf{76.2\%} & 81.6\% / 79.3\% & 83.6\% / \textbf{86.5\%} & 89.3\% / 89.0\% & 32.1\% / 27.6\% & 0.7\% / \textbf{79.4\%} & 70.6\% / 70.6\% & 56.8\% / \textbf{63.3\%} & 51.9\% / \textbf{65.8\%} & 11.7\% / \textbf{43.3\%} \\
+    mistral & 39.3\% / \textbf{62.5\%} & 15.4\% / \textbf{31.9\%} & 37.6\% / \textbf{42.2\%} & 44.9\% / \textbf{71.3\%} & 69.2\% / \textbf{86.9\%} & 33.5\% / \textbf{40.0\%} & 8.8\% / \textbf{73.2\%} & 57.6\% / \textbf{70.0\%} & 82.3\% / \textbf{86.7\%} & 73.5\% / 61.1\% & 19.4\% / \textbf{22.9\%} & 0.6\% / \textbf{74.6\%} & 39.7\% / \textbf{65.4\%} & 37.2\% / \textbf{71.3\%} & 5.1\% / \textbf{17.7\%} & 1.8\% / \textbf{51.0\%} \\
+    llama 3 instruct & 85.8\% / 81.4\% & 58.1\% / 56.2\% & 43.0\% / \textbf{48.9\%} & 68.4\% / \textbf{69.5\%} & 81.1\% / \textbf{86.5\%} & 43.0\% / \textbf{43.5\%} & 24.5\% / \textbf{75.2\%} & 72.0\% / \textbf{72.3\%} & 78.1\% / \textbf{88.0\%} & 79.4\% / \textbf{80.1\%} & 25.9\% / \textbf{27.6\%} & 15.1\% / \textbf{79.6\%} & 56.8\% / \textbf{72.2\%} & 33.3\% / \textbf{67.7\%} & 18.3\% / \textbf{27.8\%} & 0.0\% / \textbf{49.4\%} \\
+    \hline
+  \end{tabular}}
+  \caption{Zero-shot (left) vs. trained on GPT-4o direct-answer data (right) accuracy across tasks for each model. Win ratios of GPT-4o direct-answer training over zero-shot: qwen: 7/16 (43.8\%); mistral: 15/16 (93.8\%); llama 3 instruct: 14/16 (87.5\%).}
+\label{tab:win_ratio_record}
+\end{table*}

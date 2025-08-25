@@ -1,7 +1,6 @@
 # Efficiently Selecting Response Generation Strategy by Self-Aligned Perplexity for Fine-Tuning LLMs
 
 This repository provides the source code for our paper *Efficiently Selecting Response Generation Strategy by Self-Aligned Perplexity for Fine-Tuning LLMs*.
-If you encounter any issues, please **open an issue** — I’ll fix them.
 
 ## Table of Contents
 
@@ -35,15 +34,16 @@ YOUR_WORKSPACE/
 │   ├── config/
 │   ├── script/
 │   ├── Mix_Score_Ranking_Calculation/   # Efficient ranking code (SPPL core)
+|   |── LLaMA-Factory-ACL-2025/        # Downloaded from the official LLaMA-Factory GitHub
+│   |                                     # - Required to obtain training outcomes(training + evaluation)
+│   |                                     # - Required to obtain initial predictions
 │   └── ...
 │
 ├── model/                         # Target models for training & prediction
 │
 ├── output_record/output              # Not sure if useful, but leave it here
 │
-├── LLaMA-Factory-ACL-2025/        # Downloaded from the official LLaMA-Factory GitHub
-│                                  # - Required to obtain training outcomes
-│                                  # - Required to obtain initial predictions
+
 │
 └── llama_factory_temp/delete_later/
     └── ...                        # Temporary copies of LLaMA-Factory
@@ -73,7 +73,7 @@ MODEL_DIRECTORY = os.path.dirname(parent_dir) + '/model'
 OUTPUT_RECORD_DIRECTORY = os.path.dirname(parent_dir) + '/output_record'
 
 # Path to LLaMA-Factory (external dependency). Just download LLaMA-Facotry and place it here.
-LLAMA_FACTORY_DIRECTORY = os.path.dirname(parent_dir) + '/LLaMA-Factory-ACL-2025'
+LLAMA_FACTORY_DIRECTORY = 'SPPL/LLaMA-Factory-ACL-2025'
 
 # Temporary directory for isolated LLaMA-Factory copies
 LLAMA_FACTORY_TEMP_DIRECTORY = '/gpfs/users/a1796450/llama_factory_temp/delete_later'
@@ -123,6 +123,8 @@ python SPPL/Mix_Score_Ranking_Calculation/icppl_vs_other_metrics.py
 # SPPL vs. train-then-test approach
 python SPPL/Mix_Score_Ranking_Calculation/spearman_correlation_and_acc_train_then_test.py
 ```
+
+All experimental outputs are saved as LaTeX (`.tex`) tables in `SPPL/Mix_Score_Ranking_Calculation/experiment_result`. Each script generates a ready-to-paste comparison table. To visualize the tables, open the relevant `.tex` file and copy–paste the table into your Overleaf project.
 
 ---
 

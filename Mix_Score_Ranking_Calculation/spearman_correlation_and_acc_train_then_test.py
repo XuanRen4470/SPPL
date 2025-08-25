@@ -23,54 +23,118 @@ total_num = 100
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+import argparse
+
+
+parser = argparse.ArgumentParser(description="Experiment configuration")
+
+parser.add_argument(
+    "--train_then_test_sft_lr",
+    type=str,
+    default='0.0002',
+    choices=['0.0002', '2e-05'],
+)
+parser.add_argument(
+    "--train_then_test_epoch_num",
+    type=int,
+    default="40",
+)
+
+
+args = parser.parse_args()
+
+
+train_then_test_sft_lr = args.train_then_test_sft_lr
+train_then_test_epoch_num = args.train_then_test_epoch_num
+
+
+
+
+
+
+# train_then_test_sft_lr = '0.0002'
+# train_then_test_epoch_num = 40
+
+# train_then_test_sft_lr = '2e-05'
+# train_then_test_epoch_num = 20
+
+
+
+
+
 import numpy as np
 
-def calculate_diversity(data, mode: str = "cv"):
-# def calculate_diversity(data, mode: str = "sd"):
+# def calculate_diversity(data, mode: str = "cv"):
+# # def calculate_diversity(data, mode: str = "sd"):
 
+#     """
+#     Compute diversity of numeric values in a dict.
+
+#     Parameters
+#     ----------
+#     data : dict
+#         Keys are names, values are numeric-like strings.
+#     mode : {"cv", "sd"}, optional
+#         "cv" — coefficient of variation (相对离散度，默认)
+#         "sd" — sample standard deviation (绝对离散度, ddof=1)
+
+#     Returns
+#     -------
+#     float
+#         Diversity score.
+
+#     Notes
+#     -----
+#     * 键名为 'gold_label' 的项会被忽略。
+#     * CV = SD / mean，可跨量级比较；SD 保留原单位。
+#     """
+
+#     # values = np.array(
+#     #     [float(v) for k, v in data.items()], dtype=float
+#     # )
+
+#     values = np.array(
+#         [float(v) for k, v in data.items() if k != "gold_label"], dtype=float
+#     )
+
+#     if values.size == 0:
+#         raise ValueError("No numeric values found in `data`.")
+
+#     if mode == "sd":
+#         # 样本标准差 (ddof=1)
+#         return float(np.std(values, ddof=1))
+
+#     if mode == "cv":
+#         mean = float(np.mean(values))
+#         sd   = float(np.std(values, ddof=1))
+#         return sd / mean if mean != 0 else 0.0
+
+#     raise ValueError("`mode` must be 'cv' or 'sd'.")
+
+def calculate_diversity(data):
     """
-    Compute diversity of numeric values in a dict.
+    Calculate the diversity of values in a dictionary by computing the standard deviation.
 
-    Parameters
-    ----------
-    data : dict
-        Keys are names, values are numeric-like strings.
-    mode : {"cv", "sd"}, optional
-        "cv" — coefficient of variation (相对离散度，默认)
-        "sd" — sample standard deviation (绝对离散度, ddof=1)
-
-    Returns
-    -------
-    float
-        Diversity score.
-
-    Notes
-    -----
-    * 键名为 'gold_label' 的项会被忽略。
-    * CV = SD / mean，可跨量级比较；SD 保留原单位。
+    :param data: Dictionary where keys are methods and values are numerical strings.
+    :return: Standard deviation of the values.
     """
+    # values = np.array([float(v) for v in data.values()])
+    values = np.array([float(v) for k, v in data.items() if k != 'gold_label'])
+    return np.std(values, ddof=1)  # Use ddof=1 for sample standard deviation
 
-    # values = np.array(
-    #     [float(v) for k, v in data.items()], dtype=float
-    # )
 
-    values = np.array(
-        [float(v) for k, v in data.items() if k != "gold_label"], dtype=float
-    )
-
-    if values.size == 0:
-        raise ValueError("No numeric values found in `data`.")
-
-    if mode == "sd":
-        # 样本标准差 (ddof=1)
-        return float(np.std(values, ddof=1))
-
-    if mode == "cv":
-        mean = float(np.mean(values))
-        sd   = float(np.std(values, ddof=1))
-        return sd / mean if mean != 0 else 0.0
-
-    raise ValueError("`mode` must be 'cv' or 'sd'.")
 
 
 import numpy as np
@@ -233,26 +297,14 @@ for model_name in ['mistral', 'llama_3_instruct', 'qwen']:
         except:
             a = 1
     
-        print("Diversity (Standard Deviation):", diversity)
         diversity_list.append(diversity)
     diversity_list_dict[model_name] = diversity_list
 
 
 # for only_record_designed_prompt in [False]:#, True]:
 for only_record_designed_prompt in [True]:
-    # for model_name in ['qwen']: 
-    # for model_name in ['llama_3_instruct']:
-    # for model_name in ['mistral']:
 
-
-    # beta_value = 0
-    beta_value = 0.5
-    # beta_value = -1
-
-    # diff_threshold = 0
     diff_threshold = -10000
-    # diff_threshold = 0.1
-    # gap_threshold = 0.02
     gap_threshold = -1
 
     fig, axes = plt.subplots(2, 4, figsize=(18, 10))
@@ -261,8 +313,7 @@ for only_record_designed_prompt in [True]:
     # for kk, diff_threshold in enumerate([0.05, 0]):
     for kk, diff_threshold in enumerate([diff_threshold]):
     # for kk, diff_threshold in enumerate([0.05]):
-        # ranking_method_list = ['both', 'perplexity', 'similarity', 'complexity', 'length', 'IDF']
-        ranking_method_list = ['both']
+        ranking_method_list = ['in_context_perplexity']
         ranking_method_dict = {}
         ii = 0    
 
@@ -282,7 +333,7 @@ for only_record_designed_prompt in [True]:
             default_lr_task_name_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
 
             task_name_list = default_lr_task_name_list 
-            
+            tital_acc = 0
             
             for ranking_method in ranking_method_list:
                 weighted_rho = []
@@ -357,19 +408,8 @@ for only_record_designed_prompt in [True]:
                                 seed_num = 0
                                 n_train = 100
 
-                                sft_lr = '0.0002'
-                                epoch_num = 40
-                                
-                                # sft_lr = '2e-05'
-                                # epoch_num = 20
-                                # # 
-                                default_lr_experiment_result_dict_100 = load_experimental_result([model_name],task_name_list, n_train, sft_lr, seed_num, epoch_num, load_none_as = None)
+                                default_lr_experiment_result_dict_100 = load_experimental_result([model_name],task_name_list, n_train, train_then_test_sft_lr, seed_num, train_then_test_epoch_num, load_none_as = None)
                                 record_100 = default_lr_experiment_result_dict_100[model_name][task_name]
-                                # Convert the values to float and sort in descending order
-                                # record_100_item = sorted(record_100.items(), key=lambda item: float(item[1]), reverse=True)
-
-                                # # Extract the ranked methods (keys)
-                                # ranked_method_name_list = [key for key, value in record_100_item]
 
 
                                 record_100_item = sorted(record_100.items(), key=lambda item: float(item[1]) if item[1] is not None else float('-inf'), reverse=True)
@@ -408,7 +448,6 @@ for only_record_designed_prompt in [True]:
                     
                     avg_rho = total_rho/counted_task_num
                     ranking_method_dict[ranking_method]['rho'] = avg_rho
-                    print(f'{ranking_method} layer_num: {layer_num}     avg_rho: {avg_rho}')
 
 
                     weighted_rho = weighted_spearman_correlation(weighted_rho, diversity_list)
@@ -421,13 +460,15 @@ for only_record_designed_prompt in [True]:
                     values_accuracy.append(avg_mix_score)
                     avg_rho_total += avg_rho
                     avg_mix_score_total += avg_mix_score
+
+                    tital_acc += avg_mix_score
                 values_rho_total.append(weighted_rho)
                 values_accuracy_total.append(avg_mix_score_total)
             values_rho_dict[model_name] = values_rho_total
             values_accuracy_dict[model_name] = values_accuracy_total
             ranking_method_list_temp = []
             for item in ranking_method_list:
-                if item == 'both':
+                if item == 'in_context_perplexity':
                     ranking_method_list_temp.append('ours')
                 else:
                     ranking_method_list_temp.append(item)
@@ -435,22 +476,38 @@ for only_record_designed_prompt in [True]:
         values_accuracy_list = []
         values_rho_list = []
 
-        for iiiiii in range(len(ranking_method_list_temp)):
-            sum = values_accuracy_dict['mistral'][iiiiii] + values_accuracy_dict['llama_3_instruct'][iiiiii] + values_accuracy_dict['qwen'][iiiiii]
-            avg = sum/3
-            values_accuracy_list.append(avg)
 
-            # print('mistral avg: ' , values_accuracy_dict['mistral'][iiiiii])
-            # print('llama_3_instruct avg: ' , values_accuracy_dict['llama_3_instruct'][iiiiii])
-            # print('qwen avg: ' , values_accuracy_dict['qwen'][iiiiii])
+
+
+        print()
+        print()
+        print()
+        print()
+        print()
+        print()
+        print(f'--------------------final result for train then test: epoch {train_then_test_epoch_num},  lr {train_then_test_sft_lr} --------------------')
+
+        for iiiiii in range(len(ranking_method_list_temp)):
+
+            print('mistral avg: ' , values_accuracy_dict['mistral'][iiiiii])
+            print('llama_3_instruct avg: ' , values_accuracy_dict['llama_3_instruct'][iiiiii])
+            print('qwen avg: ' , values_accuracy_dict['qwen'][iiiiii])
 
             sum = values_rho_dict['mistral'][iiiiii] + values_rho_dict['llama_3_instruct'][iiiiii] + values_rho_dict['qwen'][iiiiii]
             avg = sum/3
             values_rho_list.append(avg)
 
-            print('mistral pho: ' , values_rho_dict['mistral'][iiiiii])
-            print('llama_3_instruct pho: ' , values_rho_dict['llama_3_instruct'][iiiiii])
-            print('qwen pho: ' , values_rho_dict['qwen'][iiiiii])
+            print('train then test avg acc', avg)
+            print('train then test avg pho', avg)
+
+            print('train then test mistral avg: ' , values_accuracy_dict['mistral'][iiiiii])
+            print('train then test mistral pho: ' , values_rho_dict['mistral'][iiiiii])
+
+            print('train then test llama_3_instruct avg: ' , values_accuracy_dict['llama_3_instruct'][iiiiii])
+            print('train then test llama_3_instruct pho: ' , values_rho_dict['llama_3_instruct'][iiiiii])
+
+            print('train then test qwen avg: ' , values_accuracy_dict['qwen'][iiiiii])
+            print('train then test qwen pho: ' , values_rho_dict['qwen'][iiiiii])
         a = 1
 
 a = 1

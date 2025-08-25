@@ -1,0 +1,248 @@
+{
+  "qwen": {
+    "gsm8k": {
+      "zero shot accuracy": 0.948,
+      "gpt4 accuracy": 0.889,
+      "improvement_ratio": -0.0622
+    },
+    "math_algebra": {
+      "zero shot accuracy": 0.934,
+      "gpt4 accuracy": 0.916,
+      "improvement_ratio": -0.0193
+    },
+    "mmlu": {
+      "zero shot accuracy": 0.51,
+      "gpt4 accuracy": 0.509,
+      "improvement_ratio": -0.002
+    },
+    "winogrande": {
+      "zero shot accuracy": 0.727,
+      "gpt4 accuracy": 0.721,
+      "improvement_ratio": -0.0083
+    },
+    "piqa": {
+      "zero shot accuracy": 0.86,
+      "gpt4 accuracy": 0.879,
+      "improvement_ratio": 0.0221
+    },
+    "agieval": {
+      "zero shot accuracy": 0.5721,
+      "gpt4 accuracy": 0.545,
+      "improvement_ratio": -0.0473
+    },
+    "squad": {
+      "zero shot accuracy": 0.673,
+      "gpt4 accuracy": 0.762,
+      "improvement_ratio": 0.1322
+    },
+    "ecqa": {
+      "zero shot accuracy": 0.816,
+      "gpt4 accuracy": 0.793,
+      "improvement_ratio": -0.0282
+    },
+    "boolq": {
+      "zero shot accuracy": 0.836,
+      "gpt4 accuracy": 0.865,
+      "improvement_ratio": 0.0347
+    },
+    "arc_challenge": {
+      "zero shot accuracy": 0.893,
+      "gpt4 accuracy": 0.89,
+      "improvement_ratio": -0.0034
+    },
+    "mmlu_pro_law": {
+      "zero shot accuracy": 0.3214,
+      "gpt4 accuracy": 0.276,
+      "improvement_ratio": -0.1413
+    },
+    "drop": {
+      "zero shot accuracy": 0.007,
+      "gpt4 accuracy": 0.794,
+      "improvement_ratio": 112.4286
+    },
+    "hellaswag": {
+      "zero shot accuracy": 0.706,
+      "gpt4 accuracy": 0.706,
+      "improvement_ratio": 0.0
+    },
+    "mmlu_moral_scenarios": {
+      "zero shot accuracy": 0.5683,
+      "gpt4 accuracy": 0.633,
+      "improvement_ratio": 0.1138
+    },
+    "math_geometry": {
+      "zero shot accuracy": 0.5187,
+      "gpt4 accuracy": 0.658,
+      "improvement_ratio": 0.2685
+    },
+    "api_bank": {
+      "zero shot accuracy": 0.1169,
+      "gpt4 accuracy": 0.433,
+      "improvement_ratio": 2.705
+    }
+  },
+  "mistral": {
+    "gsm8k": {
+      "zero shot accuracy": 0.393,
+      "gpt4 accuracy": 0.625,
+      "improvement_ratio": 0.5903
+    },
+    "math_algebra": {
+      "zero shot accuracy": 0.154,
+      "gpt4 accuracy": 0.319,
+      "improvement_ratio": 1.0714
+    },
+    "mmlu": {
+      "zero shot accuracy": 0.376,
+      "gpt4 accuracy": 0.422,
+      "improvement_ratio": 0.1223
+    },
+    "winogrande": {
+      "zero shot accuracy": 0.449,
+      "gpt4 accuracy": 0.713,
+      "improvement_ratio": 0.588
+    },
+    "piqa": {
+      "zero shot accuracy": 0.692,
+      "gpt4 accuracy": 0.869,
+      "improvement_ratio": 0.2558
+    },
+    "agieval": {
+      "zero shot accuracy": 0.3348,
+      "gpt4 accuracy": 0.4,
+      "improvement_ratio": 0.1947
+    },
+    "squad": {
+      "zero shot accuracy": 0.088,
+      "gpt4 accuracy": 0.732,
+      "improvement_ratio": 7.3182
+    },
+    "ecqa": {
+      "zero shot accuracy": 0.576,
+      "gpt4 accuracy": 0.7,
+      "improvement_ratio": 0.2153
+    },
+    "boolq": {
+      "zero shot accuracy": 0.823,
+      "gpt4 accuracy": 0.867,
+      "improvement_ratio": 0.0535
+    },
+    "arc_challenge": {
+      "zero shot accuracy": 0.735,
+      "gpt4 accuracy": 0.611,
+      "improvement_ratio": -0.1687
+    },
+    "mmlu_pro_law": {
+      "zero shot accuracy": 0.1943,
+      "gpt4 accuracy": 0.229,
+      "improvement_ratio": 0.1787
+    },
+    "drop": {
+      "zero shot accuracy": 0.006,
+      "gpt4 accuracy": 0.746,
+      "improvement_ratio": 123.3333
+    },
+    "hellaswag": {
+      "zero shot accuracy": 0.397,
+      "gpt4 accuracy": 0.654,
+      "improvement_ratio": 0.6474
+    },
+    "mmlu_moral_scenarios": {
+      "zero shot accuracy": 0.3717,
+      "gpt4 accuracy": 0.713,
+      "improvement_ratio": 0.9184
+    },
+    "math_geometry": {
+      "zero shot accuracy": 0.0513,
+      "gpt4 accuracy": 0.177,
+      "improvement_ratio": 2.4515
+    },
+    "api_bank": {
+      "zero shot accuracy": 0.0176,
+      "gpt4 accuracy": 0.51,
+      "improvement_ratio": 27.9106
+    }
+  },
+  "llama_3_instruct": {
+    "gsm8k": {
+      "zero shot accuracy": 0.858,
+      "gpt4 accuracy": 0.814,
+      "improvement_ratio": -0.0513
+    },
+    "math_algebra": {
+      "zero shot accuracy": 0.581,
+      "gpt4 accuracy": 0.562,
+      "improvement_ratio": -0.0327
+    },
+    "mmlu": {
+      "zero shot accuracy": 0.43,
+      "gpt4 accuracy": 0.489,
+      "improvement_ratio": 0.1372
+    },
+    "winogrande": {
+      "zero shot accuracy": 0.684,
+      "gpt4 accuracy": 0.695,
+      "improvement_ratio": 0.0161
+    },
+    "piqa": {
+      "zero shot accuracy": 0.811,
+      "gpt4 accuracy": 0.865,
+      "improvement_ratio": 0.0666
+    },
+    "agieval": {
+      "zero shot accuracy": 0.4302,
+      "gpt4 accuracy": 0.435,
+      "improvement_ratio": 0.0113
+    },
+    "squad": {
+      "zero shot accuracy": 0.245,
+      "gpt4 accuracy": 0.752,
+      "improvement_ratio": 2.0694
+    },
+    "ecqa": {
+      "zero shot accuracy": 0.72,
+      "gpt4 accuracy": 0.723,
+      "improvement_ratio": 0.0042
+    },
+    "boolq": {
+      "zero shot accuracy": 0.781,
+      "gpt4 accuracy": 0.88,
+      "improvement_ratio": 0.1268
+    },
+    "arc_challenge": {
+      "zero shot accuracy": 0.794,
+      "gpt4 accuracy": 0.801,
+      "improvement_ratio": 0.0088
+    },
+    "mmlu_pro_law": {
+      "zero shot accuracy": 0.2586,
+      "gpt4 accuracy": 0.276,
+      "improvement_ratio": 0.0674
+    },
+    "drop": {
+      "zero shot accuracy": 0.151,
+      "gpt4 accuracy": 0.796,
+      "improvement_ratio": 4.2715
+    },
+    "hellaswag": {
+      "zero shot accuracy": 0.568,
+      "gpt4 accuracy": 0.722,
+      "improvement_ratio": 0.2711
+    },
+    "mmlu_moral_scenarios": {
+      "zero shot accuracy": 0.3333,
+      "gpt4 accuracy": 0.677,
+      "improvement_ratio": 1.031
+    },
+    "math_geometry": {
+      "zero shot accuracy": 0.1834,
+      "gpt4 accuracy": 0.278,
+      "improvement_ratio": 0.5155
+    },
+    "api_bank": {
+      "zero shot accuracy": 0.0,
+      "gpt4 accuracy": 0.494,
+      "improvement_ratio": 494000000.0
+    }
+  }
+}

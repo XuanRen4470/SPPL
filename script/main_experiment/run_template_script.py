@@ -4,6 +4,14 @@ import os
 import json
 email_address = os.environ.get("EMAIL_ADDRESS")
 
+
+import sys
+# Get the absolute path of the parent directory
+HOME_DIRECTORY = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+a = 1
+
+
 def generate_script(job_name, train_task_name, file_suffix, n_train, sft_epoch, sft_lr, num_of_sft_checkpoints, disable_final_eval, seed_num, variation_suffix, model_type, train_method):
     debug_mode = False
     partition = "a100"
@@ -44,7 +52,7 @@ variation_suffix={variation_suffix}
 model_type={model_type}
 train_method={train_method}
 
-python /gpfs/users/a1796450/ACL_2024/Minimum_Change/main.py --file_suffix $file_suffix --train_task_name $train_task_name --n_train $n_train --n_eval 1000 --n_validation 300 --seed_num $seed_num --sft_epoch $sft_epoch --sft_lr $sft_lr --num_of_sft_checkpoints $num_of_sft_checkpoints --disable_final_eval $disable_final_eval --train_method $train_method --model_type $model_type --debug_mode $debug_mode --variation_suffix $variation_suffix"""
+python {HOME_DIRECTORY}/main.py --file_suffix $file_suffix --train_task_name $train_task_name --n_train $n_train --n_eval 1000 --n_validation 300 --seed_num $seed_num --sft_epoch $sft_epoch --sft_lr $sft_lr --num_of_sft_checkpoints $num_of_sft_checkpoints --disable_final_eval $disable_final_eval --train_method $train_method --model_type $model_type --debug_mode $debug_mode --variation_suffix $variation_suffix"""
 
     # Write the script to a file
     path = os. getcwd()

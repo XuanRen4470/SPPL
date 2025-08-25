@@ -147,9 +147,10 @@
                 "CUDA_VISIBLE_DEVICES": "0"
             },
             "args": [
-                "--model_name", "llama_3_instruct",
-                "--suffix", "unprocessed",
-                "--num_of_incontext_examples", "2"
+                // "--model_name", "llama_3_instruct",
+                // "--suffix", "unprocessed",
+                // "--num_of_incontext_examples", "2",
+                // "--evaluation_task", "planbench"
             ],
             "cwd": "/gpfs/users/a1796450/ACL_2024/SPPL/"
         }

@@ -20,13 +20,11 @@ import argparse
 
 
 parser = argparse.ArgumentParser(description='train and evaluate')
-parser.add_argument('--num_of_incontext_examples', type=int, required=True, help='Training method')
-parser.add_argument('--model_name', type=str, required=True, help='model_name')
-parser.add_argument('--suffix', type=str, default='', required=False, help='model_name')
+parser.add_argument('--num_of_incontext_examples', type=int, default=2, required=False, help='Training method')
+# parser.add_argument('--model_name', type=str, required=True, help='model_name')
 
 args = parser.parse_args()
-suffix = args.suffix
-model_name = args.model_name
+# model_name = args.model_name
 num_of_incontext_examples = args.num_of_incontext_examples
 
 use_correct_initial_prediction = True
@@ -37,9 +35,9 @@ not_cap_perplexity = True
 
 # train_task_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank', 'plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_execution', 'plan_bench_verification', 'plan_bench_replaning']
 
-train_task_list = ['plan_bench_replaning', 'plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_execution', 'plan_bench_verification', 'gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
+train_task_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank', 'plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_execution', 'plan_bench_verification', 'plan_bench_replaning']
 
-# train_task_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
+
 
 # train_task_list = ['api_bank']
 
@@ -55,6 +53,7 @@ end_template = """
 Now please solve the following question using the same inference style and format as the examples above. 
 Question: """
 
+suffix = f'{num_of_incontext_examples}_examples'
 
 def load_model(model_name):
     model_base = None
@@ -76,10 +75,10 @@ def load_model(model_name):
     model.to(device)
     return model, tokenizer, model_base
 
-for model_name in [model_name]:
-# for model_name in ['mistral', 'llama_3_instruct', 'qwen']:
+# for model_name in [model_name]:
+for model_name in ['mistral', 'llama_3_instruct', 'qwen']:
 # for model_name in ['mistral']:
-# for model_name in ['llama_3_instruct', 'qwen']:
+#for model_name in ['llama_3_instruct', 'qwen']:
 # for model_name in ['qwen']:
     if 'mistral' in model_name:
         model_name = 'mistral'
@@ -97,28 +96,16 @@ for model_name in [model_name]:
     model, tokenizer, model_base = load_model(model_name)
     
     for train_task_name in train_task_list:
-        suffix_ = ''
-        suffix_ += ('_' + suffix)
-        if 'plan' in train_task_name:
-            use_plan_prompt = True
-            suffix_ += f'_{num_of_incontext_examples}_examples_use_plan_prompt'
-            train_task_list = ['plan_bench_replaning', 'plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_execution', 'plan_bench_verification']
-        else:
-            use_plan_prompt = False
-            suffix_ += f'_{num_of_incontext_examples}_examples'
-            train_task_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
-
-        print('suffix_: ', suffix_)
+        
+        print('suffix_: ', suffix)
 
         if ('plan_bench_execution' not in train_task_name) or \
             ('plan_bench_execution' in train_task_name and 'llama' in model_name) or ('plan_bench_execution' in train_task_name and 'mistral' in model_name):
             file_path_temp = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/initial_prediction_record_correct_examples/{train_task_name}_{model_name}_{500}.json'
-            if use_plan_prompt:
-                print('use_plan_prompt')
-                if 'plan_bench' in train_task_name:
-                    file_path_temp = file_path_temp.replace('.json', '_plan_bench.json')
         else:
             file_path_temp = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/initial_prediction_record_modified/{train_task_name}_{model_name}_initial_prediction_{500}.json'
+        if 'plan' in train_task_name:
+            file_path_temp = file_path_temp.replace('.json','_plan_bench.json')
         
         with open(file_path_temp, 'r') as json_file:
             initial_prediction_list_total = json.load(json_file)
@@ -170,6 +157,22 @@ for model_name in [model_name]:
                     initial_prediction_of_another_question_5 = initial_prediction_list_total['initial_prediction'][index_5]
 
                 if num_of_incontext_examples_temp == 3:
+#                     in_context_question = \
+# f"""Question: {original_question}
+
+# We have inference examples below to show you how to solve the problem. please follow the inference style and solve the problem
+
+# inference example: {initial_prediction_of_another_question_1}
+
+# inference example: {initial_prediction_of_another_question_2}
+
+# inference example: {initial_prediction_of_another_question_3}
+
+# now, according to the inference examples, please solve the problem. 
+
+
+# """
+
                     in_context_question = \
 f"""Question: {original_question}
 
@@ -181,10 +184,10 @@ inference example: {initial_prediction_of_another_question_2}
 
 inference example: {initial_prediction_of_another_question_3}
 
-now, according to the inference examples, please solve the problem. 
-
+IMPORTANT FORMAT REQUIREMENT: When you solve the problem, you need to make the problem solving process and language as similar to the inference example above as possible. If the inference process does not follow at the prediction before, you have to correct your style at anytime when you notice the style is not following the inference example. this is the most important requirement. please follow it.
 
 """
+
                 elif num_of_incontext_examples_temp == 2:
                     in_context_question = \
 f"""Question: {original_question}
@@ -257,7 +260,7 @@ now, according to the inference examples, please solve the problem.
         ppl_dict = {}
         data_name_list = []
         ii = 0
-        for data_name, data_list, original_file_path, origianl_data_list, suffix in dataset_list:
+        for data_name, data_list, original_file_path, origianl_data_list, _ in dataset_list:
             ii += 1
             print()
             print(f'----------------------------------------------------------{data_name}----------------------------------------------------------')
@@ -268,7 +271,7 @@ now, according to the inference examples, please solve the problem.
 
 
         # AFTER CHECK, I FOUND CASE 1 AND CASE 2 LOAD THE SAME ppl_dict for the first 50 ppl record
-        icppl_dict_path = f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_icppl_dict{suffix_}.json"
+        icppl_dict_path = f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_icppl_dict_{suffix}.json"
         with open(icppl_dict_path, 'w') as f:
             json.dump(ppl_dict, f, indent=4) 
 
@@ -287,19 +290,8 @@ now, according to the inference examples, please solve the problem.
                 print(f'self aligned perplexity   {train_task_name} {data_name}: {average_perplexity}')
                 record_book[key] = average_perplexity
 
-                if not use_full_dataset:
-                    with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_only_correct_data_{model_name}_{train_task_name}_{data_name}{suffix_}.json", 'w') as f:
-                        json.dump(record_book, f, indent=4)
-                else:
-                    with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_{data_name}{suffix_}.json", 'w') as f:
-                        json.dump(record_book, f, indent=4)
-
-            if 'plan_bench' in train_task_name:
-                with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_{initial_index}_{last_index}_plan_bench{suffix_}.json", 'w') as f:
-                    json.dump(record_book, f, indent=4)
-            else:
-                with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_{initial_index}_{last_index}_main{suffix_}.json", 'w') as f:
-                    json.dump(record_book, f, indent=4)            
+            with open(f"{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train}_icppl_{model_name}_{train_task_name}_{initial_index}_{last_index}_{suffix}.json", 'w') as f:
+                json.dump(record_book, f, indent=4)            
 
     import gc
     del model

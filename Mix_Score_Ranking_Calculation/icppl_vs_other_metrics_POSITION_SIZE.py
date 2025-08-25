@@ -40,8 +40,8 @@ suffix_ = ''
 
 # num_of_incontext_examples = 5
 # num_of_incontext_examples = 4
-num_of_incontext_examples = 3
-# num_of_incontext_examples = 2
+# num_of_incontext_examples = 3
+num_of_incontext_examples = 2
 # num_of_incontext_examples = 1
 
 
@@ -229,7 +229,6 @@ for model_name in model_name_list:
         except:
             a = 1
     
-        print("Diversity (Standard Deviation):", diversity)
         diversity_list.append(diversity)
     diversity_list_dict[model_name] = diversity_list
 
@@ -338,29 +337,18 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
                 for task_name in task_name_list:
                     in_context_ppl_cos_record_list = []
                     ppl_cos_record_list = []
-                    if use_plan_prompt:
-                        if 'plan' in task_name:
-                            suffix_ = f'_{num_of_incontext_examples}_examples_use_plan_prompt'
-                        else:
-                            suffix_ = f'_{num_of_incontext_examples}_examples'
-                    else:
-                        suffix_ = f'_{num_of_incontext_examples}_examples'
-                    if 'plan_bench' in task_name:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_plan_bench{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
-                    else:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_main{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
+
+
+
+                    suffix = f'{num_of_incontext_examples}_examples'
+                    
+                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_{suffix}.json'
                     with open(file_path, 'r') as f:
                         in_context_ppl_cos_record = json.load(f)
 
-                    if last_index - initial_index > 100:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{300}_other_metrics_{model_name}_{task_name}_{0}_{100}.json'      
-                    else:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'                            
+                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'  
                     with open(file_path, 'r') as f:
                         ppl_cos_record = json.load(f)
-
                     
 
                     a = 1
@@ -535,46 +523,3 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
                 print('acc: ', "{:.2f}\\%".format(experimental_result['Ours']['Avg Acc'] * 100))
                 print('pho: ', "{:.3f}".format(experimental_result['Ours']['Weighted Spearman Pho']))
 
-    # import copy
-    # experimental_result_update = copy.deepcopy(experiment_recorder_different_seed_list[0])
-    # for method_name in experimental_result_update.keys():
-    #     for metric_name in experimental_result_update[method_name].keys():
-    #         record_enable = False
-    #         try:
-    #             float(experimental_result_update[method_name][metric_name])
-    #             record_enable = True
-    #         except:
-    #             record_enable = False
-    #         if record_enable:
-    #             total_value = 0
-    #             for experiment_recorder_different_seed_item in experiment_recorder_different_seed_list:
-    #                 total_value += float(experiment_recorder_different_seed_item[method_name][metric_name])
-    #             total_value /= len(index_range_list)
-    #             experimental_result_update[method_name][metric_name] = total_value
-    # experimental_result = experimental_result_update
-
-
-    
-    # experimental_result_list.append(experimental_result)
-
-
-# print()
-# print()
-
-# print()
-
-# print()
-
-# print()
-
-# print()
-
-# print()
-
-# print('Ours - Perplexity: mistral', experimental_result['Ours - Perplexity']['mistral'] * 100)
-# print('Ours - Perplexity: llama_3_instruct', experimental_result['Ours - Perplexity']['llama_3_instruct']* 100)
-# print('Ours - Perplexity: qwen', experimental_result['Ours - Perplexity']['qwen']* 100)
-# print('Ours Avg Acc', experimental_result['Ours - Perplexity']['Avg Acc']* 100)
-# print('Ours Weighted Spearman Pho', experimental_result['Ours - Perplexity']['Weighted Spearman Pho'])
-
-# write_to_table(experimental_result_list, table_tex_name)

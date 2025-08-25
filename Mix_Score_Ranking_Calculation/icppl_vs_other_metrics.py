@@ -8,49 +8,97 @@ sys.path.append(parent_dir)
 from utils.function import load_experimental_result
 from utils.data_recorder import write_to_table
 from config.config import HOME_DIRECTORY
-
-evaluation_task = 'main_experiment' # if you wish to run metrics comparison on main experiment, set evaluation_task = 'main_experiment'
-# evaluation_task = 'planbench' # if you wish to run metrics comparison on PlanBench, set evaluation_task = 'planbench'
+import argparse
 
 
+parser = argparse.ArgumentParser(description="Experiment configuration")
+
+# 你最初的参数
+parser.add_argument(
+    "--index_range_list",
+    type=lambda s: [tuple(map(int, item.split("-"))) for item in s.split(",")],
+    default=[(0, 50), (50, 100), (100, 150)],
+    help="List of index ranges, e.g. '0-50,50-100,100-150'"
+)
+parser.add_argument(
+    "--num_of_incontext_examples",
+    type=int,
+    default=2,
+    help="Number of in-context examples"
+)
+parser.add_argument(
+    "--evaluation_task",
+    type=str,
+    choices=["main_experiment", "planbench"],
+    default="main_experiment",
+    help="Task type"
+)
+
+parser.add_argument(
+    "--model_name_list",
+    type=str,
+    nargs="+",
+    choices=["mistral", "llama_3_instruct", "qwen"],
+    default=["mistral", "llama_3_instruct", "qwen"],
+    help="Target model names (space-separated)"
+)
+
+args = parser.parse_args()
+
+
+
+
+
+# 像你说的直接取出来
 # index_range_list = [(0, 50), (50, 100), (100, 150)]
 # index_range_list = [(0, 10), (10, 20), (20, 30)]
-index_range_list = [(0, 50), (50, 100), (100, 150)]
+# index_range_list = [(0, 50), (50, 100), (100, 150)]
 # index_range_list = [(0, 30), (30, 60), (60, 90)]
 # index_range_list = [(0, 100), (100, 200), (200, 300)]
-
-suffix_ = ''
-
-
+index_range_list = args.index_range_list
 # how many in-context example do you wish to add for Self-Algined perplexity ?
 # num_of_incontext_examples = 5
 # num_of_incontext_examples = 4
 # num_of_incontext_examples = 3
-num_of_incontext_examples = 2   
+# num_of_incontext_examples = 2   
 # num_of_incontext_examples = 1
+num_of_incontext_examples = args.num_of_incontext_examples
+# evaluation_task = 'main_experiment' # if you wish to run metrics comparison on main experiment, set evaluation_task = 'main_experiment'
+# evaluation_task = 'planbench' # if you wish to run metrics comparison on PlanBench, set evaluation_task = 'planbench'
+evaluation_task = args.evaluation_task
+# which model do you wish to evaluate?
+model_name_list = args.model_name_list
+
+# evaluation_task = "planbench"
+
+
+
+main_task_default_task_name_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
+# main_task_default_task_name_list = ['api_bank']
+plan_bench_default_task_name_list = ['plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_replaning', 'plan_bench_verification']
+
+
+
+
+
 
 rank_method_list = ['skywork', 'CAR', 'IDF', 'perplexity', 'in_context_perplexity']
-model_name_list = ['mistral', 'llama_3_instruct', 'qwen']
 n_train_recorder = 300
 n_train_recorder_other_metrics = 300
 experimental_result_list = []
 num_of_run = len(index_range_list)
-table_tex_name = f'icppl vs other metrics: average of {num_of_run} subsets{suffix_} num of incontext examples: {num_of_incontext_examples}'
+table_tex_name = f'icppl vs other metrics: average of {num_of_run} subsets, num of incontext examples: {num_of_incontext_examples}'
 
 
 if evaluation_task == 'main_experiment':
-    default_lr_task_name_list = ['gsm8k', 'math_algebra', 'mmlu', 'winogrande', 'piqa', 'agieval', 'squad', 'ecqa', 'boolq', 'arc_challenge', 'mmlu_pro_law', 'drop', 'hellaswag', 'mbpp', 'mmlu_moral_scenarios', 'math_geometry', 'api_bank']
+    default_lr_task_name_list = main_task_default_task_name_list
     diff_threshold_list = [-1111, 0.02, 0.04]
 
-    # default_lr_task_name_list = ['api_bank']
-    # diff_threshold_list = [-1111]
-    use_plan_prompt = False
 
 elif evaluation_task == 'planbench':
-    default_lr_task_name_list = ['plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_replaning', 'plan_bench_verification']
+    default_lr_task_name_list = plan_bench_default_task_name_list
     # default_lr_task_name_list = ['plan_bench_generation', 'plan_bench_optimality', 'plan_bench_generalization', 'plan_bench_reuse', 'plan_bench_replaning', 'plan_bench_verification', 'plan_bench_excution']
     diff_threshold_list = [-1111]
-    use_plan_prompt = True
     table_tex_name += ' plan bench'
 
 def calculate_average(dictionary):
@@ -232,7 +280,7 @@ for model_name in model_name_list:
         except:
             a = 1
     
-        print("Diversity (Standard Deviation):", diversity)
+        # print("Diversity (Standard Deviation):", diversity)
         diversity_list.append(diversity)
     diversity_list_dict[model_name] = diversity_list
 
@@ -331,31 +379,15 @@ for kk, diff_threshold in enumerate(diff_threshold_list):
                 for task_name in task_name_list:
                     in_context_ppl_cos_record_list = []
                     ppl_cos_record_list = []
-                    if use_plan_prompt:
-                        if 'plan' in task_name:
-                            suffix_ = f'_{num_of_incontext_examples}_examples_use_plan_prompt'
-                        else:
-                            suffix_ = f'_{num_of_incontext_examples}_examples'
-                    else:
-                        suffix_ = f'_{num_of_incontext_examples}_examples'
-                    if 'plan_bench' in task_name:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_plan_bench{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
-                    else:
-                        file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_main{suffix_}.json'
-                        # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}.json'
+                    suffix = f'{num_of_incontext_examples}_examples'
+
+                    
+                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder}_icppl_{model_name}_{task_name}_{initial_index}_{last_index}_{suffix}.json'
                     with open(file_path, 'r') as f:
                         in_context_ppl_cos_record = json.load(f)
                     
-                    # if 'qwen' in model_name or 'llama' in model_name or 'mistral' in model_name:
-                    #     file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{500}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}{suffix_}.json'  
-                    # else:
-                    #     file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'                            
-                    # with open(file_path, 'r') as f:
-                    #     ppl_cos_record = json.load(f)
 
-                    # file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{300}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}{suffix_}.json'  
-                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{300}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'  
+                    file_path = f'{HOME_DIRECTORY}/Mix_Score_Ranking_Calculation/Mix_Score_record/record_book/{n_train_recorder_other_metrics}_other_metrics_{model_name}_{task_name}_{initial_index}_{last_index}.json'  
                     with open(file_path, 'r') as f:
                         ppl_cos_record = json.load(f)
                    
@@ -560,4 +592,22 @@ try:
     print('Ours - Perplexity: Weighted Spearman Pho', experimental_result['Ours - Perplexity']['Weighted Spearman Pho'])
 except:
     a = 1
+
+
+
+def replace_key_preserve_order(obj, old_key, new_key):
+    if isinstance(obj, dict):
+        new_dict = {}
+        for k, v in obj.items():
+            new_k = new_key if k == old_key else k
+            new_dict[new_k] = replace_key_preserve_order(v, old_key, new_key)
+        return new_dict
+    elif isinstance(obj, list):
+        return [replace_key_preserve_order(i, old_key, new_key) for i in obj]
+    else:
+        return obj
+
+experimental_result_list = replace_key_preserve_order(experimental_result_list, "IDF", "IFD")
+
+
 write_to_table(experimental_result_list, table_tex_name)
