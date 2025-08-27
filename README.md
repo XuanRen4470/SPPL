@@ -31,7 +31,7 @@ To run our code correctly, you need to **manually create additional folders outs
 YOUR_WORKSPACE/
 │
 ├── SPPL/                          # This GitHub repository (core code)
-│   ├── config/
+│   ├── config/                    
 │   ├── script/
 │   ├── Mix_Score_Ranking_Calculation/   # Efficient ranking code (SPPL core)
 |   |── LLaMA-Factory-ACL-2025/        # Downloaded from the official LLaMA-Factory GitHub
@@ -39,7 +39,7 @@ YOUR_WORKSPACE/
 │   |                                     # - Required to obtain initial predictions
 │   └── ...
 │
-├── model/                         # Target models for training & prediction
+├── model/                         # Target models for training & prediction. You need to download the models on your own.
 │
 ├── output_record/output              # Not sure if useful, but leave it here
 │
@@ -114,14 +114,21 @@ The **core comparison scripts** rely on the following **precomputed artifacts**.
 ```bash
 # Core comparisons (run these to reproduce the main results)
 
-# SPPL vs. other metrics
+# SPPL vs. other metrics (17 Main tasks and 6 Plan Bench Tasks)
 python SPPL/Mix_Score_Ranking_Calculation/icppl_vs_other_metrics.py
 
-# SPPL vs. different response generation strategies
-python SPPL/Mix_Score_Ranking_Calculation/icppl_vs_other_metrics.py
+# SPPL vs. different response generation strategies (17 Main tasks and 6 Plan Bench Tasks)
+python SPPL/Mix_Score_Ranking_Calculation/icppl_vs_other_response_generation_methods.py
 
-# SPPL vs. train-then-test approach
+# SPPL vs. train-then-test approach (17 Main tasks)
 python SPPL/Mix_Score_Ranking_Calculation/spearman_correlation_and_acc_train_then_test.py
+
+# Stability of SPPL
+python SPPL/Mix_Score_Ranking_Calculation/icppl_vs_other_metrics_POSITION_SIZE.py
+
+# Evaluate Zeroshot Performance (17 Main tasks)
+# You can generate the zeroshot predictions on your own by running python SPPL/Mix_Score_Ranking_Calculation/zero_shot_initial_prediction.py if you want 
+python SPPL/Mix_Score_Ranking_Calculation/evaluate_qwen_zero_shot.py
 ```
 
 All experimental outputs are saved as LaTeX (`.tex`) tables in `SPPL/Mix_Score_Ranking_Calculation/experiment_result`. Each script generates a ready-to-paste comparison table. To visualize the tables, open the relevant `.tex` file and copy–paste the table into your Overleaf project.
@@ -204,3 +211,5 @@ Helper scripts for data generation and report formatting:
   ```
 
 ---
+
+
